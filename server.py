@@ -1,24 +1,22 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from mongodb import MongoDB
 import os
 from dotenv import load_dotenv
 
+from mongodb import MongoDB
+from bson.objectid import ObjectId
+
+from models import SRSData
 load_dotenv()
 
 database_name = os.environ.get("DATABASE_NAME")
-srs_main_ep = os.environ.get("POST_SRS_MAIN_ENDPOINT")
+srs_main_text_ep = os.environ.get("SRS_MAIN_TEXT_ENDPOINT")
 srs_main_collection = os.environ.get("SRS_MAIN_COLLECTION")
 
 app = FastAPI()
 
-mongodb = MongoDB()
-srs_database = mongodb.get_client()[database_name]
+srs_database = MongoDB().get_client()[database_name]
 
-class SRSData(BaseModel):
-    text: str
-
-@app.post(srs_main_ep, status_code=201)
+@app.post(srs_main_text_ep, status_code=201)
 async def add_srs_text(srs_data: SRSData):
     text = srs_data.text
     if not text:
@@ -34,3 +32,27 @@ async def add_srs_text(srs_data: SRSData):
     }
 
     return response_body
+
+
+# Get SRS
+
+@app.get(srs_main_text_ep+"{srs_id}/")
+async def get_srs_text(srs_id: str):
+    try:
+        object_id = ObjectId(srs_id)
+        srs_document = srs_database[srs_main_collection].find_one({"_id": object_id})
+        
+        if srs_document:
+            srs_text = srs_document["text"]
+
+            response_body = {
+                "message": "text found and sent successfully",
+                "srs_id": srs_id,
+                "srs": srs_text
+            }
+            
+            return response_body
+        else:
+            raise HTTPException(status_code=400, detail="error in file srs sending", headers={"X-Error": "SRS not found."})
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="error in file srs sending", headers={"X-Error": str(e)})
