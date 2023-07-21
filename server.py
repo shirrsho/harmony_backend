@@ -19,11 +19,15 @@ srs_database = MongoDB().get_client()[database_name]
 @app.post(srs_main_text_ep, status_code=201)
 async def add_srs_text(srs_data: SRSData):
     text = srs_data.text
+    srs_title = srs_data.srs_title
     if not text:
         raise HTTPException(status_code=400, detail="error in text srs adding", headers={"X-Error": "Text cannot be empty."})
 
     # Insert the SRS data into the MongoDB collection.
-    result = srs_database[srs_main_collection].insert_one({"text": text})
+    result = srs_database[srs_main_collection].insert_one({
+        "srs":text,
+        "srs_title":srs_title
+    })
     srs_id = str(result.inserted_id)
 
     response_body = {
@@ -43,12 +47,12 @@ async def get_srs_text(srs_id: str):
         srs_document = srs_database[srs_main_collection].find_one({"_id": object_id})
         
         if srs_document:
-            srs_text = srs_document["text"]
 
             response_body = {
                 "message": "text found and sent successfully",
                 "srs_id": srs_id,
-                "srs": srs_text
+                "srs_title": srs_document["srs_title"],
+                "srs": srs_document["srs"]
             }
             
             return response_body
