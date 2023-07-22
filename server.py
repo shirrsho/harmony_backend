@@ -1,18 +1,32 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 import os
 from dotenv import load_dotenv
 
 from mongodb import MongoDB
 from bson.objectid import ObjectId
 
-from models import SRSData
+from models import SRSData, SRSFile
 load_dotenv()
 
 database_name = os.environ.get("DATABASE_NAME")
-srs_main_text_ep = os.environ.get("SRS_MAIN_TEXT_ENDPOINT")
 srs_main_collection = os.environ.get("SRS_MAIN_COLLECTION")
+srs_main_text_ep = os.environ.get("SRS_MAIN_TEXT_ENDPOINT")
+srs_main_file_ep = os.environ.get("SRS_MAIN_FILE_ENDPOINT")
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 srs_database = MongoDB().get_client()[database_name]
 
@@ -37,6 +51,19 @@ async def add_srs_text(srs_data: SRSData):
 
     return response_body
 
+@app.post(srs_main_file_ep, status_code=201)
+async def add_srs_text(file: UploadFile = File(...)):
+    # ufile = file
+    # srs_title = srs_data.srs_title
+    # Handle the uploaded file here
+    # You can save the file, process it, etc.
+    # For example, to save it to a specific location:
+    with open('uploads/'+file.filename, "wb") as f:
+        f.write(await file.read())
+    return {
+            'message': 'file srs added successfully',
+            'srs_title':file.filename
+            }
 
 # Get SRS
 
