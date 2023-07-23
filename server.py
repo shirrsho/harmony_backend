@@ -11,8 +11,11 @@ load_dotenv()
 
 database_name = os.environ.get("DATABASE_NAME")
 srs_main_collection = os.environ.get("SRS_MAIN_COLLECTION")
+srs_ids_collection = os.environ.get("SRS_IDS_COLLECTION")
+
 srs_main_text_ep = os.environ.get("SRS_MAIN_TEXT_ENDPOINT")
 srs_main_file_ep = os.environ.get("SRS_MAIN_FILE_ENDPOINT")
+srs_ids_ep = os.environ.get("SRS_IDS_ENDPOINT")
 
 app = FastAPI()
 
@@ -43,7 +46,10 @@ async def add_srs_text(srs_data: SRSData):
         "srs_title":srs_title
     })
     srs_id = str(result.inserted_id)
-
+    srs_database[srs_ids_collection].insert_one({
+            "srs_id":srs_id,
+            "srs_title":srs_title
+        })
     response_body = {
         "message": "text srs added successfully",
         "srs_id": srs_id
@@ -80,6 +86,25 @@ async def get_srs_text(srs_id: str):
                 "srs_id": srs_id,
                 "srs_title": srs_document["srs_title"],
                 "srs": srs_document["srs"]
+            }
+            
+            return response_body
+        else:
+            raise HTTPException(status_code=400, detail="error in file srs sending", headers={"X-Error": "SRS not found."})
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="error in file srs sending", headers={"X-Error": str(e)})
+
+@app.get(srs_ids_ep)
+async def get_srs_ids():
+    try:
+        srs_ids_cursor = srs_database[srs_main_collection].find()
+        srs_ids = [{str(srs_ids["_id"]),str(srs_ids["srs_title"])} for srs_ids in srs_ids_cursor]
+        
+        if srs_ids:
+
+            response_body = {
+                "message": "ids found and sent successfully",
+                "srs_ids": srs_ids
             }
             
             return response_body
