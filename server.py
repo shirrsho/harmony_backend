@@ -98,7 +98,10 @@ async def get_srs_text(srs_id: str):
 async def get_srs_ids():
     try:
         srs_ids_cursor = srs_database[srs_main_collection].find()
-        srs_ids = [{str(srs_ids["_id"]),str(srs_ids["srs_title"])} for srs_ids in srs_ids_cursor]
+        srs_ids = [{
+            'srs_id':str(srs_ids["_id"]),
+            'srs_title':str(srs_ids["srs_title"])
+            } for srs_ids in srs_ids_cursor]
         
         if srs_ids:
 
