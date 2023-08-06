@@ -5,7 +5,7 @@ class SRSProject(BaseModel):
     project_title:str
 
 class SRSData(BaseModel):
-    project_id:str
+    # project_id:str
     srs_title:str
     text:str
 

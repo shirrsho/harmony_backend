@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 from mongodb import MongoDB
 from bson.objectid import ObjectId
+import pandas as pd
 
 from src.models.models import SRSData
 load_dotenv()
@@ -20,7 +21,7 @@ router = APIRouter(
     responses={404: {"description": "Not found"}},
 )
 
-@router.get('/'+"{srs_id}/")
+@router.get("/{srs_id}/")
 async def get_srs_text(srs_id: str):
     try:
         object_id = ObjectId(srs_id)
@@ -41,11 +42,11 @@ async def get_srs_text(srs_id: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail="error in srs sending", headers={"X-Error": str(e)})
 
-@router.post('/text/', status_code=201)
-async def add_srs_text(srs_data: SRSData):
+@router.post('/text/{project_id}', status_code=201)
+async def add_srs_text(project_id:str, srs_data: SRSData):
     text = srs_data.text
     srs_title = srs_data.srs_title
-    project_id = srs_data.project_id
+    # project_id = srs_data.project_id
     if not text:
         raise HTTPException(status_code=400, detail="error in text srs adding", headers={"X-Error": "Text cannot be empty."})
 
@@ -69,19 +70,35 @@ async def add_srs_text(srs_data: SRSData):
 
     return response_body
 
-@router.post('/file/', status_code=201)
-async def add_srs_file(file: UploadFile = File(...)):
-    # ufile = file
-    # srs_title = srs_data.srs_title
-    # Handle the uploaded file here
-    # You can save the file, process it, etc.
-    # For example, to save it to a specific location:
-    with open('uploads/'+file.filename, "wb") as f:
-        f.write(await file.read())
-    return {
-            'message': 'file srs added successfully',
-            'srs_title':file.filename
-            }
+@router.post('/file/{project_id}/', status_code=201)
+async def add_srs_file(project_id:str, file: UploadFile = File(...)):
+    if file.filename.endswith('.csv'):
+        df = pd.read_csv(file.file)
+    result = srs_main_collection.insert_one({
+        "srs":df.values.flatten().tolist(),
+        "srs_title":file.filename,
+        "project_id":project_id,
+    })
+    if result:
+        srs_id = str(result.inserted_id)
+        srs_ids_collection.insert_one({
+                "srs_id":srs_id,
+                "srs_title":file.filename,
+                "project_id":project_id,
+            })
+    response_body = {
+        "message": "text srs added successfully",
+        "srs_id": srs_id
+    }
+
+    return response_body
+    #     print("print:"+df.__array__())
+    # with open('uploads/'+file.filename, "wb") as f:
+    #     f.write(await file.read())
+    # return {
+    #         'message': 'file srs added successfully',
+    #         'srs_title':file.filename
+    #         }
 
 @router.put("/{srs_id}")
 async def update_project(srs_id: str, new_data: dict):
