@@ -23,7 +23,7 @@ router = APIRouter(
     responses={404: {"description": "Not found"}},
 )
 
-@router.post('/intra/{srs_id}', status_code=201)
+@router.post('/intra/{srs_id}/', status_code=201)
 async def find_intra_conflict(srs_id:str):
     object_id = ObjectId(srs_id)
     srs_document = srs_main_collection.find_one({"_id": object_id})
