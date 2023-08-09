@@ -1,0 +1,28 @@
+POST https://ars.altervista.org/lint_php/lint_php.php  HTTP/1.1
+content-type: multipart/form-data
+
+{
+    "lint_text":"  <?php 
+if ($error == 1)
+{
+    die('error')
+}
+else
+{
+    show_welcome_page(1,1,1);
+}
+//////////////////////////////////
+function show_welcome($verbose,$cond,$unused_var)
+{
+echo Some text;
+if ( ($verbose == 1) && $cond)
+{
+    echo ...and some verbose text;
+}
+elseif ($verbose == 2)
+{
+    echo ...and all verbose text;
+}
+} // end function show_welcome_page($verbose)
+?>"
+}

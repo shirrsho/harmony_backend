@@ -23,30 +23,88 @@ router = APIRouter(
     responses={404: {"description": "Not found"}},
 )
 
+def insertin(conflictings, toinsert):
+    # Check if any of the numbers in the new_set exist in any of the sets in the array
+    combined_sets = []
+    for existing_set in conflictings:
+        if any(num in existing_set for num in toinsert):
+            combined_sets.append(existing_set)
+    
+    # If there are two or more sets to combine, create a union of them
+    if len(combined_sets) >= 2:
+        combined_union = set(toinsert)
+        for existing_set in combined_sets:
+            combined_union |= existing_set
+        
+        # Remove the combined sets from the array
+        conflictings = [s for s in conflictings if s not in combined_sets]
+        
+        # Append the combined union set to the array
+        conflictings.append(combined_union)
+    else:
+        conflictings.append(set(toinsert))
+
+    ret = []
+    
+    for set1 in conflictings:
+        for set2 in conflictings:
+            if set1.intersection(set2)!={}:
+                ret.append(set1.union(set2))
+    return ret
+
+def findstatus_intrasrs(srs_count, cosine_sim_matrix):
+    conflictings = []
+
+    for i in range(srs_count):
+        for j in range(srs_count):
+            if(cosine_sim_matrix[i][j]>0.5):
+                if(i!=j):
+                    conflictings = insertin(conflictings, set((i,j)))
+    # print(cosine_sim_matrix)
+    print(conflictings)
+    
+    for c in conflictings:
+        c = list(c)
+    return conflictings
+
+
 @router.post('/intra/{srs_id}/', status_code=201)
 async def find_intra_conflict(srs_id:str):
     object_id = ObjectId(srs_id)
     srs_document = srs_main_collection.find_one({"_id": object_id})
-    df = srs_document["srs"]
-    tfidf_matrix = tfidf.fit_transform(df)
-    cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
-    conflictings = set([])
-    for i in range(len(df)):
-        for j in range(len(df)):
-            if(cosine_sim[i-1][j-1]>0.5):
-                if(i!=j):
-                    conflictings.add(i)
-                    conflictings.add(j)
-    conflictings = list(conflictings)
-    result = srs_conflict_collection.insert_one({
-        "srs_id":srs_id,
-        "conflict_set":conflictings
-    })
+
+    srsdf = srs_document["srs"]
+    tfidf_matrix = tfidf.fit_transform(srsdf)
+    cosine_sim_matrix = cosine_similarity(tfidf_matrix, tfidf_matrix)
+
+    conflictings = findstatus_intrasrs(len(srsdf), cosine_sim_matrix)
+
+    # print(cosine_sim_matrix)
+    # print(conflictings)
+
+    # conflictings = set([])
+    # safes = set([])
+    # for i in range(len(df)):
+    #     for j in range(len(df)):
+    #         if(cosine_sim[i-1][j-1]>0.5):
+    #             if(i!=j):
+    #                 conflictings.add(i)
+    #                 conflictings.add(j)
+    # for i in range(len(df)):
+    #     if i not in conflictings:
+    #         safes.add(i)
+    # conflictings = list(conflictings)
+    # safes = list(safes)
+    # result = srs_conflict_collection.insert_one({
+    #     "srs_id":srs_id,
+    #     "conflict_set":conflictings,
+    #     "safe_set":safes
+    # })
     response_body = {
             'message':'possible conflicts sent',
             'conflict_set': conflictings
         }
-    if result:
+    if 1:
         return response_body
     else:
         raise HTTPException(status_code=400, detail="error in conflict adding")
@@ -60,12 +118,14 @@ async def get_intra_conflicts(srs_id:str):
         if srs_conflicts:
             response_body = {
                 "message": "conflicts found and sent successfully",
-                "srs_conflicts": srs_conflicts["conflict_set"]
+                "srs_conflicts": srs_conflicts["conflict_set"],
+                "srs_safes": srs_conflicts["safe_set"]
             }
         else:
             response_body = {
                 "message": "conflicts not found",
-                "srs_conflicts": []
+                "srs_conflicts": [],
+                "srs_safes": []
             }
         return response_body
     except Exception as e:
