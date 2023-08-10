@@ -31,7 +31,7 @@ def insertin(conflictings, toinsert):
             combined_sets.append(existing_set)
     
     # If there are two or more sets to combine, create a union of them
-    if len(combined_sets) >= 2:
+    if len(combined_sets) >= 1:
         combined_union = set(toinsert)
         for existing_set in combined_sets:
             combined_union |= existing_set
@@ -44,13 +44,14 @@ def insertin(conflictings, toinsert):
     else:
         conflictings.append(set(toinsert))
 
-    ret = []
+    # ret = []
     
-    for set1 in conflictings:
-        for set2 in conflictings:
-            if set1.intersection(set2)!={}:
-                ret.append(set1.union(set2))
-    return ret
+    # for set1 in conflictings:
+    #     for set2 in conflictings:
+    #         if set1.intersection(set2)!={}:
+    #             ret.append(set1.union(set2))
+    print("Hi",toinsert,conflictings)
+    return conflictings
 
 def findstatus_intrasrs(srs_count, cosine_sim_matrix):
     conflictings = []
@@ -61,7 +62,7 @@ def findstatus_intrasrs(srs_count, cosine_sim_matrix):
                 if(i!=j):
                     conflictings = insertin(conflictings, set((i,j)))
     # print(cosine_sim_matrix)
-    print(conflictings)
+    # print(conflictings)
     
     for c in conflictings:
         c = list(c)
