@@ -63,10 +63,13 @@ def findstatus_intrasrs(srs_count, cosine_sim_matrix):
                     conflictings = insertin(conflictings, set((i,j)))
     # print(cosine_sim_matrix)
     # print(conflictings)
+
+    ret = [[]]
     
     for c in conflictings:
         c = list(c)
-    return conflictings
+        ret.append(c)
+    return ret
 
 
 @router.post('/intra/{srs_id}/', status_code=201)
@@ -84,7 +87,7 @@ async def find_intra_conflict(srs_id:str):
     # print(conflictings)
 
     # conflictings = set([])
-    # safes = set([])
+    safes = []
     # for i in range(len(df)):
     #     for j in range(len(df)):
     #         if(cosine_sim[i-1][j-1]>0.5):
@@ -96,16 +99,17 @@ async def find_intra_conflict(srs_id:str):
     #         safes.add(i)
     # conflictings = list(conflictings)
     # safes = list(safes)
-    # result = srs_conflict_collection.insert_one({
-    #     "srs_id":srs_id,
-    #     "conflict_set":conflictings,
-    #     "safe_set":safes
-    # })
+    result = srs_conflict_collection.insert_one({
+        "srs_id":srs_id,
+        "conflict_set":conflictings,
+        "safe_set":safes
+    })
     response_body = {
             'message':'possible conflicts sent',
             'conflict_set': conflictings
         }
-    if 1:
+    print(conflictings)
+    if result:
         return response_body
     else:
         raise HTTPException(status_code=400, detail="error in conflict adding")
