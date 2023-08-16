@@ -8,7 +8,7 @@ load_dotenv()
 
 srs_database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
 
-srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
+# srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
 srs_projects_collection = srs_database[os.environ.get("SRS_PROJECTS_COLLECTION")]
 srs_main_collection = srs_database[os.environ.get("SRS_MAIN_COLLECTION")]
 
@@ -59,11 +59,13 @@ async def get_projects():
 async def get_project(project_id: str):
     try:
         # object_id = ObjectId(srs_id)
-        srs_ids_cursor = srs_ids_collection.find({"project_id": project_id})
+        # srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
+        
+        srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
         srs_ids = [{
-            'srs_id':str(srs_ids["srs_id"]),
+            'srs_id':str(srs_ids["_id"]),
             'srs_title':str(srs_ids["srs_title"])
-            } for srs_ids in srs_ids_cursor]
+        } for srs_ids in srs_ids_cursor]
 
         if srs_ids:
             response_body = {
@@ -106,7 +108,7 @@ async def delete_project(project_id: str):
 
         # Use the delete_one() method to delete the document with the given object_id
         result = srs_projects_collection.delete_one({"_id": object_id})
-        result = srs_ids_collection.delete_many({"project_id": project_id})
+        # result = srs_ids_collection.delete_many({"project_id": project_id})
         result = srs_main_collection.delete_many({"project_id": project_id})
 
         # Check if the document was found and deleted

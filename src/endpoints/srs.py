@@ -12,7 +12,7 @@ load_dotenv()
 srs_database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
 
 srs_main_collection = srs_database[os.environ.get("SRS_MAIN_COLLECTION")]
-srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
+# srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
 
 
 #APIRouter creates path operations for user module
@@ -56,16 +56,16 @@ async def add_srs_text(project_id:str, srs_data: SRSData):
         "srs_title":srs_title,
         "project_id":project_id,
     })
-    if result:
-        srs_id = str(result.inserted_id)
-        srs_ids_collection.insert_one({
-                "srs_id":srs_id,
-                "srs_title":srs_title,
-                "project_id":project_id,
-            })
+    # if result:
+    #     srs_id = str(result.inserted_id)
+    #     srs_ids_collection.insert_one({
+    #             "srs_id":srs_id,
+    #             "srs_title":srs_title,
+    #             "project_id":project_id,
+    #         })
     response_body = {
         "message": "text srs added successfully",
-        "srs_id": srs_id
+        "srs_id": str(result.inserted_id)
     }
 
     return response_body
@@ -79,16 +79,16 @@ async def add_srs_file(project_id:str, file: UploadFile = File(...)):
         "srs_title":file.filename,
         "project_id":project_id,
     })
-    if result:
-        srs_id = str(result.inserted_id)
-        srs_ids_collection.insert_one({
-                "srs_id":srs_id,
-                "srs_title":file.filename,
-                "project_id":project_id,
-            })
+    # if result:
+    #     srs_id = str(result.inserted_id)
+    #     srs_ids_collection.insert_one({
+    #             "srs_id":srs_id,
+    #             "srs_title":file.filename,
+    #             "project_id":project_id,
+    #         })
     response_body = {
         "message": "text srs added successfully",
-        "srs_id": srs_id
+        "srs_id": str(result.inserted_id)
     }
 
     return response_body
@@ -114,11 +114,11 @@ async def update_project(srs_id: str, new_data: dict):
         if result.matched_count == 0:
             raise HTTPException(status_code=404, detail="Srs not found")
 
-        result = srs_ids_collection.update_one({"srs_id": srs_id}, {"$set": new_data})
+        # result = srs_ids_collection.update_one({"srs_id": srs_id}, {"$set": new_data})
 
-        # Check if the document was found and updated
-        if result.matched_count == 0:
-            raise HTTPException(status_code=404, detail="Srs not found")
+        # # Check if the document was found and updated
+        # if result.matched_count == 0:
+        #     raise HTTPException(status_code=404, detail="Srs not found")
 
         # Return a response indicating the update was successful
         return {"message": "Srs updated successfully"}
@@ -135,7 +135,7 @@ async def delete_srs(srs_id: str):
 
         # Use the delete_one() method to delete the document with the given object_id
         result = srs_main_collection.delete_one({"_id": object_id})
-        result = srs_ids_collection.delete_one({"srs_id": srs_id})
+        # result = srs_ids_collection.delete_one({"srs_id": srs_id})
 
         # Check if the document was found and deleted
         if result.deleted_count == 0:

@@ -9,7 +9,7 @@ load_dotenv()
 
 srs_database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
 
-srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
+# srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
 srs_projects_collection = srs_database[os.environ.get("SRS_PROJECTS_COLLECTION")]
 srs_main_collection = srs_database[os.environ.get("SRS_MAIN_COLLECTION")]
 srs_conflict_collection = srs_database[os.environ.get("SRS_CONFLICT_COLLECTION")]
