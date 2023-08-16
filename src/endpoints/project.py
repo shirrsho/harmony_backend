@@ -77,7 +77,7 @@ async def get_project(project_id: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail="error in project srss sending", headers={"X-Error": str(e)})
 
-@router.put("/{project_id}")
+@router.put("/{project_id}/")
 async def update_project(project_id: str, new_data: dict):
     try:
         # Convert the given document_id string to an ObjectId
@@ -98,7 +98,7 @@ async def update_project(project_id: str, new_data: dict):
         # Handle any potential exceptions and return an error response
         return {"error": str(e)}
 
-@router.delete("/{project_id}")
+@router.delete("/{project_id}/")
 async def delete_project(project_id: str):
     try:
         # Convert the given document_id string to an ObjectId

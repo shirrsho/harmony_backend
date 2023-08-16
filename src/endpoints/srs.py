@@ -42,7 +42,7 @@ async def get_srs_text(srs_id: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail="error in srs sending", headers={"X-Error": str(e)})
 
-@router.post('/text/{project_id}', status_code=201)
+@router.post('/text/{project_id}/', status_code=201)
 async def add_srs_text(project_id:str, srs_data: SRSData):
     text = srs_data.text
     srs_title = srs_data.srs_title
@@ -100,7 +100,7 @@ async def add_srs_file(project_id:str, file: UploadFile = File(...)):
     #         'srs_title':file.filename
     #         }
 
-@router.put("/{srs_id}")
+@router.put("/{srs_id}/")
 async def update_project(srs_id: str, new_data: dict):
     try:
         # Convert the given document_id string to an ObjectId
@@ -127,7 +127,7 @@ async def update_project(srs_id: str, new_data: dict):
         # Handle any potential exceptions and return an error response
         return {"error": str(e)}
 
-@router.delete("/{srs_id}")
+@router.delete("/{srs_id}/")
 async def delete_srs(srs_id: str):
     try:
         # Convert the given document_id string to an ObjectId
