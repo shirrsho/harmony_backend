@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
 
+from src.requirement.functionalities.db import deleteDocumentRequirements
+
 load_dotenv()
 
 database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
@@ -42,8 +44,9 @@ def editDocument(document_id:str, new_data:dict):
 
     return new_data
 
-def deleteDocumentRequirements(project_id:str):
-    pass
+def deleteProjectDocuments(project_id:str):
+    document_collection.delete_many({"project_id": project_id})
+    return True
 
 def deleteDocument(document_id:str):
     document_collection.delete_one({"_id": ObjectId(document_id)})
