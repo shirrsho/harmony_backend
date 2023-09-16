@@ -56,25 +56,6 @@ async def get_projects():
         
     except Exception as e:
         raise HTTPException(status_code=400, detail="Projects cannot be added, Please try again later", headers={"X-Error": str(e)})
-        
-@router.get("/{project_id}/")
-async def get_documents(project_id: str):
-    try:
-        # object_id = ObjectId(srs_id)
-        # srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
-        
-        srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
-        srs_ids = [{
-            'srs_id':str(srs_ids["_id"]),
-            'srs_title':str(srs_ids["srs_title"])
-        } for srs_ids in srs_ids_cursor]
-
-        return {
-                "message": "Project found and documents sent successfully",
-                "srs_ids": srs_ids
-        }
-    except Exception as e:
-        raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
 ## Edit project, validator to be added
 @router.put("/{project_id}/")

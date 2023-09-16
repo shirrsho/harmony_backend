@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson.objectid import ObjectId
 import pandas as pd
+from src.document.functionalities.validations import validateDocument
 
 from src.document.models.model import SRSData
 load_dotenv()
@@ -17,10 +18,29 @@ srs_main_collection = srs_database[os.environ.get("SRS_MAIN_COLLECTION")]
 
 #APIRouter creates path operations for user module
 router = APIRouter(
-    prefix="/srs",
+    prefix="/document",
     responses={404: {"description": "Not found"}},
     tags=["Document"]
 )
+
+@router.get("/all/{project_id}/")
+async def get_documents(project_id: str):
+    try:
+        # object_id = ObjectId(srs_id)
+        # srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
+        
+        srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
+        srs_ids = [{
+            'srs_id':str(srs_ids["_id"]),
+            'srs_title':str(srs_ids["srs_title"])
+        } for srs_ids in srs_ids_cursor]
+
+        return {
+                "message": "Project found and documents sent successfully",
+                "srs_ids": srs_ids
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
 @router.get("/{srs_id}/")
 async def get_srs_text(srs_id: str):
@@ -28,105 +48,71 @@ async def get_srs_text(srs_id: str):
         object_id = ObjectId(srs_id)
         srs_document = srs_main_collection.find_one({"_id": object_id})
         
-        if srs_document:
-
-            response_body = {
+        return {
                 "message": "text found and sent successfully",
                 "srs_id": srs_id,
                 "srs_title": srs_document["srs_title"],
                 "srs": srs_document["srs"]
             }
-            
-            return response_body
-        else:
-            raise HTTPException(status_code=400, detail="error in srs sending", headers={"X-Error": "SRS not found."})
     except Exception as e:
-        raise HTTPException(status_code=400, detail="error in srs sending", headers={"X-Error": str(e)})
+        raise HTTPException(status_code=400, detail="Document not found!", headers={"X-Error": str(e)})
 
 @router.post('/text/{project_id}/', status_code=201)
 async def add_srs_text(project_id:str, srs_data: SRSData):
+    validateDocument(srs_data)
     text = srs_data.text
     srs_title = srs_data.srs_title
     # project_id = srs_data.project_id
-    if not text:
-        raise HTTPException(status_code=400, detail="error in text srs adding", headers={"X-Error": "Text cannot be empty."})
 
     # Insert the SRS data into the MongoDB collection.
-    result = srs_main_collection.insert_one({
-        "srs":text.split('\n'),
-        "srs_title":srs_title,
-        "project_id":project_id,
-    })
-    # if result:
-    #     srs_id = str(result.inserted_id)
-    #     srs_ids_collection.insert_one({
-    #             "srs_id":srs_id,
-    #             "srs_title":srs_title,
-    #             "project_id":project_id,
-    #         })
-    response_body = {
-        "message": "text srs added successfully",
-        "srs_id": str(result.inserted_id)
-    }
+    try:
+        result = srs_main_collection.insert_one({
+            "srs":text.split('\n'),
+            "srs_title":srs_title,
+            "project_id":project_id,
+        })
 
-    return response_body
+        return {
+            "message": "text srs added successfully",
+            "srs_id": str(result.inserted_id)
+        }
+    except:
+        raise HTTPException(status_code=404, detail="Document can not be added!")
 
 @router.post('/file/{project_id}/', status_code=201)
 async def add_srs_file(project_id:str, file: UploadFile = File(...)):
     if file.filename.endswith('.csv'):
         df = pd.read_csv(file.file)
-    result = srs_main_collection.insert_one({
-        "srs":df.values.flatten().tolist(),
-        "srs_title":file.filename,
-        "project_id":project_id,
-    })
-    # if result:
-    #     srs_id = str(result.inserted_id)
-    #     srs_ids_collection.insert_one({
-    #             "srs_id":srs_id,
-    #             "srs_title":file.filename,
-    #             "project_id":project_id,
-    #         })
-    response_body = {
-        "message": "text srs added successfully",
-        "srs_id": str(result.inserted_id)
-    }
+    try:
+        result = srs_main_collection.insert_one({
+            "srs":df.values.flatten().tolist(),
+            "srs_title":file.filename,
+            "project_id":project_id,
+        })
 
-    return response_body
-    #     print("print:"+df.__array__())
-    # with open('uploads/'+file.filename, "wb") as f:
-    #     f.write(await file.read())
-    # return {
-    #         'message': 'file srs added successfully',
-    #         'srs_title':file.filename
-    #         }
+        return {
+            "message": "text srs added successfully",
+            "srs_id": str(result.inserted_id)
+        }
+    except:
+        raise HTTPException(status_code=404, detail="File can not be added!")
 
+#Validators to be added
 @router.put("/{srs_id}/")
 async def update_project(srs_id: str, new_data: dict):
     try:
-        # Convert the given document_id string to an ObjectId
         object_id = ObjectId(srs_id)
 
-        # Use the update_one() method to update the document with the given object_id
-        # The $set operator is used to update specific fields in the document
-        result = srs_main_collection.update_one({"_id": object_id}, {"$set": new_data})
+        srs_main_collection.update_one({"_id": object_id}, {"$set": new_data})
 
-        # Check if the document was found and updated
-        if result.matched_count == 0:
-            raise HTTPException(status_code=404, detail="Srs not found")
-
-        # result = srs_ids_collection.update_one({"srs_id": srs_id}, {"$set": new_data})
-
-        # # Check if the document was found and updated
-        # if result.matched_count == 0:
-        #     raise HTTPException(status_code=404, detail="Srs not found")
-
-        # Return a response indicating the update was successful
-        return {"message": "Srs updated successfully"}
+        return {
+            "message": "Document updated successfully",
+            "updated": new_data
+        }
 
     except Exception as e:
         # Handle any potential exceptions and return an error response
-        return {"error": str(e)}
+        raise HTTPException(status_code=404, detail="Document can not be updated", headers={"X-Error": str(e)})
 
 @router.delete("/{srs_id}/")
 async def delete_srs(srs_id: str):
@@ -134,17 +120,12 @@ async def delete_srs(srs_id: str):
         # Convert the given document_id string to an ObjectId
         object_id = ObjectId(srs_id)
 
-        # Use the delete_one() method to delete the document with the given object_id
-        result = srs_main_collection.delete_one({"_id": object_id})
+        srs_main_collection.delete_one({"_id": object_id})
         # result = srs_ids_collection.delete_one({"srs_id": srs_id})
-
-        # Check if the document was found and deleted
-        if result.deleted_count == 0:
-            raise HTTPException(status_code=404, detail="Document not found")
 
         # Return a response indicating the deletion was successful
         return {"message": "Document deleted successfully"}
 
     except Exception as e:
         # Handle any potential exceptions and return an error response
-        return {"error": str(e)}
+        raise HTTPException(status_code=404, detail="Document can not be deleted", headers={"X-Error": str(e)})
