@@ -1,8 +1,8 @@
 from fastapi import HTTPException
-from src.document.models.model import SRSData
+from src.document.models.model import Document
 
-def validateDocument(data: SRSData):
-    if not data.srs_title:
-        raise HTTPException(status_code=400, detail="Document Title cannot be empty!", headers={"X-Error": "Title cannot be empty."})
-    if not data.text:
-        raise HTTPException(status_code=400, detail="Document content cannot be empty!", headers={"X-Error": "Content cannot be empty."})
+def validateDocument(data: Document):
+    if not data.project_id:
+        raise HTTPException(status_code=400, detail="No project provided!", headers={"X-Error": "No project provided!"})
+    if not data.title:
+        raise HTTPException(status_code=400, detail="Document title cannot be empty!", headers={"X-Error": "Document title cannot be empty."})

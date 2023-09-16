@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
 
-from src.project.functionalities.db import addProjecttoDB, deleteProject, editProject, getAllProjectsFromDB
+from src.project.functionalities.db import addProjecttoDB, deleteProject, editProject, getAllProjectsFromDB, getProjectFromDB
 from src.project.functionalities.validations import validateProject
 from src.project.models.model import Project
 load_dotenv()
@@ -30,10 +30,21 @@ async def add_project(data: Project):
 @router.get('/')
 async def get_projects():
     try:
-        projects = await getAllProjectsFromDB()
+        projects = getAllProjectsFromDB()
         return {
             "message": "Projects are sent successfully",
             "projects": projects
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Projects cannot be fetched, Please try again later", headers={"X-Error": str(e)})
+
+@router.get('/{project_id}')
+async def get_project(project_id:str):
+    try:
+        project = getProjectFromDB(project_id)
+        return {
+            "message": "Project sent successfully",
+            "project": project
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail="Projects cannot be fetched, Please try again later", headers={"X-Error": str(e)})
@@ -53,7 +64,7 @@ async def update_project(project_id: str, new_data: dict):
 @router.delete("/{project_id}/")
 async def delete_project(project_id: str):
     try:
-        if await deleteProject(project_id) == True:
+        if deleteProject(project_id) == True:
             return {
                 "message": "Proejct deleted successfully!"
             }

@@ -1,10 +1,7 @@
 from pydantic import BaseModel
 from fastapi import UploadFile
 
-class SRSData(BaseModel):
+class Document(BaseModel):
     # project_id:str
-    srs_title:str
-    text:str
-
-class SRSFile(BaseModel):
-    file:UploadFile
+    project_id: str
+    title: str
