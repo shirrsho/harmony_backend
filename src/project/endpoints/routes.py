@@ -2,16 +2,11 @@ from fastapi import APIRouter, HTTPException
 import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
-from bson import ObjectId
+
+from src.project.functionalities.db import addProjecttoDB, deleteProject, editProject, getAllProjectsFromDB
 from src.project.functionalities.validations import validateProject
-from src.project.models.model import SRSProject
+from src.project.models.model import Project
 load_dotenv()
-
-srs_database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
-
-# srs_ids_collection = srs_database[os.environ.get("SRS_IDS_COLLECTION")]
-srs_projects_collection = srs_database[os.environ.get("SRS_PROJECTS_COLLECTION")]
-srs_main_collection = srs_database[os.environ.get("SRS_MAIN_COLLECTION")]
 
 #APIRouter creates path operations for user module
 router = APIRouter(
@@ -21,73 +16,46 @@ router = APIRouter(
 )
 
 @router.post('/', status_code=201)
-async def add_project(data: SRSProject):
+async def add_project(data: Project):
     validateProject(data)
-    project_title = data.project_title
-
-    # Insert the SRS data into the MongoDB collection.
     try:
-        result = srs_projects_collection.insert_one({
-            "project_title":project_title
-        })
+        project = addProjecttoDB(data)
         return {
-            "message": "Project added successfully",
-            "project_id": str(result.inserted_id)
+            "message": "Project added successfully!",
+            "project_id": str(project.inserted_id)
         }
-    except:
-        return {
-            "message": "Please try again later"
-        }
-
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Project cannot be added, Please try again later", headers={"X-Error": str(e)})
 
 @router.get('/')
 async def get_projects():
     try:
-        srs_projects_cursor = srs_projects_collection.find()
-        srs_projects = [{
-            'project_id':str(srs_project["_id"]),
-            'project_title':str(srs_project["project_title"])
-            } for srs_project in srs_projects_cursor]
-
+        projects = await getAllProjectsFromDB()
         return {
             "message": "Projects are sent successfully",
-            "srs_projects": srs_projects
+            "projects": projects
         }
-        
     except Exception as e:
-        raise HTTPException(status_code=400, detail="Projects cannot be added, Please try again later", headers={"X-Error": str(e)})
+        raise HTTPException(status_code=400, detail="Projects cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
 ## Edit project, validator to be added
 @router.put("/{project_id}/")
 async def update_project(project_id: str, new_data: dict):
     try:
-        object_id = ObjectId(project_id)
-        result = srs_projects_collection.update_one({"_id": object_id}, {"$set": new_data})
-
-        if result.matched_count == 0:
-            raise HTTPException(status_code=404, detail="Project not found")
-
+        updated = editProject(project_id, new_data)
         return {
             "message": "Project updated successfully",
-            "updated": new_data
+            "updated": updated
         }
-
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
 @router.delete("/{project_id}/")
 async def delete_project(project_id: str):
     try:
-        object_id = ObjectId(project_id)
-        srs_projects_collection.delete_one({"_id": object_id})
-        try:
-            srs_main_collection.delete_many({"project_id": project_id})
-        except:
-            pass
-
-        return {
-            "message": "Proejct deleted successfully!"
-        }
-
+        if await deleteProject(project_id) == True:
+            return {
+                "message": "Proejct deleted successfully!"
+            }
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project not found", headers={"X-Error": str(e)})
