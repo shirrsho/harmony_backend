@@ -25,27 +25,28 @@ router = APIRouter(
 @router.post('/intra/{srs_id}/', status_code=201)
 async def find_intra_conflict(srs_id:str):
     object_id = ObjectId(srs_id)
-    srs_document = srs_main_collection.find_one({"_id": object_id})
+    try:
+        srs_document = srs_main_collection.find_one({"_id": object_id})
+    except:
+        raise HTTPException(status_code=400, detail="No data available!")
 
     srsdf = srs_document["srs"]
 
     conflictings = findstatus_intrasrs(srsdf)
     safes = []
 
-    result = srs_conflict_collection.insert_one({
-        "srs_id":srs_id,
-        "conflict_set":conflictings,
-        "safe_set":safes
-    })
-    response_body = {
-            'message':'possible conflicts sent',
-            'conflict_set': conflictings
-        }
-    print(conflictings)
-    if result:
-        return response_body
-    else:
-        raise HTTPException(status_code=400, detail="error in conflict adding")
+    try:
+        srs_conflict_collection.insert_one({
+            "srs_id":srs_id,
+            "conflict_set":conflictings,
+            "safe_set":safes
+        })
+        return {
+                'message':'possible conflicts sent',
+                'conflict_set': conflictings
+            }
+    except:
+        raise HTTPException(status_code=400, detail="Cannot find conflicts!")
 
 
 @router.get('/intra/{srs_id}/', status_code=200)
@@ -67,4 +68,4 @@ async def get_intra_conflicts(srs_id:str):
             }
         return response_body
     except Exception as e:
-        raise HTTPException(status_code=400, detail=e.__str__(), headers={"X-Error": str(e)})
+        raise HTTPException(status_code=400, detail="Cannot get!", headers={"X-Error": str(e)})
