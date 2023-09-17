@@ -3,7 +3,9 @@ import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
-from src.conflict.functionalities.cos import findstatus_intrasrs
+from src.conflict.functionalities.db import addConflictstoDB, getConflict, getDocumentConflicts, getProjectConflicts
+from src.conflict.models.model import Conflict
+from src.requirement.functionalities.db import getDocumentRequirementsFromDB, getProjectRequirementsFromDB
 
 load_dotenv()
 
@@ -22,50 +24,81 @@ router = APIRouter(
 )
 
 
-# @router.post('/intra/{srs_id}/', status_code=201)
-# async def find_intra_conflict(srs_id:str):
-#     object_id = ObjectId(srs_id)
-#     try:
-#         srs_document = srs_main_collection.find_one({"_id": object_id})
-#     except:
-#         raise HTTPException(status_code=400, detail="No data available!")
+@router.post('/document', status_code=201)
+async def find_document_conflict(document_id:str):
+    
+    # return requirements
+    # added_conflicts = addConflictstoDB(requirements)
+    # {isConflicting, cos} 
 
-#     srsdf = srs_document["srs"]
-
-#     conflictings = findstatus_intrasrs(srsdf)
-#     safes = []
-
-#     try:
-#         srs_conflict_collection.insert_one({
-#             "srs_id":srs_id,
-#             "conflict_set":conflictings,
-#             "safe_set":safes
-#         })
-#         return {
-#                 'message':'possible conflicts sent',
-#                 'conflict_set': conflictings
-#             }
-#     except:
-#         raise HTTPException(status_code=400, detail="Cannot find conflicts!")
-
-
-# @router.get('/intra/{srs_id}/', status_code=200)
-# async def get_intra_conflicts(srs_id:str):
-#     try:
-#         srs_conflicts = srs_conflict_collection.find_one({"srs_id": srs_id})
+    try:
+        requirements = getDocumentRequirementsFromDB(document_id)
         
-#         if srs_conflicts:
-#             response_body = {
-#                 "message": "conflicts found and sent successfully",
-#                 "srs_conflicts": srs_conflicts["conflict_set"],
-#                 "srs_safes": srs_conflicts["safe_set"]
-#             }
-#         else:
-#             response_body = {
-#                 "message": "conflicts not found",
-#                 "srs_conflicts": [],
-#                 "srs_safes": []
-#             }
-#         return response_body
-#     except Exception as e:
-#         raise HTTPException(status_code=400, detail="Cannot get!", headers={"X-Error": str(e)})
+        result = addConflictstoDB(requirements)
+
+        return {
+            "message": "Conflicts successfully found!",
+            "conflict_ids": [str(id) for id in result.inserted_ids]
+        }
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Conflicts can not be found!", headers={"X-Error": str(e)})
+    
+@router.post('/project', status_code=201)
+async def find_project_conflict(project_id:str):
+    
+    # return requirements
+    # added_conflicts = addConflictstoDB(requirements)
+    # {isConflicting, cos} 
+
+    try:
+        requirements = getProjectRequirementsFromDB(project_id)
+        
+        result = addConflictstoDB(requirements)
+
+        return {
+            "message": "Conflicts successfully found!",
+            "conflict_ids": [str(id) for id in result.inserted_ids]
+        }
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Conflicts can not be found!", headers={"X-Error": str(e)})
+    
+@router.get("/document/{document_id}/")
+async def get_document_conflicts(document_id: str):
+    try:
+        # object_id = ObjectId(srs_id)
+        # srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
+        conflicts = getDocumentConflicts(document_id)
+
+        return {
+                "message": "Document conflict found!",
+                "conflicts": conflicts
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Document conflict cannot be accessed, Please try again later", headers={"X-Error": str(e)})
+    
+@router.get("/project/{project_id}/")
+async def get_project_conflicts(project_id: str):
+    try:
+        # object_id = ObjectId(srs_id)
+        # srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
+        conflicts = getProjectConflicts(project_id)
+
+
+        return {
+                "message": "Project conflict found!",
+                "conflicts": conflicts
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Project conflict cannot be accessed, Please try again later", headers={"X-Error": str(e)})
+
+@router.get("/{conflict_id}/")
+async def get_conflict(conflict_id: str):
+    try:
+        conflict = getConflict(conflict_id)
+        
+        return {
+                "message": "Conflict found and sent successfully",
+                "conflict": conflict
+            }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Conflict not found!", headers={"X-Error": str(e)})
