@@ -35,7 +35,7 @@ def getProjectRequirementsFromDB(project_id:str):
         "document_id": str(req["document_id"]),
         "project_id": str(req["project_id"]),
         "content": str(req["content"]),
-        '_id':str(req["_id"])
+        'id':str(req["_id"])
         } for req in requirements_cursor]
 
     return requirements
@@ -46,7 +46,7 @@ def getDocumentRequirementsFromDB(document_id:str):
         "document_id": str(req["document_id"]),
         "project_id": str(req["project_id"]),
         "content": str(req["content"]),
-        '_id':str(req["_id"])
+        'id':str(req["_id"])
         } for req in requirements_cursor]
 
     return requirements
@@ -58,7 +58,7 @@ def getRequirementFromDB(requirement_id:str):
         "document_id": str(requirement["document_id"]),
         "project_id": str(requirement["project_id"]),
         "content": str(requirement["content"]),
-        '_id':str(requirement["_id"])
+        'id':str(requirement["_id"])
     }
 
 def editRequirement(requirement_id:str, new_data:dict):

@@ -23,7 +23,7 @@ def addDocumenttoDB(data):
 def getDocument(document_id:str):
     document = document_collection.find_one({"_id":ObjectId(document_id)})
     return {
-        "_id":str(document["_id"]),
+        "id":str(document["_id"]),
         "title":str(document["title"]),
         "project_id":str(document["project_id"])
     }
@@ -32,7 +32,7 @@ def getAllDocuments(project_id:str):
     # document_cursor = document_collection.find({"project_id": project_id},{'_id':1, 'title':1})
     document_cursor = document_collection.find({"project_id": project_id})
     documents = [{
-        '_id':str(document["_id"]),
+        'id':str(document["_id"]),
         'title':str(document["title"]),
         'project_id':project_id
     } for document in document_cursor]

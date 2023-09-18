@@ -23,14 +23,14 @@ def getProjectFromDB(project_id:str):
     project = project_collection.find_one({"_id": ObjectId(project_id)})
 
     return {
-        "_id":str(project["_id"]),
+        "id":str(project["_id"]),
         "title":str(project["title"])
     }
 
 def getAllProjectsFromDB():
     projects_cursor = project_collection.find()
     projects = [{
-        '_id':str(project["_id"]),
+        'id':str(project["_id"]),
         'title':str(project["title"])
         } for project in projects_cursor]
 

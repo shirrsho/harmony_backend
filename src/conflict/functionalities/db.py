@@ -17,6 +17,7 @@ def addConflictstoDB(requirements:any):
 def getDocumentConflicts(document_id:str):
     conflict_cursor = conflict_collection.find({"document_id": document_id})
     conflicts = [{
+        'id':str(conflict["_id"]),
         "document_id": str(conflict["document_id"]),
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
@@ -29,6 +30,7 @@ def getDocumentConflicts(document_id:str):
 def getProjectConflicts(project_id:str):
     conflict_cursor = conflict_collection.find({"project_id": project_id})
     conflicts = [{
+        'id':str(conflict["_id"]),
         "document_id": str(conflict["document_id"]),
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
@@ -41,6 +43,7 @@ def getProjectConflicts(project_id:str):
 def getConflict(conflict_id:str):
     conflict = conflict_collection.find_one({"_id":ObjectId(conflict_id)})
     return {
+        'id':str(conflict["_id"]),
         "document_id": str(conflict["document_id"]),
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),

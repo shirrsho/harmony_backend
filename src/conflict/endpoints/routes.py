@@ -55,10 +55,11 @@ async def find_project_conflict(project_id:str):
         
         result = addConflictstoDB(requirements)
 
-        return {
-            "message": "Conflicts successfully found!",
-            "conflict_ids": [str(id) for id in result.inserted_ids]
-        }
+        # return {
+        #     "message": "Conflicts successfully found!",
+        #     "conflict_ids": [str(id) for id in result.inserted_ids]
+        # }
+        return [str(id) for id in result.inserted_ids]
     except Exception as e:
         raise HTTPException(status_code=404, detail="Conflicts can not be found!", headers={"X-Error": str(e)})
     
@@ -69,10 +70,11 @@ async def get_document_conflicts(document_id: str):
         # srs_ids_cursor = srs_main_collection.find({"project_id": project_id},{'_id':1, 'srs_title':1})
         conflicts = getDocumentConflicts(document_id)
 
-        return {
-                "message": "Document conflict found!",
-                "conflicts": conflicts
-        }
+        # return {
+        #         "message": "Document conflict found!",
+        #         "conflicts": conflicts
+        # }
+        return conflicts
     except Exception as e:
         raise HTTPException(status_code=400, detail="Document conflict cannot be accessed, Please try again later", headers={"X-Error": str(e)})
     
@@ -84,10 +86,11 @@ async def get_project_conflicts(project_id: str):
         conflicts = getProjectConflicts(project_id)
 
 
-        return {
-                "message": "Project conflict found!",
-                "conflicts": conflicts
-        }
+        # return {
+        #         "message": "Project conflict found!",
+        #         "conflicts": conflicts
+        # }
+        return conflicts
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project conflict cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
@@ -96,9 +99,10 @@ async def get_conflict(conflict_id: str):
     try:
         conflict = getConflict(conflict_id)
         
-        return {
-                "message": "Conflict found and sent successfully",
-                "conflict": conflict
-            }
+        # return {
+        #         "message": "Conflict found and sent successfully",
+        #         "conflict": conflict
+        #     }
+        return conflict
     except Exception as e:
         raise HTTPException(status_code=400, detail="Conflict not found!", headers={"X-Error": str(e)})

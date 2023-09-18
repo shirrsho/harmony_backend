@@ -35,10 +35,11 @@ async def add_requirements(data: List[dict]):
     print(data)
     try:
         requirements = addDocumentRequirementstoDB(data)
-        return {
-            "message": "Requirement added successfully!",
-            "requirement_id": [str(id) for id in requirements.inserted_ids]
-        }
+        # return {
+        #     "message": "Requirement added successfully!",
+        #     "requirement_id": [str(id) for id in requirements.inserted_ids]
+        # }
+        return [str(id) for id in requirements.inserted_ids]
     except Exception as e:
         raise HTTPException(status_code=400, detail="Requirements cannot be added, Please try again later", headers={"X-Error": str(e)})
 
@@ -46,10 +47,11 @@ async def add_requirements(data: List[dict]):
 async def get_project_requirements(project_id:str):
     try:
         requirements = getProjectRequirementsFromDB(project_id)
-        return {
-            "message": "Project requirements are sent successfully",
-            "requirements": requirements
-        }
+        # return {
+        #     "message": "Project requirements are sent successfully",
+        #     "requirements": requirements
+        # }
+        return requirements
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project requirements cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
@@ -57,10 +59,11 @@ async def get_project_requirements(project_id:str):
 async def get_document_requirements(document_id:str):
     try:
         requirements = getDocumentRequirementsFromDB(document_id)
-        return {
-            "message": "Document requirements are sent successfully",
-            "requirements": requirements
-        }
+        # return {
+        #     "message": "Document requirements are sent successfully",
+        #     "requirements": requirements
+        # }
+        return requirements
     except Exception as e:
         raise HTTPException(status_code=400, detail="Document requirements cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
@@ -68,10 +71,11 @@ async def get_document_requirements(document_id:str):
 async def get_requirement(requirement_id:str):
     try:
         requirement = getRequirementFromDB(requirement_id)
-        return {
-            "message": "Requirement sent successfully",
-            "requirement": requirement
-        }
+        # return {
+        #     "message": "Requirement sent successfully",
+        #     "requirement": requirement
+        # }
+        return requirement
     except Exception as e:
         raise HTTPException(status_code=400, detail="Requirements cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
@@ -80,10 +84,11 @@ async def get_requirement(requirement_id:str):
 async def update_requirement(requirement_id: str, new_data: dict):
     try:
         updated = editRequirement(requirement_id, new_data)
-        return {
-            "message": "Requirement updated successfully",
-            "updated": updated
-        }
+        # return {
+        #     "message": "Requirement updated successfully",
+        #     "updated": updated
+        # }
+        return updated
     except Exception as e:
         raise HTTPException(status_code=400, detail="Requirement cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
@@ -91,8 +96,9 @@ async def update_requirement(requirement_id: str, new_data: dict):
 async def delete_requirement(requirement_id: str):
     try:
         if deleteRequirement(requirement_id) == True:
-            return {
-                "message": "Requirement deleted successfully!"
-            }
+            # return {
+            #     "message": "Requirement deleted successfully!"
+            # }
+            return True
     except Exception as e:
         raise HTTPException(status_code=400, detail="Requirement not found", headers={"X-Error": str(e)})

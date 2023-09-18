@@ -32,10 +32,11 @@ async def get_documents(project_id: str):
         documents = getAllDocuments(project_id)
 
 
-        return {
-                "message": "Project found and documents sent successfully",
-                "documents": documents
-        }
+        # return {
+        #         "message": "Project found and documents sent successfully",
+        #         "documents": documents
+        # }
+        return documents
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
@@ -44,10 +45,11 @@ async def get_document(document_id: str):
     try:
         document = getDocument(document_id)
         
-        return {
-                "message": "text found and sent successfully",
-                "document": document
-            }
+        # return {
+        #         "message": "text found and sent successfully",
+        #         "document": document
+        #     }
+        return document
     except Exception as e:
         raise HTTPException(status_code=400, detail="Document not found!", headers={"X-Error": str(e)})
 
@@ -56,10 +58,11 @@ async def add_document(data: Document):
     validateDocument(data)
     try:
         result = addDocumenttoDB(data)
-        return {
-            "message": "text srs added successfully",
-            "document_id": str(result.inserted_id)
-        }
+        # return {
+        #     "message": "text srs added successfully",
+        #     "document_id": str(result.inserted_id)
+        # }
+        return str(result.inserted_id)
     except:
         raise HTTPException(status_code=404, detail="Document can not be added!")
 
@@ -87,10 +90,11 @@ async def update_document(document_id: str, new_data: dict):
     try:
         updated = editDocument(document_id, new_data)
 
-        return {
-            "message": "Document updated successfully",
-            "updated": updated
-        }
+        # return {
+        #     "message": "Document updated successfully",
+        #     "updated": updated
+        # }
+        return updated
 
     except Exception as e:
         # Handle any potential exceptions and return an error response
@@ -100,8 +104,9 @@ async def update_document(document_id: str, new_data: dict):
 async def delete_document(document_id: str):
     try:
         if deleteDocument(document_id) == True:
-            return {
-                "message": "Document deleted successfully!"
-            }
+            # return {
+            #     "message": "Document deleted successfully!"
+            # }
+            return True
     except Exception as e:
         raise HTTPException(status_code=400, detail="Document not found", headers={"X-Error": str(e)})

@@ -20,10 +20,11 @@ async def add_project(data: Project):
     validateProject(data)
     try:
         project = addProjecttoDB(data)
-        return {
-            "message": "Project added successfully!",
-            "project_id": str(project.inserted_id)
-        }
+        # return {
+        #     "message": "Project added successfully!",
+        #     "project_id": str(project.inserted_id)
+        # }
+        return str(project.inserted_id)
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project cannot be added, Please try again later", headers={"X-Error": str(e)})
 
@@ -31,10 +32,11 @@ async def add_project(data: Project):
 async def get_projects():
     try:
         projects = getAllProjectsFromDB()
-        return {
-            "message": "Projects are sent successfully",
-            "projects": projects
-        }
+        # return {
+        #     "message": "Projects are sent successfully",
+        #     "projects": projects
+        # }
+        return projects
     except Exception as e:
         raise HTTPException(status_code=400, detail="Projects cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
@@ -42,10 +44,11 @@ async def get_projects():
 async def get_project(project_id:str):
     try:
         project = getProjectFromDB(project_id)
-        return {
-            "message": "Project sent successfully",
-            "project": project
-        }
+        # return {
+        #     "message": "Project sent successfully",
+        #     "project": project
+        # }
+        return project
     except Exception as e:
         raise HTTPException(status_code=400, detail="Projects cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
@@ -54,10 +57,11 @@ async def get_project(project_id:str):
 async def update_project(project_id: str, new_data: dict):
     try:
         updated = editProject(project_id, new_data)
-        return {
-            "message": "Project updated successfully",
-            "updated": updated
-        }
+        # return {
+        #     "message": "Project updated successfully",
+        #     "updated": updated
+        # }
+        return updated
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
@@ -65,8 +69,9 @@ async def update_project(project_id: str, new_data: dict):
 async def delete_project(project_id: str):
     try:
         if deleteProject(project_id) == True:
-            return {
-                "message": "Proejct deleted successfully!"
-            }
+            # return {
+            #     "message": "Proejct deleted successfully!"
+            # }
+            return True
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project not found", headers={"X-Error": str(e)})
