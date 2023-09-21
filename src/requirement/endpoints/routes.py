@@ -80,7 +80,7 @@ async def get_requirement(requirement_id:str):
         raise HTTPException(status_code=400, detail="Requirements cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
 ## Edit requirement, validator to be added
-@router.put("/{requirement_id}/")
+@router.put("/{requirement_id}")
 async def update_requirement(requirement_id: str, new_data: dict):
     try:
         updated = editRequirement(requirement_id, new_data)
@@ -92,7 +92,7 @@ async def update_requirement(requirement_id: str, new_data: dict):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Requirement cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
-@router.delete("/{requirement_id}/")
+@router.delete("/{requirement_id}")
 async def delete_requirement(requirement_id: str):
     try:
         if deleteRequirement(requirement_id) == True:

@@ -24,7 +24,7 @@ router = APIRouter(
     tags=["Document"]
 )
 
-@router.get("/all/{project_id}/")
+@router.get("/all/{project_id}")
 async def get_documents(project_id: str):
     try:
         # object_id = ObjectId(srs_id)
@@ -40,7 +40,7 @@ async def get_documents(project_id: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
-@router.get("/{document_id}/")
+@router.get("/{document_id}")
 async def get_document(document_id: str):
     try:
         document = getDocument(document_id)
@@ -85,7 +85,7 @@ async def add_document(data: Document):
 #         raise HTTPException(status_code=404, detail="File can not be added!")
 
 #Validators to be added
-@router.put("/{document_id}/")
+@router.put("/{document_id}")
 async def update_document(document_id: str, new_data: dict):
     try:
         updated = editDocument(document_id, new_data)
@@ -100,7 +100,7 @@ async def update_document(document_id: str, new_data: dict):
         # Handle any potential exceptions and return an error response
         raise HTTPException(status_code=404, detail="Document can not be updated", headers={"X-Error": str(e)})
 
-@router.delete("/{document_id}/")
+@router.delete("/{document_id}")
 async def delete_document(document_id: str):
     try:
         if deleteDocument(document_id) == True:

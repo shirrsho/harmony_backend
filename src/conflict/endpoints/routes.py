@@ -63,7 +63,7 @@ async def find_project_conflict(project_id:str):
     except Exception as e:
         raise HTTPException(status_code=404, detail="Conflicts can not be found!", headers={"X-Error": str(e)})
     
-@router.get("/document/{document_id}/")
+@router.get("/document/{document_id}")
 async def get_document_conflicts(document_id: str):
     try:
         # object_id = ObjectId(srs_id)
@@ -78,7 +78,7 @@ async def get_document_conflicts(document_id: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Document conflict cannot be accessed, Please try again later", headers={"X-Error": str(e)})
     
-@router.get("/project/{project_id}/")
+@router.get("/project/{project_id}")
 async def get_project_conflicts(project_id: str):
     try:
         # object_id = ObjectId(srs_id)
@@ -94,7 +94,7 @@ async def get_project_conflicts(project_id: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project conflict cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
-@router.get("/{conflict_id}/")
+@router.get("/{conflict_id}")
 async def get_conflict(conflict_id: str):
     try:
         conflict = getConflict(conflict_id)

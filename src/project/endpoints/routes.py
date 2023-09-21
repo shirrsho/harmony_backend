@@ -53,7 +53,7 @@ async def get_project(project_id:str):
         raise HTTPException(status_code=400, detail="Projects cannot be fetched, Please try again later", headers={"X-Error": str(e)})
 
 ## Edit project, validator to be added
-@router.put("/{project_id}/")
+@router.put("/{project_id}")
 async def update_project(project_id: str, new_data: dict):
     try:
         updated = editProject(project_id, new_data)
@@ -65,7 +65,7 @@ async def update_project(project_id: str, new_data: dict):
     except Exception as e:
         raise HTTPException(status_code=400, detail="Project cannot be accessed, Please try again later", headers={"X-Error": str(e)})
 
-@router.delete("/{project_id}/")
+@router.delete("/{project_id}")
 async def delete_project(project_id: str):
     try:
         if deleteProject(project_id) == True:
