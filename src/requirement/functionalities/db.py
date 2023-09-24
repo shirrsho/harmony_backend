@@ -25,6 +25,7 @@ def addDocumentRequirementstoDB(data):
     #     "project_id": data.project_id,
     #     "content": data.content
     # })
+    print(data)
     result = requirement_collection.insert_many(data)
     
     return result

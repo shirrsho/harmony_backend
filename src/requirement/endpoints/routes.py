@@ -1,5 +1,7 @@
+from io import BytesIO
 from typing import List
-from fastapi import APIRouter, HTTPException, Body
+from fastapi import APIRouter, HTTPException, Body, File, UploadFile
+import pandas as pd
 import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
@@ -39,6 +41,26 @@ async def add_requirements(data: List[dict]):
         #     "message": "Requirement added successfully!",
         #     "requirement_id": [str(id) for id in requirements.inserted_ids]
         # }
+        return [str(id) for id in requirements.inserted_ids]
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Requirements cannot be added, Please try again later", headers={"X-Error": str(e)})
+
+@router.post('/{project_id}/{document_id}', status_code=201)
+async def upload(project_id:str, document_id:str, file: UploadFile = File(...)):
+    # validateRequirement(data)
+    # print(data)
+    try:
+        content = await file.read()
+        df = pd.read_csv(BytesIO(content)) if file.filename.endswith('.csv') else pd.read_excel(BytesIO(content))
+        # print(df.head())
+
+        reqs = [{
+            'content':r[0],
+            'document_id': document_id,
+            'project_id':project_id
+        }for r in df.__array__()]
+        requirements = addDocumentRequirementstoDB(reqs)
+        # print(reqs)
         return [str(id) for id in requirements.inserted_ids]
     except Exception as e:
         raise HTTPException(status_code=400, detail="Requirements cannot be added, Please try again later", headers={"X-Error": str(e)})
