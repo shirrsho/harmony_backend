@@ -32,7 +32,7 @@ async def find_document_conflict(document_id:str):
     # {isConflicting, cos} 
 
     try:
-        requirements = getDocumentRequirementsFromDB(document_id)
+        requirements = getDocumentRequirementsFromDB(document_id) # External call
         
         result = addConflictstoDB(requirements)
 
@@ -51,7 +51,7 @@ async def find_project_conflict(project_id:str):
     # {isConflicting, cos} 
 
     try:
-        requirements = getProjectRequirementsFromDB(project_id)
+        requirements = getProjectRequirementsFromDB(project_id) # External call
         
         result = addConflictstoDB(requirements)
 
