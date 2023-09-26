@@ -5,7 +5,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf = TfidfVectorizer()
 
 def calculateCosSimilarity(r1:str, r2:str):
-
+    if r1.__len__()==0 or r2.__len__()==0:
+        return 0.0
     # Tokenize and preprocess the sentences
     sentences = [r1, r2]
     tfidf_vectorizer = TfidfVectorizer()
@@ -13,6 +14,7 @@ def calculateCosSimilarity(r1:str, r2:str):
 
     # Calculate the cosine similarity
     cos_score = cosine_similarity(tfidf_matrix[0], tfidf_matrix[1]).__float__()
+
     return round(cos_score, 3)
 
 def determine(conflicts):
@@ -30,13 +32,16 @@ def findConflicts(requirements:any):
         for j in range(i + 1, len(requirements)):
             req1 = requirements[i]
             req2 = requirements[j]
+            
             conflict = {
                 "document_id": str(req1["document_id"]),
                 "project_id": str(req1["project_id"]),
-                "req1_id": str(req1["_id"]),
-                "req2_id": str(req2["_id"]),
+                "req1_id": str(req1["id"]),
+                "req2_id": str(req2["id"]),
                 'cos':calculateCosSimilarity(req1["content"], req2["content"]),
             }
+
             conflicts.append(conflict)
+    
     conflicts = determine(conflicts)
     return conflicts

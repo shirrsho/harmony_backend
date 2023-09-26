@@ -9,12 +9,13 @@ report_collection = database[os.environ.get("REPORT_COLLECTION")]
 
 
 
-def addDocumentReport(data:dict):
+def addDocumentReport(data:any):
+    
     report_collection.insert_one({
-        "report_id": data.document_id,
-        "title":data.title,
-        "conflict_count":data.conflict_count,
-        "threat":data.threat,
+        "report_id": data["document_id"],
+        "title":data["title"],
+        "conflict_count":data["conflict_count"],
+        "threat":data["threat"],
         "mark_as_safe":False
     })
     return True
@@ -25,10 +26,10 @@ def editProjectReport(project_id:str, new_data:dict):
 
 def addProjectReport(data:dict):
     report_collection.insert_one({
-        "report_id": data.project_id,
-        "title":data.title,
-        "conflict_count":data.conflict_count,
-        "threat":data.threat,
+        "report_id": data["project_id"],
+        "title":data["title"],
+        "conflict_count":data["conflict_count"],
+        "threat":data["threat"],
         "mark_as_safe":False
     })
     return True

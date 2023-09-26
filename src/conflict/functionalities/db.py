@@ -3,15 +3,23 @@ import os
 from bson import ObjectId
 from mongodb import MongoDB
 from src.conflict.functionalities.algorithm import findConflicts
+from src.report.functionalities.db import addDocumentReport
 
 database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
 conflict_collection = database[os.environ.get("CONFLICT_COLLECTION")]
 
 def addConflictstoDB(requirements:any):
+        #     "report_id": data.document_id,
+        # "title":data.title,
+        # "conflict_count":data.conflict_count,
+        # "threat":data.threat,
+        # "mark_as_safe":False
     
     conflicts = findConflicts(requirements)
-    
+    # for c in conflicts:
+    #         conflict_collection.replace_one({"req1_id":c["req1_id"], "req2_id":c["req2_id"]}, c, upsert=True)
     added = conflict_collection.insert_many(conflicts)
+
     return added
 
 def getDocumentConflicts(document_id:str):
@@ -51,3 +59,10 @@ def getConflict(conflict_id:str):
         'cos': str(conflict['cos']),
         'decision': str(conflict['decision'])
     }
+
+def deleteDocumentConflicts(document_id:str):
+    return conflict_collection.delete_many({"document_id": document_id})
+
+def deleteProjectConflicts(project_id:str):
+    conflict_collection.delete_many({"project_id": project_id})
+    return True
