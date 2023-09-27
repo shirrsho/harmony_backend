@@ -30,6 +30,8 @@ def getDocumentConflicts(document_id:str):
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
         "req2_id": str(conflict["req2_id"]),
+        "req2_content": str(conflict["req2_content"]),
+        "req1_content": str(conflict["req1_content"]),
         'cos': str(conflict['cos']),
         'decision': str(conflict['decision'])
     } for conflict in conflict_cursor]
@@ -43,6 +45,8 @@ def getProjectConflicts(project_id:str):
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
         "req2_id": str(conflict["req2_id"]),
+        "req2_content": str(conflict["req2_content"]),
+        "req1_content": str(conflict["req1_content"]),
         'cos': str(conflict['cos']),
         'decision': str(conflict['decision'])
     } for conflict in conflict_cursor]
@@ -56,6 +60,8 @@ def getConflict(conflict_id:str):
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
         "req2_id": str(conflict["req2_id"]),
+        "req2_content": str(conflict["req2_content"]),
+        "req1_content": str(conflict["req1_content"]),
         'cos': str(conflict['cos']),
         'decision': str(conflict['decision'])
     }

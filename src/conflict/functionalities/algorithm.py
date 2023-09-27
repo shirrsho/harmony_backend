@@ -38,6 +38,8 @@ def findConflicts(requirements:any):
                 "project_id": str(req1["project_id"]),
                 "req1_id": str(req1["id"]),
                 "req2_id": str(req2["id"]),
+                "req1_content": str(req1["content"]),
+                "req2_content": str(req2["content"]),
                 'cos':calculateCosSimilarity(req1["content"], req2["content"]),
             }
 
