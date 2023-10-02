@@ -27,7 +27,7 @@ router = APIRouter(
 )
 
 
-@router.post('/document', status_code=201)
+@router.post('/document/{document_id}', status_code=201)
 async def find_document_conflict(document_id:str):
     
     # return requirements
@@ -55,7 +55,7 @@ async def find_document_conflict(document_id:str):
     except Exception as e:
         raise HTTPException(status_code=404, detail="Conflicts can not be found!", headers={"X-Error": str(e)})
     
-@router.post('/project', status_code=201)
+@router.post('/project/{project_id}', status_code=201)
 async def find_project_conflict(project_id:str):
     
     # return requirements

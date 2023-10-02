@@ -34,7 +34,8 @@ def findConflicts(requirements:any):
             req2 = requirements[j]
             
             conflict = {
-                "document_id": str(req1["document_id"]),
+                "req1_document_id": str(req1["document_id"]),
+                "req2_document_id": str(req2["document_id"]),
                 "project_id": str(req1["project_id"]),
                 "req1_id": str(req1["id"]),
                 "req2_id": str(req2["id"]),
