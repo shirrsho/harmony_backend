@@ -1,9 +1,11 @@
 from typing import List
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-import spacy
+# import spacy
+import nltk
+from nltk.corpus import wordnet
 
-nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm")
 tfidf = TfidfVectorizer()
 
 def calculateCosSimilarity(r1:str, r2:str):
@@ -20,19 +22,36 @@ def calculateCosSimilarity(r1:str, r2:str):
     return round(cos_score, 3)
 
 def extractPosTokens(sentence):
-    doc = nlp(sentence)
-    # Initialize empty dictionaries for each part of speech
+    # Tokenize the sentence into words
+    words = nltk.word_tokenize(sentence)
+
+    # Use nltk.pos_tag to get the part of speech for each word
+    pos_tags = nltk.pos_tag(words)
+
     word_objects = {"noun": [], "verb": [], "adjective": []}
-    # Iterate through the tokens in the sentence and categorize them
-    for token in doc:
-        if token.pos_ == "NOUN":
-            word_objects["noun"].append(token.text)
-        elif token.pos_ == "VERB":
-            word_objects["verb"].append(token.text)
-        elif token.pos_ == "ADJ":
-            word_objects["adjective"].append(token.text)
+
+    # Categorize words based on their part of speech
+    for word, pos in pos_tags:
+        if pos.startswith('N'):  # Nouns
+            word_objects["noun"].append(word)
+        elif pos.startswith('V'):  # Verbs
+            word_objects["verb"].append(word)
+        elif pos.startswith('J'):  # Adjectives
+            word_objects["adjective"].append(word)
+
+    # doc = nlp(sentence)
+    # # Initialize empty dictionaries for each part of speech
+    # word_objects = {"noun": [], "verb": [], "adjective": []}
+    # # Iterate through the tokens in the sentence and categorize them
+    # for token in doc:
+    #     if token.pos_ == "NOUN":
+    #         word_objects["noun"].append(token.text)
+    #     elif token.pos_ == "VERB":
+    #         word_objects["verb"].append(token.text)
+    #     elif token.pos_ == "ADJ":
+    #         word_objects["adjective"].append(token.text)
     # Print the word objects
-    print(word_objects)
+    # print(word_objects)
     return word_objects
 
 def calculatePosOverlapRatio(r1:str, r2:str):
@@ -41,16 +60,39 @@ def calculatePosOverlapRatio(r1:str, r2:str):
     overlap_counts = {}
     maxPosOR = 0.00
     for pos in ["noun", "verb", "adjective"]:
-        print(r1_pos[pos], r2_pos[pos])
+        # print(r1_pos[pos], r2_pos[pos])
         overlap_counts[pos] = len(set(r1_pos[pos]) & set(r2_pos[pos])) / (1e-20+max(r1_pos[pos].__len__(), r2_pos[pos].__len__()))
         maxPosOR = max(maxPosOR, overlap_counts[pos])
-    print(overlap_counts)
-    print(maxPosOR)
+    # print(overlap_counts)
+    # print(maxPosOR)
     return round(maxPosOR, 3)
+
+def calculateOppositeOverlapCount(r1:str, r2:str):
+    # Tokenize the sentences into words
+    words1 = nltk.word_tokenize(r1)
+    words2 = nltk.word_tokenize(r2)
+
+    # Create sets of words from the sentences
+    word_set1 = set(words1)
+    word_set2 = set(words2)
+
+    # Find antonyms for each word in the first sentence
+    antonyms = []
+
+    for word in word_set1:
+        for syn in wordnet.synsets(word):
+            for lemma in syn.lemmas():
+                if lemma.antonyms():
+                    antonyms.append(lemma.antonyms()[0].name())
+
+    # Find common antonyms between the two sentences
+    common_antonyms = word_set2.intersection(set(antonyms))
+    print(common_antonyms)
+    return len(common_antonyms)
 
 def determine(conflicts):
     for i in range(len(conflicts)):
-        if conflicts[i]["cos"]>=0.5:
+        if conflicts[i]["cos"]>=0.3:
             conflicts[i]["decision"] = "Yes"
 
         else: conflicts[i]["decision"] = "No"
@@ -67,8 +109,10 @@ def findConflicts(requirements:any):
 
             cosr1r2 = calculateCosSimilarity(req1["content"], req2["content"])
             posOR = 0.0
-            if cosr1r2 >= 0.5:
+            oppositeOC = 0
+            if cosr1r2 >= 0.3:
                 posOR = calculatePosOverlapRatio(req1["content"], req2["content"])
+                oppositeOC = calculateOppositeOverlapCount(req1["content"], req2["content"])
             
             conflict = {
                 "req1_document_id": str(req1["document_id"]),
@@ -79,7 +123,8 @@ def findConflicts(requirements:any):
                 "req1_content": str(req1["content"]),
                 "req2_content": str(req2["content"]),
                 'cos': cosr1r2,
-                'pos_overlap_ratio': posOR
+                'pos_overlap_ratio': posOR,
+                'opposite_overlap_count': oppositeOC
             }
 
             conflicts.append(conflict)

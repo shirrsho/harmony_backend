@@ -34,6 +34,7 @@ def getDocumentConflicts(document_id:str):
         "req1_content": str(conflict["req1_content"]),
         'cos': str(conflict['cos']),
         'pos_overlap_ratio': str(conflict['pos_overlap_ratio']),
+        'opposite_overlap_count': str(conflict['opposite_overlap_count']),
         'decision': str(conflict['decision'])
     } for conflict in conflict_cursor]
     return conflicts
@@ -51,6 +52,7 @@ def getProjectConflicts(project_id:str):
         "req1_content": str(conflict["req1_content"]),
         'cos': str(conflict['cos']),
         'pos_overlap_ratio': str(conflict['pos_overlap_ratio']),
+        'opposite_overlap_count': str(conflict['opposite_overlap_count']),
         'decision': str(conflict['decision'])
     } for conflict in conflict_cursor]
     return conflicts
@@ -67,6 +69,7 @@ def getConflict(conflict_id:str):
         "req1_content": str(conflict["req1_content"]),
         'cos': str(conflict['cos']),
         'pos_overlap_ratio': str(conflict['pos_overlap_ratio']),
+        'opposite_overlap_count': str(conflict['opposite_overlap_count']),
         'decision': str(conflict['decision'])
     }
 
