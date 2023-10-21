@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
 
+from src.requirement.functionalities.algorithms import extractPosTokens
+
 load_dotenv()
 
 database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
@@ -12,10 +14,12 @@ document_collection = database[os.environ.get("DOCUMENT_COLLECTION")]
 requirement_collection = database[os.environ.get("REQUIREMENT_COLLECTION")]
 
 def addRequirementtoDB(data):
+    word_objects = extractPosTokens(data.content)
     result = requirement_collection.insert_one({
         "document_id": data.document_id,
         "project_id": data.project_id,
-        "content": data.content
+        "content": data.content,
+        "word_objects": word_objects
     })
     return result
 
@@ -25,7 +29,9 @@ def addDocumentRequirementstoDB(data):
     #     "project_id": data.project_id,
     #     "content": data.content
     # })
-    print(data)
+    for d in data:
+        d["word_objects"] = extractPosTokens(str(d["content"]))
+        print(d)
     result = requirement_collection.insert_many(data)
     
     return result
@@ -36,6 +42,7 @@ def getProjectRequirementsFromDB(project_id:str):
         "document_id": str(req["document_id"]),
         "project_id": str(req["project_id"]),
         "content": str(req["content"]),
+        "word_objects": str(req["word_objects"]),
         'id':str(req["_id"])
         } for req in requirements_cursor]
 
@@ -47,19 +54,21 @@ def getDocumentRequirementsFromDB(document_id:str):
         "document_id": str(req["document_id"]),
         "project_id": str(req["project_id"]),
         "content": str(req["content"]),
+        "word_objects": str(req["word_objects"]),
         'id':str(req["_id"])
         } for req in requirements_cursor]
 
     return requirements
 
 def getRequirementFromDB(requirement_id:str):
-    requirement = requirement_collection.find_one({"_id": ObjectId(requirement_id)})
+    req = requirement_collection.find_one({"_id": ObjectId(requirement_id)})
 
     return {
-        "document_id": str(requirement["document_id"]),
-        "project_id": str(requirement["project_id"]),
-        "content": str(requirement["content"]),
-        'id':str(requirement["_id"])
+        "document_id": str(req["document_id"]),
+        "project_id": str(req["project_id"]),
+        "content": str(req["content"]),
+        "word_objects": str(req["word_objects"]),
+        'id':str(req["_id"])
     }
 
 def editRequirement(requirement_id:str, new_data:dict):

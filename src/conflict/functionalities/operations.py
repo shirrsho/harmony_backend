@@ -2,8 +2,8 @@ import os
 
 from bson import ObjectId
 from mongodb import MongoDB
-from src.conflict.functionalities.algorithm import findConflicts
-from src.report.functionalities.db import addDocumentReport
+from src.conflict.functionalities.algorithms import findConflicts
+from src.report.functionalities.operations import addDocumentReport
 
 database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
 conflict_collection = database[os.environ.get("CONFLICT_COLLECTION")]

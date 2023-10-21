@@ -3,10 +3,10 @@ import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
-from src.conflict.functionalities.db import addConflictstoDB, getConflict, getDocumentConflicts, getProjectConflicts
+from src.conflict.functionalities.operations import addConflictstoDB, getConflict, getDocumentConflicts, getProjectConflicts
 from src.conflict.models.model import Conflict
-from src.report.functionalities.db import editDocumentReport, editProjectReport, editRequirementReport, getDocumentReport, getProjectReport
-from src.requirement.functionalities.db import getDocumentRequirementsFromDB, getProjectRequirementsFromDB
+from src.report.functionalities.operations import editDocumentReport, editProjectReport, editRequirementReport, getDocumentReport, getProjectReport
+from src.requirement.functionalities.operations import getDocumentRequirementsFromDB, getProjectRequirementsFromDB
 
 load_dotenv()
 

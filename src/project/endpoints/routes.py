@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
 
-from src.project.functionalities.db import addProjecttoDB, deleteProject, editProject, getAllProjectsFromDB, getProjectFromDB
+from src.project.functionalities.operations import addProjecttoDB, deleteProject, editProject, getAllProjectsFromDB, getProjectFromDB
 from src.project.functionalities.validations import validateProject
 from src.project.models.model import Project
 load_dotenv()

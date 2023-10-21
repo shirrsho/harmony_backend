@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
 
-from src.requirement.functionalities.db import deleteDocumentRequirements
+from src.requirement.functionalities.operations import deleteDocumentRequirements
 
 load_dotenv()
 

@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson.objectid import ObjectId
 import pandas as pd
-from src.document.functionalities.db import addDocumenttoDB, deleteDocument, editDocument, getAllDocuments, getDocument
+from src.document.functionalities.operations import addDocumenttoDB, deleteDocument, editDocument, getAllDocuments, getDocument
 from src.document.functionalities.validations import validateDocument
 
 from src.document.models.model import Document

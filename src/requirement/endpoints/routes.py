@@ -5,7 +5,7 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
-from src.requirement.functionalities.db import addDocumentRequirementstoDB, addRequirementtoDB, deleteRequirement, editRequirement, getDocumentRequirementsFromDB, getProjectRequirementsFromDB, getRequirementFromDB
+from src.requirement.functionalities.operations import addDocumentRequirementstoDB, addRequirementtoDB, deleteRequirement, editRequirement, getDocumentRequirementsFromDB, getProjectRequirementsFromDB, getRequirementFromDB
 from src.requirement.functionalities.validations import validateRequirement
 
 from src.requirement.models.model import Requirement, RequirementList
@@ -34,7 +34,7 @@ async def add_requirement(data: Requirement):
 @router.post('/document', status_code=201)
 async def add_requirements(data: List[dict]):
     # validateRequirement(data)
-    print(data)
+    # print(data)
     try:
         requirements = addDocumentRequirementstoDB(data)
         # return {

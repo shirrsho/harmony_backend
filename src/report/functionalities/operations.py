@@ -2,7 +2,7 @@ import os
 
 from bson import ObjectId
 from mongodb import MongoDB
-from src.conflict.functionalities.algorithm import findConflicts
+from src.conflict.functionalities.algorithms import findConflicts
 
 database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
 report_collection = database[os.environ.get("REPORT_COLLECTION")]

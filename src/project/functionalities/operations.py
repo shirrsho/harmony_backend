@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
 
-from src.document.functionalities.db import deleteProjectDocuments
-from src.requirement.functionalities.db import deleteProjectRequirements
+from src.document.functionalities.operations import deleteProjectDocuments
+from src.requirement.functionalities.operations import deleteProjectRequirements
 
 load_dotenv()
 
