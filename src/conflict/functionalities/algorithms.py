@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # import spacy
 import nltk
 from nltk.corpus import wordnet
+import ast
 
 # nlp = spacy.load("en_core_web_sm")
 tfidf = TfidfVectorizer()
@@ -21,42 +22,26 @@ def calculateCosSimilarity(r1:str, r2:str):
 
     return round(cos_score, 3)
 
-def extractPosTokens(sentence):
-    # Tokenize the sentence into words
-    words = nltk.word_tokenize(sentence)
+# def extractPosTokens(sentence):
+#     # Tokenize the sentence into words
+#     words = nltk.word_tokenize(sentence)
 
-    # Use nltk.pos_tag to get the part of speech for each word
-    pos_tags = nltk.pos_tag(words)
+#     # Use nltk.pos_tag to get the part of speech for each word
+#     pos_tags = nltk.pos_tag(words)
 
-    word_objects = {"noun": [], "verb": [], "adjective": []}
+#     word_objects = {"noun": [], "verb": [], "adjective": []}
 
-    # Categorize words based on their part of speech
-    for word, pos in pos_tags:
-        if pos.startswith('N'):  # Nouns
-            word_objects["noun"].append(word)
-        elif pos.startswith('V'):  # Verbs
-            word_objects["verb"].append(word)
-        elif pos.startswith('J'):  # Adjectives
-            word_objects["adjective"].append(word)
+#     # Categorize words based on their part of speech
+#     for word, pos in pos_tags:
+#         if pos.startswith('N'):  # Nouns
+#             word_objects["noun"].append(word)
+#         elif pos.startswith('V'):  # Verbs
+#             word_objects["verb"].append(word)
+#         elif pos.startswith('J'):  # Adjectives
+#             word_objects["adjective"].append(word)
+#     return word_objects
 
-    # doc = nlp(sentence)
-    # # Initialize empty dictionaries for each part of speech
-    # word_objects = {"noun": [], "verb": [], "adjective": []}
-    # # Iterate through the tokens in the sentence and categorize them
-    # for token in doc:
-    #     if token.pos_ == "NOUN":
-    #         word_objects["noun"].append(token.text)
-    #     elif token.pos_ == "VERB":
-    #         word_objects["verb"].append(token.text)
-    #     elif token.pos_ == "ADJ":
-    #         word_objects["adjective"].append(token.text)
-    # Print the word objects
-    # print(word_objects)
-    return word_objects
-
-def calculatePosOverlapRatio(r1:str, r2:str):
-    r1_pos = extractPosTokens(r1)
-    r2_pos = extractPosTokens(r2)
+def calculatePosOverlapRatio(r1_pos, r2_pos):
     overlap_counts = {}
     maxPosOR = 0.00
     for pos in ["noun", "verb", "adjective"]:
@@ -106,12 +91,12 @@ def findConflicts(requirements:any):
         for j in range(i + 1, len(requirements)):
             req1 = requirements[i]
             req2 = requirements[j]
-
+            
             cosr1r2 = calculateCosSimilarity(req1["content"], req2["content"])
             posOR = 0.0
             oppositeOC = 0
             if cosr1r2 >= 0.3:
-                posOR = calculatePosOverlapRatio(req1["content"], req2["content"])
+                posOR = calculatePosOverlapRatio(ast.literal_eval(req1["word_objects"]), ast.literal_eval(req2["word_objects"]))
                 oppositeOC = calculateOppositeOverlapCount(req1["content"], req2["content"])
             
             conflict = {
