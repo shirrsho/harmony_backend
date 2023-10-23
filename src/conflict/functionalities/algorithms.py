@@ -95,9 +95,9 @@ def findConflicts(requirements:any):
             cosr1r2 = calculateCosSimilarity(req1["content"], req2["content"])
             posOR = 0.0
             oppositeOC = 0
-            if cosr1r2 >= 0.3:
-                posOR = calculatePosOverlapRatio(ast.literal_eval(req1["word_objects"]), ast.literal_eval(req2["word_objects"]))
-                oppositeOC = calculateOppositeOverlapCount(req1["content"], req2["content"])
+        # if cosr1r2 >= 0.3:
+            posOR = calculatePosOverlapRatio(ast.literal_eval(req1["word_objects"]), ast.literal_eval(req2["word_objects"]))
+            oppositeOC = calculateOppositeOverlapCount(req1["content"], req2["content"])
             
             conflict = {
                 "req1_document_id": str(req1["document_id"]),

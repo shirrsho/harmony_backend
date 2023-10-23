@@ -51,14 +51,25 @@ async def upload(project_id:str, document_id:str, file: UploadFile = File(...)):
     # print(data)
     try:
         content = await file.read()
-        df = pd.read_csv(BytesIO(content)) if file.filename.endswith('.csv') else pd.read_excel(BytesIO(content))
-        # print(df.head())
+        if file.filename.endswith(".csv"):
+            try:
+                df = pd.read_csv(BytesIO(content))
+            except Exception as e:
+                print(str(e))
+        elif file.filename.endswith(".xlsx"):
+            try:
+                df = pd.read_excel(BytesIO(content))
+            except Exception as e:
+                print(str(e))
+            
+        else:
+            return {"error": "File format not supported"}
 
         reqs = [{
             'content':r[0],
             'document_id': document_id,
             'project_id':project_id
-        }for r in df.__array__()]
+        } for r in df.__array__()]
         requirements = addDocumentRequirementstoDB(reqs)
         # print(reqs)
         return [str(id) for id in requirements.inserted_ids]
