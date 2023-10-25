@@ -6,6 +6,8 @@ import nltk
 from nltk.corpus import wordnet
 import ast
 
+from src.conflict.functionalities.similarities import bm25_similarity, euclidean_distance, jaccard_similarity, jensen_shannon_divergence, levenshtein_distance, ngram_overlap
+
 # nlp = spacy.load("en_core_web_sm")
 tfidf = TfidfVectorizer()
 
@@ -72,7 +74,6 @@ def calculateOppositeOverlapCount(r1:str, r2:str):
 
     # Find common antonyms between the two sentences
     common_antonyms = word_set2.intersection(set(antonyms))
-    print(common_antonyms)
     return len(common_antonyms)
 
 def determine(conflicts):
@@ -93,11 +94,14 @@ def findConflicts(requirements:any):
             req2 = requirements[j]
             
             cosr1r2 = calculateCosSimilarity(req1["content"], req2["content"])
-            posOR = 0.0
-            oppositeOC = 0
-        # if cosr1r2 >= 0.3:
             posOR = calculatePosOverlapRatio(ast.literal_eval(req1["word_objects"]), ast.literal_eval(req2["word_objects"]))
             oppositeOC = calculateOppositeOverlapCount(req1["content"], req2["content"])
+            jaccard = jaccard_similarity(req1["content"], req2["content"])
+            euclidean = euclidean_distance(req1["content"], req2["content"])
+            levenshtein = levenshtein_distance(req1["content"], req2["content"])
+            jensen_shannon = jensen_shannon_divergence(req1["content"], req2["content"])
+            ngram = ngram_overlap(req1["content"], req2["content"])
+            bm25 = bm25_similarity(req1["content"], req2["content"])
             
             conflict = {
                 "req1_document_id": str(req1["document_id"]),
@@ -109,7 +113,13 @@ def findConflicts(requirements:any):
                 "req2_content": str(req2["content"]),
                 'cos': cosr1r2,
                 'pos_overlap_ratio': posOR,
-                'opposite_overlap_count': oppositeOC
+                'opposite_overlap_count': oppositeOC,
+                'jaccard':jaccard,
+                'euclidean':euclidean,
+                'levenshtein':levenshtein,
+                'jensen_shannon':jensen_shannon,
+                'ngram':ngram,
+                'bm25':bm25
             }
 
             conflicts.append(conflict)

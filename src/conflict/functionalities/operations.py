@@ -35,7 +35,13 @@ def getDocumentConflicts(document_id:str):
         'cos': str(conflict['cos']),
         'pos_overlap_ratio': str(conflict['pos_overlap_ratio']),
         'opposite_overlap_count': str(conflict['opposite_overlap_count']),
-        'decision': str(conflict['decision'])
+        'decision': str(conflict['decision']),
+        'jaccard':str(conflict['jaccard']),
+        'euclidean':str(conflict['euclidean']),
+        'levenshtein':str(conflict['levenshtein']),
+        'jensen_shannon':str(conflict['jensen_shannon']),
+        'ngram':str(conflict['ngram']),
+        'bm25':str(conflict['bm25']),
     } for conflict in conflict_cursor]
     return conflicts
 
@@ -53,6 +59,12 @@ def getProjectConflicts(project_id:str):
         'cos': str(conflict['cos']),
         'pos_overlap_ratio': str(conflict['pos_overlap_ratio']),
         'opposite_overlap_count': str(conflict['opposite_overlap_count']),
+        'jaccard':str(conflict['jaccard']),
+        'euclidean':str(conflict['euclidean']),
+        'levenshtein':str(conflict['levenshtein']),
+        'jensen_shannon':str(conflict['jensen_shannon']),
+        'ngram':str(conflict['ngram']),
+        'bm25':str(conflict['bm25']),
         'decision': str(conflict['decision'])
     } for conflict in conflict_cursor]
     return conflicts
@@ -70,6 +82,12 @@ def getConflict(conflict_id:str):
         'cos': str(conflict['cos']),
         'pos_overlap_ratio': str(conflict['pos_overlap_ratio']),
         'opposite_overlap_count': str(conflict['opposite_overlap_count']),
+        'jaccard':str(conflict['jaccard']),
+        'euclidean':str(conflict['euclidean']),
+        'levenshtein':str(conflict['levenshtein']),
+        'jensen_shannon':str(conflict['jensen_shannon']),
+        'ngram':str(conflict['ngram']),
+        'bm25':str(conflict['bm25']),
         'decision': str(conflict['decision'])
     }
 
