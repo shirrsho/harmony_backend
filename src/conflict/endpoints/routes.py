@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
-from src.conflict.functionalities.operations import addConflictstoDB, deleteDocumentConflicts, deleteProjectConflicts, getConflict, getDocumentConflicts, getProjectConflicts
+from src.conflict.functionalities.operations import addConflictstoDB, deleteDocumentConflicts, deleteProjectConflicts, editConflict, getConflict, getDocumentConflicts, getProjectConflicts
 from src.conflict.models.model import Conflict
 from src.document.functionalities.operations import getDocument
 from src.project.functionalities.operations import getProjectFromDB
@@ -169,3 +169,18 @@ async def get_conflict(conflict_id: str):
         return conflict
     except Exception as e:
         raise HTTPException(status_code=400, detail="Conflict not found!", headers={"X-Error": str(e)})
+
+@router.put("/{conflict_id}")
+async def update_conflict(conflict_id: str, new_data: dict):
+    try:
+        updated = editConflict(conflict_id, new_data)
+
+        # return {
+        #     "message": "Document updated successfully",
+        #     "updated": updated
+        # }
+        return updated
+
+    except Exception as e:
+        # Handle any potential exceptions and return an error response
+        raise HTTPException(status_code=404, detail="Conflict can not be updated", headers={"X-Error": str(e)})

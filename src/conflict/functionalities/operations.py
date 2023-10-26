@@ -91,6 +91,11 @@ def getConflict(conflict_id:str):
         'decision': str(conflict['decision'])
     }
 
+def editConflict(conflict_id:str, new_data:dict):
+    conflict_collection.update_one({"_id": ObjectId(conflict_id)}, {"$set": new_data})
+
+    return new_data
+
 def deleteDocumentConflicts(document_id:str):
     return conflict_collection.delete_many({"document_id": document_id})
 
