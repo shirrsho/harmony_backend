@@ -15,6 +15,8 @@ from collections import Counter
 import re
 import numpy as np
 
+from src.logger import console_log
+
 epsilon = 1e-20
 
 """### **Jaccard Similarities**"""
@@ -37,7 +39,7 @@ def jaccard_similarity(sentence1, sentence2):
 sentence1 = "This is a sample."
 sentence2 = "Here is an example."
 score = jaccard_similarity(sentence1, sentence2)
-print(f"Jaccard Similarity: {score}")
+console_log(f"Jaccard Similarity: {score}")
 
 """### **Euclidean Distance**"""
 
@@ -58,7 +60,7 @@ def euclidean_distance(sentence1, sentence2):
 sentence1 = "This is the sentence."
 sentence2 = "This is the sentence."
 score = euclidean_distance(sentence1, sentence2)
-print("Euclidean Distance:", score)
+console_log("Euclidean Distance:", score)
 
 """### **Levenshtein Distance**"""
 
@@ -87,7 +89,7 @@ def levenshtein_distance(s1, s2):
 sentence1 = "This is the sentence."
 sentence2 = "This is the sentence."
 distance = levenshtein_distance(sentence1, sentence2)
-print("Levenshtein Distance:", distance)
+console_log("Levenshtein Distance:", distance)
 
 """### **Jensen Shannon Divergence**"""
 
@@ -130,7 +132,7 @@ sentence2 = "This is the sentence"
 # Calculate Jensen-Shannon Divergence
 jsd_score = jensen_shannon_divergence(sentence1, sentence2)
 
-print(f"Jensen-Shannon Divergence: {jsd_score}")
+console_log(f"Jensen-Shannon Divergence: {jsd_score}")
 
 """### **N-Gram Overlap**"""
 
@@ -167,7 +169,7 @@ sentence1 = "The quick brown fox jumps over the lazy dog"
 sentence2 = "The quick brown"
 
 overlap_score = ngram_overlap(sentence1, sentence2)
-print(f"N-gram Overlap Score: {overlap_score}")
+console_log(f"N-gram Overlap Score: {overlap_score}")
 
 """### **BM25**"""
 
@@ -216,4 +218,4 @@ def bm25_similarity(sentence1, sentence2):
 sentence1 = "This is the first sentence."
 sentence2 = "This is another sentence with some words."
 score = bm25_similarity(sentence1, sentence2)
-print("BM25 Similarity Score:", score)
+console_log("BM25 Similarity Score:", score)

@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from mongodb import MongoDB
 from bson import ObjectId
+from src.logger import console_log
 
 from src.requirement.functionalities.algorithms import extractPosTokens
 
@@ -31,7 +32,7 @@ def addDocumentRequirementstoDB(data):
     # })
     for d in data:
         d["word_objects"] = extractPosTokens(str(d["content"]))
-        print(d)
+        console_log(d)
     result = requirement_collection.insert_many(data)
     
     return result

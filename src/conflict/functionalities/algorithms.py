@@ -1,15 +1,23 @@
 from typing import List
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-# import spacy
+# from sklearn.exceptions import InconsistentVersionWarning
+# warnings.simplefilter("error", InconsistentVersionWarning)
+import pickle
 import nltk
 from nltk.corpus import wordnet
 import ast
 
 from src.conflict.functionalities.similarities import bm25_similarity, euclidean_distance, jaccard_similarity, jensen_shannon_divergence, levenshtein_distance, ngram_overlap
+from src.logger import console_log
 
 # nlp = spacy.load("en_core_web_sm")
 tfidf = TfidfVectorizer()
+
+# try:
+#    est = pickle.loads("model_from_prevision_version.pickle")
+# except InconsistentVersionWarning as w:
+#    console_log("ATTENTION: ",w.original_sklearn_version)
 
 def calculateCosSimilarity(r1:str, r2:str):
     if r1.__len__()==0 or r2.__len__()==0:
@@ -77,12 +85,25 @@ def calculateOppositeOverlapCount(r1:str, r2:str):
     return len(common_antonyms)
 
 def determine(conflicts):
+    with open('src\decision_tree_model.pkl', 'rb') as model_file:
+        loaded_model = pickle.load(model_file)
     for i in range(len(conflicts)):
-        if conflicts[i]["cos"]>=0.3:
-            conflicts[i]["decision"] = "Yes"
-
-        else: conflicts[i]["decision"] = "No"
-
+        # if conflicts[i]["cos"]>=0.3:
+        #     conflicts[i]["decision"] = "Yes"
+        # else: conflicts[i]["decision"] = "No"
+        scores = [[
+            conflicts[i]["cos"],
+            conflicts[i]["pos_overlap_ratio"],
+            conflicts[i]["opposite_overlap_count"],
+            conflicts[i]["jaccard"],
+            conflicts[i]["euclidean"],
+            conflicts[i]["levenshtein"],
+            conflicts[i]["jensen_shannon"],
+            conflicts[i]["ngram"],
+            conflicts[i]["bm25"]
+        ]]
+        conflicts[i]["decision"] = loaded_model.predict(scores)[0]
+        console_log(conflicts[i]["decision"])
     return conflicts
 
 def findConflicts(requirements:any):
