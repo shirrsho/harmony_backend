@@ -35,12 +35,6 @@ def jaccard_similarity(sentence1, sentence2):
     else:
         return round(float(intersection) / (union + epsilon), 3)
 
-# Example usage:
-sentence1 = "This is a sample."
-sentence2 = "Here is an example."
-score = jaccard_similarity(sentence1, sentence2)
-console_log(f"Jaccard Similarity: {score}")
-
 """### **Euclidean Distance**"""
 
 def euclidean_distance(sentence1, sentence2):
@@ -55,12 +49,6 @@ def euclidean_distance(sentence1, sentence2):
 
     # The Euclidean distance matrix will have the distance between the two sentences
     return round(distance[0][1], 3)
-
-# Example usage:
-sentence1 = "This is the sentence."
-sentence2 = "This is the sentence."
-score = euclidean_distance(sentence1, sentence2)
-console_log("Euclidean Distance:", score)
 
 """### **Levenshtein Distance**"""
 
@@ -84,12 +72,6 @@ def levenshtein_distance(s1, s2):
 
     # The final value in the matrix is the Levenshtein distance
     return round(matrix[len(s1)][len(s2)], 3)
-
-# Example usage
-sentence1 = "This is the sentence."
-sentence2 = "This is the sentence."
-distance = levenshtein_distance(sentence1, sentence2)
-console_log("Levenshtein Distance:", distance)
 
 """### **Jensen Shannon Divergence**"""
 
@@ -125,15 +107,6 @@ def jensen_shannon_divergence(sentence1, sentence2):
 
     return round(jensen_shannon, 3)
 
-# Example usage
-sentence1 = "This is the first sentence"
-sentence2 = "This is the sentence"
-
-# Calculate Jensen-Shannon Divergence
-jsd_score = jensen_shannon_divergence(sentence1, sentence2)
-
-console_log(f"Jensen-Shannon Divergence: {jsd_score}")
-
 """### **N-Gram Overlap**"""
 
 def ngram_overlap(sentence1, sentence2):
@@ -163,13 +136,6 @@ def ngram_overlap(sentence1, sentence2):
         score = intersection / (union + epsilon)
 
     return round(score, 3)
-
-# Example usage:
-sentence1 = "The quick brown fox jumps over the lazy dog"
-sentence2 = "The quick brown"
-
-overlap_score = ngram_overlap(sentence1, sentence2)
-console_log(f"N-gram Overlap Score: {overlap_score}")
 
 """### **BM25**"""
 
@@ -214,8 +180,3 @@ def bm25_similarity(sentence1, sentence2):
         score += idf * (numerator / (denominator + epsilon))
 
     return round(score, 3)
-
-sentence1 = "This is the first sentence."
-sentence2 = "This is another sentence with some words."
-score = bm25_similarity(sentence1, sentence2)
-console_log("BM25 Similarity Score:", score)

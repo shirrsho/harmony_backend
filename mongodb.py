@@ -12,6 +12,7 @@ class MongoDB:
             cls._instance = super().__new__(cls)
             connection_url = os.environ.get("MONGO_CONNECTION_URL")
             cls._instance.client = MongoClient(connection_url)
+            print("MongoDB connection established!")
         return cls._instance
 
     def get_client(self):
