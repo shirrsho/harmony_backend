@@ -35,8 +35,9 @@ async def find_document_conflict(document_id:str):
     # {isConflicting, cos} 
 
     try:
-        report = getDocumentReport(document_id) # External call
-        if report != None: return []
+        # report = getDocumentReport(document_id) # External call
+        # if report != None: return []
+        deleteDocumentConflicts(document_id)
         requirements = getDocumentRequirementsFromDB(document_id) # External call
         result = addConflictstoDB(requirements)
         
@@ -63,8 +64,9 @@ async def find_project_conflict(project_id:str):
     # {isConflicting, cos}
 
     try:
-        report = getProjectReport(project_id) # External call
-        if report != None: return []
+        # report = getProjectReport(project_id) # External call
+        # if report != None: return []
+        deleteProjectConflicts(project_id)
         requirements = getProjectRequirementsFromDB(project_id) # External call
         
         result = addConflictstoDB(requirements)

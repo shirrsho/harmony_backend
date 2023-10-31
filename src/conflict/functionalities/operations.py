@@ -26,7 +26,8 @@ def getDocumentConflicts(document_id:str):
     conflict_cursor = conflict_collection.find({"req1_document_id": document_id, "req2_document_id": document_id})
     conflicts = [{
         'id':str(conflict["_id"]),
-        "document_id": str(conflict["req1_document_id"]),
+        "req1_document_id": str(conflict["req1_document_id"]),
+        "req2_document_id": str(conflict["req2_document_id"]),
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
         "req2_id": str(conflict["req2_id"]),
@@ -73,7 +74,8 @@ def getConflict(conflict_id:str):
     conflict = conflict_collection.find_one({"_id":ObjectId(conflict_id)})
     return {
         'id':str(conflict["_id"]),
-        "document_id": str(conflict["document_id"]),
+        "req1_document_id": str(conflict["req1_document_id"]),
+        "req2_document_id": str(conflict["req2_document_id"]),
         "project_id": str(conflict["project_id"]),
         "req1_id": str(conflict["req1_id"]),
         "req2_id": str(conflict["req2_id"]),
@@ -97,8 +99,7 @@ def editConflict(conflict_id:str, new_data:dict):
     return new_data
 
 def deleteDocumentConflicts(document_id:str):
-    return conflict_collection.delete_many({"document_id": document_id})
+    return conflict_collection.delete_many({"req1_document_id": document_id, "req2_document_id": document_id})
 
 def deleteProjectConflicts(project_id:str):
-    conflict_collection.delete_many({"project_id": project_id})
-    return True
+    return conflict_collection.delete_many({"project_id": project_id})
