@@ -103,6 +103,10 @@ def determine(conflicts):
             conflicts[i]["bm25"]
         ]]
         conflicts[i]["decision"] = loaded_model.predict(scores)[0]
+        # if conflicts[i]["decision"] == "No":
+        #     if conflicts[i]["cos"]>=0.2 and conflicts[i]["pos_overlap_ratio"]>=0.1:
+        #         console_log("here: ",conflicts[i]["decision"])
+        #         conflicts[i]["decision"] = "Maybe"
         console_log(conflicts[i]["decision"])
     return conflicts
 

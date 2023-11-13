@@ -1,0 +1,137 @@
+req2_content,req1_content,cos,pos_overlap_ratio,opposite_overlap_count,jaccard,euclidean,levenshtein,jensen_shannon,ngram,bm25,decision
+Accounts payable and receivable modules are necessary to manage financial transactions.,The system must include a general ledger for accurate financial record-keeping.,0.048,0.25,0,0.048,1.38,61,0.909,0,1.602,No
+Budgeting and forecasting features should be integrated to support financial planning.,The system must include a general ledger for accurate financial record-keeping.,0.048,0.333,0,0.048,1.38,64,0.909,0,1.602,No
+The software must offer functionality for fixed assets management.,The system must include a general ledger for accurate financial record-keeping.,0.18,0,0,0.176,1.281,54,0.699,0,4.298,No
+The ERP system must provide robust inventory management capabilities.,The system must include a general ledger for accurate financial record-keeping.,0.18,0.2,0,0.176,1.281,53,0.699,0,4.298,No
+Order processing functionality is required to efficiently handle customer orders.,The system must include a general ledger for accurate financial record-keeping.,0,0,0,0,1.414,66,1,0,0,No
+Supplier management tools should be included to maintain effective vendor relationships.,The system must include a general ledger for accurate financial record-keeping.,0,0,0,0,1.414,68,1,0,0,No
+All sections should have different ledgers for financial record-keeping.,The system must include a general ledger for accurate financial record-keeping.,0.238,0.333,0,0.176,1.235,37,0.699,0,4.298,Yes
+Inventory management should be available.,The system must include a general ledger for accurate financial record-keeping.,0,0,0,0,1.414,62,1,0,0,No
+Employee management features are essential for tracking personnel information.,The system must include a general ledger for accurate financial record-keeping.,0.054,0,0,0.053,1.376,60,0.9,0,1.433,No
+The system must include payroll functionality to process employee salaries.,The system must include a general ledger for accurate financial record-keeping.,0.238,0.5,0,0.235,1.235,46,0.619,0.133,6.059,Yes
+Time and attendance tracking features should be available for accurate workforce management.,The system must include a general ledger for accurate financial record-keeping.,0.096,0.333,0,0.095,1.344,64,0.826,0,3.389,No
+Production planning tools must be integrated to optimize manufacturing processes.,The system must include a general ledger for accurate financial record-keeping.,0.051,0,0,0.05,1.378,66,0.905,0,1.515,No
+Quality control features are necessary to ensure product standards are met.,The system must include a general ledger for accurate financial record-keeping.,0,0,0,0,1.414,61,1,0,0,No
+Work order management functionality is required to track and manage production tasks.,The system must include a general ledger for accurate financial record-keeping.,0,0,0,0,1.414,68,1,0,0,No
+Provide personal information manager f oremployees.,The system must include a general ledger for accurate financial record-keeping.,0,0,0,0,1.414,60,1,0,0,No
+The salary system should be maintained with this system.,The system must include a general ledger for accurate financial record-keeping.,0.164,0.333,0,0.111,1.293,59,0.799,0,2.865,No
+Budgeting and forecasting features should be integrated to support financial planning.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.16,0.25,0,0.158,1.296,59,0.727,0,4.806,No
+The software must offer functionality for fixed assets management.,Accounts payable and receivable modules are necessary to manage financial transactions.,0,0,0,0,1.414,66,1,0,0,No
+The ERP system must provide robust inventory management capabilities.,Accounts payable and receivable modules are necessary to manage financial transactions.,0,0,0,0,1.414,59,1,0,0,No
+Order processing functionality is required to efficiently handle customer orders.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.051,0,0,0.05,1.378,70,0.905,0,1.515,No
+Supplier management tools should be included to maintain effective vendor relationships.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.048,0,0,0.048,1.38,65,0.909,0,1.602,No
+All sections should have different ledgers for financial record-keeping.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.051,0.25,0,0.053,1.378,62,0.9,0,1.433,No
+Inventory management should be available.,Accounts payable and receivable modules are necessary to manage financial transactions.,0,0,0,0,1.414,68,1,0,0,No
+Employee management features are essential for tracking personnel information.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.054,0.5,0,0.053,1.376,61,0.9,0,1.433,No
+The system must include payroll functionality to process employee salaries.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.051,0,0,0.05,1.378,68,0.905,0,1.515,No
+Time and attendance tracking features should be available for accurate workforce management.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.046,0,0,0.045,1.381,70,0.913,0,1.694,No
+Production planning tools must be integrated to optimize manufacturing processes.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.051,0,0,0.05,1.378,65,0.905,0,1.515,No
+Quality control features are necessary to ensure product standards are met.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.207,0.25,0,0.167,1.259,56,0.693,0.059,4.806,No
+Work order management functionality is required to track and manage production tasks.,Accounts payable and receivable modules are necessary to manage financial transactions.,0.152,0.25,0,0.15,1.302,62,0.739,0,5.083,No
+Provide personal information manager f oremployees.,Accounts payable and receivable modules are necessary to manage financial transactions.,0,0,0,0,1.414,65,1,0,0,No
+The salary system should be maintained with this system.,Accounts payable and receivable modules are necessary to manage financial transactions.,0,0,0,0,1.414,67,1,0,0,No
+The software must offer functionality for fixed assets management.,Budgeting and forecasting features should be integrated to support financial planning.,0,0,0,0,1.414,67,1,0,0,No
+The ERP system must provide robust inventory management capabilities.,Budgeting and forecasting features should be integrated to support financial planning.,0,0,0,0,1.414,66,1,0,0,No
+Order processing functionality is required to efficiently handle customer orders.,Budgeting and forecasting features should be integrated to support financial planning.,0.051,0,0,0.05,1.378,68,0.905,0,1.515,No
+Supplier management tools should be included to maintain effective vendor relationships.,Budgeting and forecasting features should be integrated to support financial planning.,0.16,0.333,0,0.158,1.296,62,0.727,0,4.806,No
+All sections should have different ledgers for financial record-keeping.,Budgeting and forecasting features should be integrated to support financial planning.,0.107,0.5,0,0.111,1.337,58,0.799,0,2.865,No
+Inventory management should be available.,Budgeting and forecasting features should be integrated to support financial planning.,0.16,0.333,0,0.143,1.296,62,0.739,0,2.315,No
+Employee management features are essential for tracking personnel information.,Budgeting and forecasting features should be integrated to support financial planning.,0.054,0.2,0,0.053,1.376,63,0.9,0,1.433,No
+The system must include payroll functionality to process employee salaries.,Budgeting and forecasting features should be integrated to support financial planning.,0.051,0,0,0.05,1.378,67,0.905,0,1.515,No
+Time and attendance tracking features should be available for accurate workforce management.,Budgeting and forecasting features should be integrated to support financial planning.,0.213,0.333,0,0.211,1.255,54,0.652,0.056,6.778,No
+Production planning tools must be integrated to optimize manufacturing processes.,Budgeting and forecasting features should be integrated to support financial planning.,0.238,0.667,0,0.167,1.235,54,0.714,0.062,4.544,No
+Quality control features are necessary to ensure product standards are met.,Budgeting and forecasting features should be integrated to support financial planning.,0.092,0.2,0,0.105,1.347,60,0.818,0,3.204,No
+Work order management functionality is required to track and manage production tasks.,Budgeting and forecasting features should be integrated to support financial planning.,0.096,0,0,0.095,1.344,71,0.826,0,3.389,No
+Provide personal information manager f oremployees.,Budgeting and forecasting features should be integrated to support financial planning.,0,0,0,0,1.414,66,1,0,0,No
+The salary system should be maintained with this system.,Budgeting and forecasting features should be integrated to support financial planning.,0.101,0.333,0,0.111,1.341,61,0.799,0,2.865,No
+The ERP system must provide robust inventory management capabilities.,The software must offer functionality for fixed assets management.,0.202,0.2,0,0.125,1.263,49,0.778,0,2.637,Yes
+Order processing functionality is required to efficiently handle customer orders.,The software must offer functionality for fixed assets management.,0.056,0.2,0,0.056,1.374,57,0.895,0,1.412,No
+Supplier management tools should be included to maintain effective vendor relationships.,The software must offer functionality for fixed assets management.,0.054,0.2,0,0,1.376,69,1,0,0,No
+All sections should have different ledgers for financial record-keeping.,The software must offer functionality for fixed assets management.,0.056,0,0,0.059,1.374,52,0.889,0,1.318,No
+Inventory management should be available.,The software must offer functionality for fixed assets management.,0.082,0.25,0,0,1.355,51,1,0,0,No
+Employee management features are essential for tracking personnel information.,The software must offer functionality for fixed assets management.,0.126,0.2,0,0.059,1.322,61,0.889,0,1.318,No
+The system must include payroll functionality to process employee salaries.,The software must offer functionality for fixed assets management.,0.19,0.2,0,0.188,1.273,42,0.684,0,4.236,No
+Time and attendance tracking features should be available for accurate workforce management.,The software must offer functionality for fixed assets management.,0.108,0.167,0,0.105,1.336,60,0.808,0,3.238,No
+Production planning tools must be integrated to optimize manufacturing processes.,The software must offer functionality for fixed assets management.,0.056,0,0,0.056,1.374,65,0.895,0,1.412,No
+Quality control features are necessary to ensure product standards are met.,The software must offer functionality for fixed assets management.,0,0,0,0,1.414,58,1,0,0,No
+Work order management functionality is required to track and manage production tasks.,The software must offer functionality for fixed assets management.,0.108,0.333,0,0.05,1.336,52,0.904,0,1.619,No
+Provide personal information manager f oremployees.,The software must offer functionality for fixed assets management.,0,0,0,0,1.414,49,1,0,0,No
+The salary system should be maintained with this system.,The software must offer functionality for fixed assets management.,0.054,0,0,0.059,1.376,46,0.889,0,1.318,No
+Order processing functionality is required to efficiently handle customer orders.,The ERP system must provide robust inventory management capabilities.,0,0,0,0,1.414,60,1,0,0,No
+Supplier management tools should be included to maintain effective vendor relationships.,The ERP system must provide robust inventory management capabilities.,0.054,0.2,0,0.053,1.376,65,0.9,0,1.512,No
+All sections should have different ledgers for financial record-keeping.,The ERP system must provide robust inventory management capabilities.,0,0,0,0,1.414,58,1,0,0,No
+Inventory management should be available.,The ERP system must provide robust inventory management capabilities.,0.179,0.2,0,0.077,1.282,52,0.854,0,1.008,No
+Employee management features are essential for tracking personnel information.,The ERP system must provide robust inventory management capabilities.,0.06,0.2,0,0.059,1.371,62,0.889,0,1.318,No
+The system must include payroll functionality to process employee salaries.,The ERP system must provide robust inventory management capabilities.,0.19,0.2,0,0.188,1.273,46,0.684,0,4.236,No
+Time and attendance tracking features should be available for accurate workforce management.,The ERP system must provide robust inventory management capabilities.,0.051,0.167,0,0,1.378,71,1,0,0,No
+Production planning tools must be integrated to optimize manufacturing processes.,The ERP system must provide robust inventory management capabilities.,0.056,0,0,0.056,1.374,62,0.895,0,1.412,No
+Quality control features are necessary to ensure product standards are met.,The ERP system must provide robust inventory management capabilities.,0,0,0,0,1.414,59,1,0,0,No
+Work order management functionality is required to track and manage production tasks.,The ERP system must provide robust inventory management capabilities.,0.051,0.167,0,0.05,1.378,63,0.904,0,1.619,No
+Provide personal information manager f oremployees.,The ERP system must provide robust inventory management capabilities.,0.082,0,0,0,1.355,48,1,0,0,No
+The salary system should be maintained with this system.,The ERP system must provide robust inventory management capabilities.,0.184,0.2,0,0.125,1.278,47,0.778,0,2.637,No
+Supplier management tools should be included to maintain effective vendor relationships.,Order processing functionality is required to efficiently handle customer orders.,0.051,0,0,0.05,1.378,68,0.905,0,1.562,No
+All sections should have different ledgers for financial record-keeping.,Order processing functionality is required to efficiently handle customer orders.,0,0,0,0,1.414,65,1,0,0,No
+Inventory management should be available.,Order processing functionality is required to efficiently handle customer orders.,0,0,0,0,1.414,64,1,0,0,No
+Employee management features are essential for tracking personnel information.,Order processing functionality is required to efficiently handle customer orders.,0,0,0,0,1.414,65,1,0,0,No
+The system must include payroll functionality to process employee salaries.,Order processing functionality is required to efficiently handle customer orders.,0.112,0.2,0,0.111,1.332,63,0.8,0,2.937,No
+Time and attendance tracking features should be available for accurate workforce management.,Order processing functionality is required to efficiently handle customer orders.,0,0,0,0,1.414,72,1,0,0,No
+Production planning tools must be integrated to optimize manufacturing processes.,Order processing functionality is required to efficiently handle customer orders.,0.053,0,0,0.053,1.376,61,0.9,0,1.469,No
+Quality control features are necessary to ensure product standards are met.,Order processing functionality is required to efficiently handle customer orders.,0.046,0,0,0.053,1.381,64,0.905,0,1.562,No
+Work order management functionality is required to track and manage production tasks.,Order processing functionality is required to efficiently handle customer orders.,0.299,0.5,0,0.222,1.184,42,0.636,0.125,6.645,Yes
+Provide personal information manager f oremployees.,Order processing functionality is required to efficiently handle customer orders.,0,0,0,0,1.414,58,1,0,0,No
+The salary system should be maintained with this system.,Order processing functionality is required to efficiently handle customer orders.,0,0,0,0,1.414,64,1,0,0,No
+All sections should have different ledgers for financial record-keeping.,Supplier management tools should be included to maintain effective vendor relationships.,0.051,0,0,0.053,1.378,63,0.9,0,1.433,No
+Inventory management should be available.,Supplier management tools should be included to maintain effective vendor relationships.,0.262,0.333,0,0.231,1.215,60,0.609,0,3.473,No
+Employee management features are essential for tracking personnel information.,Supplier management tools should be included to maintain effective vendor relationships.,0.054,0.2,0,0.053,1.376,57,0.9,0,1.433,No
+The system must include payroll functionality to process employee salaries.,Supplier management tools should be included to maintain effective vendor relationships.,0.051,0,0,0.05,1.378,69,0.905,0,1.515,No
+Time and attendance tracking features should be available for accurate workforce management.,Supplier management tools should be included to maintain effective vendor relationships.,0.152,0.333,0,0.095,1.302,71,0.826,0,3.389,No
+Production planning tools must be integrated to optimize manufacturing processes.,Supplier management tools should be included to maintain effective vendor relationships.,0.169,0.333,0,0.167,1.289,61,0.714,0,4.544,No
+Quality control features are necessary to ensure product standards are met.,Supplier management tools should be included to maintain effective vendor relationships.,0.044,0,0,0.05,1.383,66,0.909,0,1.602,No
+Work order management functionality is required to track and manage production tasks.,Supplier management tools should be included to maintain effective vendor relationships.,0.096,0.167,0,0.095,1.344,59,0.826,0,3.389,No
+Provide personal information manager f oremployees.,Supplier management tools should be included to maintain effective vendor relationships.,0,0,0,0,1.414,67,1,0,0,No
+The salary system should be maintained with this system.,Supplier management tools should be included to maintain effective vendor relationships.,0.101,0.333,0,0.111,1.341,58,0.799,0,2.865,No
+Inventory management should be available.,All sections should have different ledgers for financial record-keeping.,0.077,0,0,0.077,1.358,55,0.854,0,1.008,No
+Employee management features are essential for tracking personnel information.,All sections should have different ledgers for financial record-keeping.,0.056,0,0,0.059,1.374,61,0.889,0,1.318,No
+The system must include payroll functionality to process employee salaries.,All sections should have different ledgers for financial record-keeping.,0,0,0,0,1.414,61,1,0,0,No
+Time and attendance tracking features should be available for accurate workforce management.,All sections should have different ledgers for financial record-keeping.,0.102,0,0,0.105,1.34,71,0.808,0,3.238,No
+Production planning tools must be integrated to optimize manufacturing processes.,All sections should have different ledgers for financial record-keeping.,0,0,0,0,1.414,63,1,0,0,No
+Quality control features are necessary to ensure product standards are met.,All sections should have different ledgers for financial record-keeping.,0,0,0,0,1.414,60,1,0,0,No
+Work order management functionality is required to track and manage production tasks.,All sections should have different ledgers for financial record-keeping.,0,0,0,0,1.414,69,1,0,0,No
+Provide personal information manager f oremployees.,All sections should have different ledgers for financial record-keeping.,0,0,0,0,1.414,55,1,0,0,No
+The salary system should be maintained with this system.,All sections should have different ledgers for financial record-keeping.,0.051,0,0,0.059,1.378,56,0.889,0,1.318,No
+Employee management features are essential for tracking personnel information.,Inventory management should be available.,0.082,0.2,0,0.077,1.355,57,0.854,0,0.661,No
+The system must include payroll functionality to process employee salaries.,Inventory management should be available.,0,0,0,0,1.414,60,1,0,0,No
+Time and attendance tracking features should be available for accurate workforce management.,Inventory management should be available.,0.368,1,0,0.133,1.125,63,0.752,0.083,1.926,No
+Production planning tools must be integrated to optimize manufacturing processes.,Inventory management should be available.,0.077,0.333,0,0.071,1.358,63,0.862,0,0.748,No
+Quality control features are necessary to ensure product standards are met.,Inventory management should be available.,0,0,0,0,1.414,57,1,0,0,No
+Work order management functionality is required to track and manage production tasks.,Inventory management should be available.,0.07,0.167,0,0.062,1.364,62,0.876,0,0.963,No
+Provide personal information manager f oremployees.,Inventory management should be available.,0,0,0,0,1.414,40,1,0,0,No
+The salary system should be maintained with this system.,Inventory management should be available.,0.16,0.5,0,0.167,1.296,39,0.707,0,1.321,No
+The system must include payroll functionality to process employee salaries.,Employee management features are essential for tracking personnel information.,0.056,0,0,0,1.374,59,1,0,0,No
+Time and attendance tracking features should be available for accurate workforce management.,Employee management features are essential for tracking personnel information.,0.241,0.333,0,0.167,1.232,63,0.713,0,4.857,Yes
+Production planning tools must be integrated to optimize manufacturing processes.,Employee management features are essential for tracking personnel information.,0,0,0,0,1.414,66,1,0,0,No
+Quality control features are necessary to ensure product standards are met.,Employee management features are essential for tracking personnel information.,0.165,0.25,0,0.118,1.292,54,0.759,0,3.024,No
+Work order management functionality is required to track and manage production tasks.,Employee management features are essential for tracking personnel information.,0.051,0.167,0,0.05,1.378,52,0.904,0,1.619,No
+Provide personal information manager f oremployees.,Employee management features are essential for tracking personnel information.,0.082,0.2,0,0,1.355,61,1,0,0,No
+The salary system should be maintained with this system.,Employee management features are essential for tracking personnel information.,0,0,0,0,1.414,61,1,0,0,No
+Time and attendance tracking features should be available for accurate workforce management.,The system must include payroll functionality to process employee salaries.,0,0,0,0,1.414,68,1,0,0,No
+Production planning tools must be integrated to optimize manufacturing processes.,The system must include payroll functionality to process employee salaries.,0.112,0,0,0.111,1.332,66,0.8,0,2.937,No
+Quality control features are necessary to ensure product standards are met.,The system must include payroll functionality to process employee salaries.,0.046,0,0,0.053,1.381,61,0.905,0,1.562,No
+Work order management functionality is required to track and manage production tasks.,The system must include payroll functionality to process employee salaries.,0.102,0.167,0,0.1,1.34,64,0.818,0,3.323,No
+Provide personal information manager f oremployees.,The system must include payroll functionality to process employee salaries.,0,0,0,0,1.414,53,1,0,0,No
+The salary system should be maintained with this system.,The system must include payroll functionality to process employee salaries.,0.173,0.2,0,0.118,1.286,55,0.789,0,2.762,No
+Production planning tools must be integrated to optimize manufacturing processes.,Time and attendance tracking features should be available for accurate workforce management.,0.048,0.333,0,0.048,1.38,69,0.909,0,1.554,No
+Quality control features are necessary to ensure product standards are met.,Time and attendance tracking features should be available for accurate workforce management.,0.042,0.167,0,0.048,1.384,64,0.913,0,1.636,No
+Work order management functionality is required to track and manage production tasks.,Time and attendance tracking features should be available for accurate workforce management.,0.092,0.167,0,0.043,1.348,72,0.917,0,1.722,No
+Provide personal information manager f oremployees.,Time and attendance tracking features should be available for accurate workforce management.,0,0,0,0,1.414,69,1,0,0,No
+The salary system should be maintained with this system.,Time and attendance tracking features should be available for accurate workforce management.,0.096,0.5,0,0.105,1.344,62,0.808,0,2.955,No
+Quality control features are necessary to ensure product standards are met.,Production planning tools must be integrated to optimize manufacturing processes.,0.046,0,0,0.053,1.381,62,0.905,0,1.562,No
+Work order management functionality is required to track and manage production tasks.,Production planning tools must be integrated to optimize manufacturing processes.,0.102,0,0,0.048,1.34,64,0.909,0,1.661,No
+Provide personal information manager f oremployees.,Production planning tools must be integrated to optimize manufacturing processes.,0,0,0,0,1.414,57,1,0,0,No
+The salary system should be maintained with this system.,Production planning tools must be integrated to optimize manufacturing processes.,0.051,0.333,0,0.056,1.378,60,0.895,0,1.381,No
+Work order management functionality is required to track and manage production tasks.,Quality control features are necessary to ensure product standards are met.,0.042,0,0,0.048,1.384,69,0.913,0,1.694,No
+Provide personal information manager f oremployees.,Quality control features are necessary to ensure product standards are met.,0,0,0,0,1.414,60,1,0,0,No
+The salary system should be maintained with this system.,Quality control features are necessary to ensure product standards are met.,0,0,0,0,1.414,58,1,0,0,No
+Provide personal information manager f oremployees.,Work order management functionality is required to track and manage production tasks.,0,0,0,0,1.414,60,1,0,0,No
+The salary system should be maintained with this system.,Work order management functionality is required to track and manage production tasks.,0,0,0,0,1.414,66,1,0,0,No
+The salary system should be maintained with this system.,Provide personal information manager f oremployees.,0,0,0,0,1.414,45,1,0,0,No
