@@ -1,0 +1,254 @@
+req2_content,req1_content,cos,pos_overlap_ratio,opposite_overlap_count,jaccard,euclidean,levenshtein,jensen_shannon,ngram,bm25,decision
+Allow users to create and manage their profiles with relevant information.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.101,0,0,0.1,1.341,66,0.818,0,3.204,No
+"Differentiate between student, teacher, and administrator profiles.","Implement secure user authentication with roles for students, teachers, and administrators.",0.061,0,0,0.059,1.37,50,0.887,0,1.284,No
+"Enable teachers to create, edit, and delete courses.","Implement secure user authentication with roles for students, teachers, and administrators.",0.121,0.167,0,0.056,1.326,65,0.894,0,1.355,No
+"Provide options for adding course materials, assignments, and assessments.","Implement secure user authentication with roles for students, teachers, and administrators.",0.113,0,0,0.111,1.332,65,0.799,0,2.865,No
+"Support various file formats for uploading learning materials (documents, presentations, videos).","Implement secure user authentication with roles for students, teachers, and administrators.",0.048,0,0,0.048,1.38,78,0.909,0,1.602,No
+Implement a user-friendly interface for easy navigation through learning materials.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.169,0,0,0.105,1.289,59,0.809,0,3.029,No
+"Admin will create, edit, and delete courses.","Implement secure user authentication with roles for students, teachers, and administrators.",0.061,0,0,0.059,1.37,68,0.887,0,1.284,No
+Support various file formats for uploading materials.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.061,0,0,0.059,1.37,66,0.887,0,1.284,No
+Provide options for taking exams and assignments.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.13,0,0,0.125,1.319,63,0.775,0,2.567,No
+Allow teachers to create assignments and assessments.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.13,0.167,0,0.059,1.319,66,0.887,0,1.284,No
+Provide a submission and grading system for assignments.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.13,0,0,0.118,1.319,67,0.788,0,2.711,No
+Generate automatic feedback for assessments.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.074,0,0,0.067,1.361,65,0.87,0,1.158,No
+Include a messaging system between students and teachers.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.21,0.333,0,0.056,1.257,61,0.894,0,1.355,No
+Support discussion forums will be there.,"Implement secure user authentication with roles for students, teachers, and administrators.",0,0,0,0,1.414,71,1,0,0,No
+A tracking system for student progress.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.074,0,0,0.062,1.361,67,0.879,0,1.217,No
+Provide dashboards to monitor performance.,"Implement secure user authentication with roles for students, teachers, and administrators.",0,0,0,0,1.414,73,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.","Implement secure user authentication with roles for students, teachers, and administrators.",0.113,0,0,0.111,1.332,62,0.799,0,2.865,No
+Generate automatic feedback for exams.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.074,0,0,0.067,1.361,68,0.87,0,1.158,No
+Chatting system should be available.,"Implement secure user authentication with roles for students, teachers, and administrators.",0,0,0,0,1.414,73,1,0,0,No
+A forum will be there for discussion.,"Implement secure user authentication with roles for students, teachers, and administrators.",0.067,0,0,0.059,1.366,69,0.887,0,1.284,No
+Automated progress tracking should be available.,"Implement secure user authentication with roles for students, teachers, and administrators.",0,0,0,0,1.414,70,1,0,0,No
+Dashboard should contain link to monitor performances.,"Implement secure user authentication with roles for students, teachers, and administrators.",0,0,0,0,1.414,68,1,0,0,No
+"Differentiate between student, teacher, and administrator profiles.",Allow users to create and manage their profiles with relevant information.,0.13,0.2,0,0.059,1.319,61,0.887,0,1.284,No
+"Enable teachers to create, edit, and delete courses.",Allow users to create and manage their profiles with relevant information.,0.193,0.5,0,0.118,1.271,53,0.788,0,2.711,No
+"Provide options for adding course materials, assignments, and assessments.",Allow users to create and manage their profiles with relevant information.,0.054,0,0,0.053,1.376,61,0.9,0,1.433,No
+"Support various file formats for uploading learning materials (documents, presentations, videos).",Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,71,1,0,0,No
+Implement a user-friendly interface for easy navigation through learning materials.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,63,1,0,0,No
+"Admin will create, edit, and delete courses.",Allow users to create and manage their profiles with relevant information.,0.13,0.5,0,0.059,1.319,54,0.887,0,1.284,No
+Support various file formats for uploading materials.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,57,1,0,0,No
+Provide options for taking exams and assignments.,Allow users to create and manage their profiles with relevant information.,0.061,0,0,0.059,1.37,57,0.887,0,1.284,No
+Allow teachers to create assignments and assessments.,Allow users to create and manage their profiles with relevant information.,0.301,0.5,0,0.286,1.183,46,0.549,0,5.135,No
+Provide a submission and grading system for assignments.,Allow users to create and manage their profiles with relevant information.,0.061,0,0,0.056,1.37,58,0.894,0,1.355,No
+Generate automatic feedback for assessments.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,56,1,0,0,No
+Include a messaging system between students and teachers.,Allow users to create and manage their profiles with relevant information.,0.061,0,0,0.056,1.37,56,0.894,0,1.355,No
+Support discussion forums will be there.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,57,1,0,0,No
+A tracking system for student progress.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,55,1,0,0,No
+Provide dashboards to monitor performance.,Allow users to create and manage their profiles with relevant information.,0.074,0,0,0.067,1.361,55,0.87,0,1.158,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Allow users to create and manage their profiles with relevant information.,0.054,0,0,0.053,1.376,65,0.9,0,1.433,No
+Generate automatic feedback for exams.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,53,1,0,0,No
+Chatting system should be available.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,58,1,0,0,No
+A forum will be there for discussion.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,55,1,0,0,No
+Automated progress tracking should be available.,Allow users to create and manage their profiles with relevant information.,0,0,0,0,1.414,54,1,0,0,No
+Dashboard should contain link to monitor performances.,Allow users to create and manage their profiles with relevant information.,0.061,0,0,0.059,1.37,55,0.887,0,1.284,No
+"Enable teachers to create, edit, and delete courses.","Differentiate between student, teacher, and administrator profiles.",0.072,0,0,0.071,1.362,45,0.867,0,1.033,No
+"Provide options for adding course materials, assignments, and assessments.","Differentiate between student, teacher, and administrator profiles.",0.068,0,0,0.067,1.365,55,0.874,0,1.128,No
+"Support various file formats for uploading learning materials (documents, presentations, videos).","Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,73,1,0,0,No
+Implement a user-friendly interface for easy navigation through learning materials.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,62,1,0,0,No
+"Admin will create, edit, and delete courses.","Differentiate between student, teacher, and administrator profiles.",0.078,0,0,0.077,1.358,46,0.857,0,0.946,No
+Support various file formats for uploading materials.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,50,1,0,0,No
+Provide options for taking exams and assignments.,"Differentiate between student, teacher, and administrator profiles.",0.078,0,0,0.077,1.358,50,0.857,0,0.946,No
+Allow teachers to create assignments and assessments.,"Differentiate between student, teacher, and administrator profiles.",0.078,0,0,0.077,1.358,52,0.857,0,0.946,No
+Provide a submission and grading system for assignments.,"Differentiate between student, teacher, and administrator profiles.",0.078,0,0,0.071,1.358,52,0.867,0,1.033,No
+Generate automatic feedback for assessments.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,50,1,0,0,No
+Include a messaging system between students and teachers.,"Differentiate between student, teacher, and administrator profiles.",0.168,0,0,0.154,1.29,49,0.733,0,2.067,No
+Support discussion forums will be there.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,54,1,0,0,No
+A tracking system for student progress.,"Differentiate between student, teacher, and administrator profiles.",0.093,0.2,0,0,1.346,49,1,0,0,Yes
+Provide dashboards to monitor performance.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,51,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.","Differentiate between student, teacher, and administrator profiles.",0.068,0,0,0.067,1.365,64,0.874,0,1.128,No
+Generate automatic feedback for exams.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,49,1,0,0,No
+Chatting system should be available.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,51,1,0,0,No
+A forum will be there for discussion.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,49,1,0,0,No
+Automated progress tracking should be available.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,52,1,0,0,No
+Dashboard should contain link to monitor performances.,"Differentiate between student, teacher, and administrator profiles.",0,0,0,0,1.414,50,1,0,0,No
+"Provide options for adding course materials, assignments, and assessments.","Enable teachers to create, edit, and delete courses.",0.063,0,0,0.062,1.369,53,0.882,0,1.239,No
+"Support various file formats for uploading learning materials (documents, presentations, videos).","Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,74,1,0,0,No
+Implement a user-friendly interface for easy navigation through learning materials.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,63,1,0,0,No
+"Admin will create, edit, and delete courses.","Enable teachers to create, edit, and delete courses.",0.506,1,0,0.5,0.994,17,0.333,0.375,5.308,Yes
+Support various file formats for uploading materials.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,44,1,0,0,No
+Provide options for taking exams and assignments.,"Enable teachers to create, edit, and delete courses.",0.072,0,0,0.071,1.362,39,0.867,0,1.062,No
+Allow teachers to create assignments and assessments.,"Enable teachers to create, edit, and delete courses.",0.368,1,0,0.25,1.124,28,0.6,0.1,3.185,No
+Provide a submission and grading system for assignments.,"Enable teachers to create, edit, and delete courses.",0.072,0,0,0.067,1.362,46,0.875,0,1.147,No
+Generate automatic feedback for assessments.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,40,1,0,0,No
+Include a messaging system between students and teachers.,"Enable teachers to create, edit, and delete courses.",0.156,0.333,0,0.067,1.299,40,0.875,0,1.147,No
+Support discussion forums will be there.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,41,1,0,0,No
+A tracking system for student progress.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,36,1,0,0,No
+Provide dashboards to monitor performance.,"Enable teachers to create, edit, and delete courses.",0.087,0,0,0.083,1.351,39,0.844,0,0.913,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.","Enable teachers to create, edit, and delete courses.",0.063,0,0,0.062,1.369,59,0.882,0,1.239,No
+Generate automatic feedback for exams.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,39,1,0,0,No
+Chatting system should be available.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,41,1,0,0,No
+A forum will be there for discussion.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,41,1,0,0,No
+Automated progress tracking should be available.,"Enable teachers to create, edit, and delete courses.",0,0,0,0,1.414,42,1,0,0,No
+Dashboard should contain link to monitor performances.,"Enable teachers to create, edit, and delete courses.",0.072,0,0,0.071,1.362,45,0.867,0,1.062,No
+"Support various file formats for uploading learning materials (documents, presentations, videos).","Provide options for adding course materials, assignments, and assessments.",0.113,0.143,0,0.053,1.332,60,0.9,0,1.512,No
+Implement a user-friendly interface for easy navigation through learning materials.,"Provide options for adding course materials, assignments, and assessments.",0.119,0.167,0,0.056,1.327,66,0.895,0,1.412,No
+"Admin will create, edit, and delete courses.","Provide options for adding course materials, assignments, and assessments.",0.068,0,0,0.067,1.365,52,0.874,0,1.15,No
+Support various file formats for uploading materials.,"Provide options for adding course materials, assignments, and assessments.",0.146,0.167,0,0.067,1.307,54,0.874,0,1.15,No
+Provide options for taking exams and assignments.,"Provide options for adding course materials, assignments, and assessments.",0.465,0.5,0,0.333,1.034,32,0.498,0.091,4.601,Yes
+Allow teachers to create assignments and assessments.,"Provide options for adding course materials, assignments, and assessments.",0.236,0.333,0,0.143,1.236,34,0.749,0.091,2.3,Yes
+Provide a submission and grading system for assignments.,"Provide options for adding course materials, assignments, and assessments.",0.341,0.167,0,0.214,1.148,44,0.647,0,3.693,No
+Generate automatic feedback for assessments.,"Provide options for adding course materials, assignments, and assessments.",0.179,0.167,0,0.167,1.282,49,0.707,0,2.015,No
+Include a messaging system between students and teachers.,"Provide options for adding course materials, assignments, and assessments.",0.068,0,0,0.062,1.365,47,0.882,0,1.231,No
+Support discussion forums will be there.,"Provide options for adding course materials, assignments, and assessments.",0,0,0,0,1.414,57,1,0,0,No
+A tracking system for student progress.,"Provide options for adding course materials, assignments, and assessments.",0.082,0,0,0.071,1.355,53,0.865,0,1.076,No
+Provide dashboards to monitor performance.,"Provide options for adding course materials, assignments, and assessments.",0.082,0,0,0.077,1.355,51,0.854,0,1.008,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.","Provide options for adding course materials, assignments, and assessments.",0.288,0.333,0,0.2,1.193,44,0.667,0,3.955,No
+Generate automatic feedback for exams.,"Provide options for adding course materials, assignments, and assessments.",0.082,0,0,0.077,1.355,57,0.854,0,1.008,No
+Chatting system should be available.,"Provide options for adding course materials, assignments, and assessments.",0,0,0,0,1.414,59,1,0,0,No
+A forum will be there for discussion.,"Provide options for adding course materials, assignments, and assessments.",0.074,0,0,0.067,1.361,56,0.874,0,1.15,No
+Automated progress tracking should be available.,"Provide options for adding course materials, assignments, and assessments.",0,0,0,0,1.414,57,1,0,0,No
+Dashboard should contain link to monitor performances.,"Provide options for adding course materials, assignments, and assessments.",0,0,0,0,1.414,59,1,0,0,No
+Implement a user-friendly interface for easy navigation through learning materials.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.169,0.333,0,0.105,1.289,74,0.809,0,3.029,No
+"Admin will create, edit, and delete courses.","Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,73,1,0,0,No
+Support various file formats for uploading materials.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.685,0.571,0,0.5,0.793,44,0.324,0.4,7.702,Yes
+Provide options for taking exams and assignments.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.061,0,0,0.059,1.37,70,0.887,0,1.284,No
+Allow teachers to create assignments and assessments.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,73,1,0,0,No
+Provide a submission and grading system for assignments.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.061,0,0,0.056,1.37,71,0.894,0,1.355,No
+Generate automatic feedback for assessments.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.074,0,0,0.067,1.361,76,0.87,0,1.158,No
+Include a messaging system between students and teachers.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,73,1,0,0,No
+Support discussion forums will be there.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.067,0.143,0,0.062,1.366,71,0.879,0,1.217,No
+A tracking system for student progress.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.074,0,0,0.062,1.361,76,0.879,0,1.217,No
+Provide dashboards to monitor performance.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,76,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.","Support various file formats for uploading learning materials (documents, presentations, videos).",0.054,0,0,0.053,1.376,63,0.9,0,1.433,No
+Generate automatic feedback for exams.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.074,0,0,0.067,1.361,78,0.87,0,1.158,No
+Chatting system should be available.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,79,1,0,0,No
+A forum will be there for discussion.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0.067,0,0,0.059,1.366,75,0.887,0,1.284,No
+Automated progress tracking should be available.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,73,1,0,0,No
+Dashboard should contain link to monitor performances.,"Support various file formats for uploading learning materials (documents, presentations, videos).",0,0,0,0,1.414,71,1,0,0,No
+"Admin will create, edit, and delete courses.",Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,63,1,0,0,No
+Support various file formats for uploading materials.,Implement a user-friendly interface for easy navigation through learning materials.,0.138,0.25,0,0.133,1.313,50,0.763,0,2.445,No
+Provide options for taking exams and assignments.,Implement a user-friendly interface for easy navigation through learning materials.,0.064,0,0,0.062,1.368,61,0.881,0,1.222,No
+Allow teachers to create assignments and assessments.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,61,1,0,0,No
+Provide a submission and grading system for assignments.,Implement a user-friendly interface for easy navigation through learning materials.,0.064,0,0,0.125,1.368,60,0.777,0,2.597,No
+Generate automatic feedback for assessments.,Implement a user-friendly interface for easy navigation through learning materials.,0.077,0,0,0.071,1.358,62,0.862,0,1.088,No
+Include a messaging system between students and teachers.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0.059,1.414,60,0.889,0,1.299,No
+Support discussion forums will be there.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,63,1,0,0,No
+A tracking system for student progress.,Implement a user-friendly interface for easy navigation through learning materials.,0.077,0,0,0.067,1.358,62,0.873,0,1.152,No
+Provide dashboards to monitor performance.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,63,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Implement a user-friendly interface for easy navigation through learning materials.,0.056,0,0,0.056,1.374,71,0.895,0,1.381,No
+Generate automatic feedback for exams.,Implement a user-friendly interface for easy navigation through learning materials.,0.077,0,0,0.071,1.358,64,0.862,0,1.088,No
+Chatting system should be available.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,66,1,0,0,No
+A forum will be there for discussion.,Implement a user-friendly interface for easy navigation through learning materials.,0.07,0,0,0.062,1.364,67,0.881,0,1.222,No
+Automated progress tracking should be available.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,60,1,0,0,No
+Dashboard should contain link to monitor performances.,Implement a user-friendly interface for easy navigation through learning materials.,0,0,0,0,1.414,64,1,0,0,No
+Support various file formats for uploading materials.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,43,1,0,0,No
+Provide options for taking exams and assignments.,"Admin will create, edit, and delete courses.",0.078,0,0,0.077,1.358,37,0.857,0,0.946,No
+Allow teachers to create assignments and assessments.,"Admin will create, edit, and delete courses.",0.168,1,0,0.077,1.29,37,0.857,0,0.946,No
+Provide a submission and grading system for assignments.,"Admin will create, edit, and delete courses.",0.078,0,0,0.071,1.358,43,0.867,0,1.033,No
+Generate automatic feedback for assessments.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,37,1,0,0,No
+Include a messaging system between students and teachers.,"Admin will create, edit, and delete courses.",0.078,0,0,0.071,1.358,42,0.867,0,1.033,No
+Support discussion forums will be there.,"Admin will create, edit, and delete courses.",0.085,0,0,0.083,1.353,36,0.846,0,0.867,No
+A tracking system for student progress.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,30,1,0,0,No
+Provide dashboards to monitor performance.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,38,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.","Admin will create, edit, and delete courses.",0.068,0,0,0.067,1.365,62,0.874,0,1.128,No
+Generate automatic feedback for exams.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,34,1,0,0,No
+Chatting system should be available.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,34,1,0,0,No
+A forum will be there for discussion.,"Admin will create, edit, and delete courses.",0.085,0,0,0.077,1.353,30,0.857,0,0.946,No
+Automated progress tracking should be available.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,39,1,0,0,No
+Dashboard should contain link to monitor performances.,"Admin will create, edit, and delete courses.",0,0,0,0,1.414,42,1,0,0,No
+Provide options for taking exams and assignments.,Support various file formats for uploading materials.,0.078,0,0,0.077,1.358,40,0.857,0,0.946,No
+Allow teachers to create assignments and assessments.,Support various file formats for uploading materials.,0,0,0,0,1.414,43,1,0,0,No
+Provide a submission and grading system for assignments.,Support various file formats for uploading materials.,0.078,0,0,0.071,1.358,46,0.867,0,1.033,No
+Generate automatic feedback for assessments.,Support various file formats for uploading materials.,0.093,0,0,0.091,1.346,37,0.832,0,0.794,No
+Include a messaging system between students and teachers.,Support various file formats for uploading materials.,0,0,0,0,1.414,46,1,0,0,No
+Support discussion forums will be there.,Support various file formats for uploading materials.,0.085,0.25,0,0.083,1.353,31,0.846,0,0.867,Yes
+A tracking system for student progress.,Support various file formats for uploading materials.,0.093,0,0,0.083,1.346,38,0.846,0,0.867,No
+Provide dashboards to monitor performance.,Support various file formats for uploading materials.,0,0,0,0,1.414,41,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Support various file formats for uploading materials.,0.068,0,0,0.067,1.365,63,0.874,0,1.128,No
+Generate automatic feedback for exams.,Support various file formats for uploading materials.,0.093,0,0,0.091,1.346,38,0.832,0,0.794,No
+Chatting system should be available.,Support various file formats for uploading materials.,0,0,0,0,1.414,40,1,0,0,No
+A forum will be there for discussion.,Support various file formats for uploading materials.,0.085,0,0,0.077,1.353,38,0.857,0,0.946,No
+Automated progress tracking should be available.,Support various file formats for uploading materials.,0,0,0,0,1.414,41,1,0,0,No
+Dashboard should contain link to monitor performances.,Support various file formats for uploading materials.,0,0,0,0,1.414,43,1,0,0,No
+Allow teachers to create assignments and assessments.,Provide options for taking exams and assignments.,0.168,0.25,0,0.077,1.29,31,0.857,0,0.946,Yes
+Provide a submission and grading system for assignments.,Provide options for taking exams and assignments.,0.403,0.25,0,0.364,1.093,25,0.466,0,4.133,Yes
+Generate automatic feedback for assessments.,Provide options for taking exams and assignments.,0.093,0,0,0.091,1.346,33,0.832,0,0.794,No
+Include a messaging system between students and teachers.,Provide options for taking exams and assignments.,0.078,0,0,0.071,1.358,43,0.867,0,1.033,No
+Support discussion forums will be there.,Provide options for taking exams and assignments.,0,0,0,0,1.414,39,1,0,0,No
+A tracking system for student progress.,Provide options for taking exams and assignments.,0.093,0,0,0.083,1.346,37,0.846,0,0.867,No
+Provide dashboards to monitor performance.,Provide options for taking exams and assignments.,0.093,0,0,0.091,1.346,33,0.832,0,0.794,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Provide options for taking exams and assignments.,0.236,0.2,0,0.143,1.236,48,0.749,0,2.257,No
+Generate automatic feedback for exams.,Provide options for taking exams and assignments.,0.206,0.25,0,0.091,1.26,39,0.832,0,0.794,Yes
+Chatting system should be available.,Provide options for taking exams and assignments.,0,0,0,0,1.414,39,1,0,0,No
+A forum will be there for discussion.,Provide options for taking exams and assignments.,0.085,0,0,0.077,1.353,37,0.857,0,0.946,No
+Automated progress tracking should be available.,Provide options for taking exams and assignments.,0,0,0,0,1.414,36,1,0,0,No
+Dashboard should contain link to monitor performances.,Provide options for taking exams and assignments.,0,0,0,0,1.414,41,1,0,0,No
+Provide a submission and grading system for assignments.,Allow teachers to create assignments and assessments.,0.168,0.25,0,0.071,1.29,38,0.867,0,1.033,Yes
+Generate automatic feedback for assessments.,Allow teachers to create assignments and assessments.,0.093,0.333,0,0.091,1.346,33,0.832,0,0.794,No
+Include a messaging system between students and teachers.,Allow teachers to create assignments and assessments.,0.168,0.333,0,0.071,1.29,39,0.867,0,1.033,No
+Support discussion forums will be there.,Allow teachers to create assignments and assessments.,0,0,0,0,1.414,43,1,0,0,No
+A tracking system for student progress.,Allow teachers to create assignments and assessments.,0,0,0,0,1.414,37,1,0,0,No
+Provide dashboards to monitor performance.,Allow teachers to create assignments and assessments.,0.093,0,0,0.091,1.346,41,0.832,0,0.794,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Allow teachers to create assignments and assessments.,0.236,0.4,0,0.067,1.236,51,0.874,0,1.128,No
+Generate automatic feedback for exams.,Allow teachers to create assignments and assessments.,0,0,0,0,1.414,39,1,0,0,No
+Chatting system should be available.,Allow teachers to create assignments and assessments.,0,0,0,0,1.414,42,1,0,0,No
+A forum will be there for discussion.,Allow teachers to create assignments and assessments.,0,0,0,0,1.414,39,1,0,0,No
+Automated progress tracking should be available.,Allow teachers to create assignments and assessments.,0,0,0,0,1.414,41,1,0,0,No
+Dashboard should contain link to monitor performances.,Allow teachers to create assignments and assessments.,0.078,0,0,0.077,1.358,45,0.857,0,0.946,No
+Generate automatic feedback for assessments.,Provide a submission and grading system for assignments.,0.093,0,0,0.083,1.346,36,0.844,0,0.913,No
+Include a messaging system between students and teachers.,Provide a submission and grading system for assignments.,0.168,0.25,0,0.231,1.29,43,0.625,0,3.44,No
+Support discussion forums will be there.,Provide a submission and grading system for assignments.,0,0,0,0,1.414,42,1,0,0,No
+A tracking system for student progress.,Provide a submission and grading system for assignments.,0.206,0.25,0,0.167,1.26,41,0.713,0,1.967,Yes
+Provide dashboards to monitor performance.,Provide a submission and grading system for assignments.,0.093,0.5,0,0.083,1.346,34,0.844,0,0.913,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Provide a submission and grading system for assignments.,0.236,0.2,0,0.133,1.236,56,0.764,0,2.477,No
+Generate automatic feedback for exams.,Provide a submission and grading system for assignments.,0.093,0,0,0.083,1.346,42,0.844,0,0.913,No
+Chatting system should be available.,Provide a submission and grading system for assignments.,0.093,0.25,0,0.083,1.346,44,0.844,0,0.913,No
+A forum will be there for discussion.,Provide a submission and grading system for assignments.,0.085,0,0,0.071,1.353,42,0.867,0,1.062,No
+Automated progress tracking should be available.,Provide a submission and grading system for assignments.,0,0,0,0,1.414,41,1,0,0,No
+Dashboard should contain link to monitor performances.,Provide a submission and grading system for assignments.,0,0,0,0,1.414,41,1,0,0,No
+Include a messaging system between students and teachers.,Generate automatic feedback for assessments.,0,0,0,0,1.414,43,1,0,0,No
+Support discussion forums will be there.,Generate automatic feedback for assessments.,0,0,0,0,1.414,36,1,0,0,No
+A tracking system for student progress.,Generate automatic feedback for assessments.,0.112,0,0,0.1,1.332,35,0.818,0,0.457,No
+Provide dashboards to monitor performance.,Generate automatic feedback for assessments.,0,0,0,0,1.414,34,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Generate automatic feedback for assessments.,0.179,0.2,0,0.077,1.282,58,0.854,0,0.661,No
+Generate automatic feedback for exams.,Generate automatic feedback for assessments.,0.669,1,0,0.667,0.813,8,0.2,0.5,1.615,Yes
+Chatting system should be available.,Generate automatic feedback for assessments.,0,0,0,0,1.414,36,1,0,0,No
+A forum will be there for discussion.,Generate automatic feedback for assessments.,0.102,0,0,0.091,1.34,30,0.832,0,0.517,No
+Automated progress tracking should be available.,Generate automatic feedback for assessments.,0,0,0,0,1.414,39,1,0,0,No
+Dashboard should contain link to monitor performances.,Generate automatic feedback for assessments.,0,0,0,0,1.414,41,1,0,0,No
+Support discussion forums will be there.,Include a messaging system between students and teachers.,0,0,0,0,1.414,43,1,0,0,No
+A tracking system for student progress.,Include a messaging system between students and teachers.,0.093,0.25,0,0.077,1.346,33,0.856,0,0.984,Yes
+Provide dashboards to monitor performance.,Include a messaging system between students and teachers.,0,0,0,0,1.414,44,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Include a messaging system between students and teachers.,0.068,0,0,0.062,1.365,57,0.882,0,1.239,No
+Generate automatic feedback for exams.,Include a messaging system between students and teachers.,0,0,0,0,1.414,43,1,0,0,No
+Chatting system should be available.,Include a messaging system between students and teachers.,0.093,0.333,0,0.083,1.346,38,0.844,0,0.913,Yes
+A forum will be there for discussion.,Include a messaging system between students and teachers.,0,0,0,0,1.414,46,1,0,0,No
+Automated progress tracking should be available.,Include a messaging system between students and teachers.,0,0,0,0,1.414,44,1,0,0,No
+Dashboard should contain link to monitor performances.,Include a messaging system between students and teachers.,0,0,0,0,1.414,48,1,0,0,No
+A tracking system for student progress.,Support discussion forums will be there.,0,0,0,0,1.414,30,1,0,0,No
+Provide dashboards to monitor performance.,Support discussion forums will be there.,0,0,0,0,1.414,33,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Support discussion forums will be there.,0,0,0,0,1.414,63,1,0,0,No
+Generate automatic feedback for exams.,Support discussion forums will be there.,0,0,0,0,1.414,34,1,0,0,No
+Chatting system should be available.,Support discussion forums will be there.,0.102,0.5,0,0.1,1.34,32,0.818,0,0.637,No
+A forum will be there for discussion.,Support discussion forums will be there.,0.503,1,0,0.182,0.997,33,0.692,0.125,1.563,Yes
+Automated progress tracking should be available.,Support discussion forums will be there.,0.092,1,0,0.091,1.348,35,0.833,0,0.705,No
+Dashboard should contain link to monitor performances.,Support discussion forums will be there.,0,0,0,0,1.414,42,1,0,0,No
+Provide dashboards to monitor performance.,A tracking system for student progress.,0,0,0,0,1.414,33,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",A tracking system for student progress.,0.082,0,0,0.071,1.355,63,0.865,0,0.96,No
+Generate automatic feedback for exams.,A tracking system for student progress.,0.112,0,0,0.1,1.332,31,0.818,0,0.637,No
+Chatting system should be available.,A tracking system for student progress.,0.112,0.25,0,0.1,1.332,25,0.818,0,0.637,Yes
+A forum will be there for discussion.,A tracking system for student progress.,0.102,0,0,0.182,1.34,29,0.692,0,1.563,No
+Automated progress tracking should be available.,A tracking system for student progress.,0.226,0.5,0,0.091,1.244,36,0.833,0,0.705,Yes
+Dashboard should contain link to monitor performances.,A tracking system for student progress.,0,0,0,0,1.414,41,1,0,0,No
+"Send timely notifications for upcoming assignments, assessments, and announcements.",Provide dashboards to monitor performance.,0,0,0,0,1.414,64,1,0,0,No
+Generate automatic feedback for exams.,Provide dashboards to monitor performance.,0,0,0,0,1.414,34,1,0,0,No
+Chatting system should be available.,Provide dashboards to monitor performance.,0,0,0,0,1.414,34,1,0,0,No
+A forum will be there for discussion.,Provide dashboards to monitor performance.,0,0,0,0,1.414,35,1,0,0,No
+Automated progress tracking should be available.,Provide dashboards to monitor performance.,0,0,0,0,1.414,35,1,0,0,No
+Dashboard should contain link to monitor performances.,Provide dashboards to monitor performance.,0.206,0.5,0,0.2,1.26,25,0.664,0,1.033,Yes
+Generate automatic feedback for exams.,"Send timely notifications for upcoming assignments, assessments, and announcements.",0.082,0,0,0.077,1.355,63,0.854,0,1.008,No
+Chatting system should be available.,"Send timely notifications for upcoming assignments, assessments, and announcements.",0,0,0,0,1.414,68,1,0,0,No
+A forum will be there for discussion.,"Send timely notifications for upcoming assignments, assessments, and announcements.",0.074,0,0,0.067,1.361,67,0.874,0,1.15,No
+Automated progress tracking should be available.,"Send timely notifications for upcoming assignments, assessments, and announcements.",0,0,0,0,1.414,65,1,0,0,No
+Dashboard should contain link to monitor performances.,"Send timely notifications for upcoming assignments, assessments, and announcements.",0,0,0,0,1.414,64,1,0,0,No
+Chatting system should be available.,Generate automatic feedback for exams.,0,0,0,0,1.414,33,1,0,0,No
+A forum will be there for discussion.,Generate automatic feedback for exams.,0.102,0,0,0.091,1.34,31,0.832,0,0.517,No
+Automated progress tracking should be available.,Generate automatic feedback for exams.,0,0,0,0,1.414,37,1,0,0,No
+Dashboard should contain link to monitor performances.,Generate automatic feedback for exams.,0,0,0,0,1.414,41,1,0,0,No
+A forum will be there for discussion.,Chatting system should be available.,0.102,0.5,0,0.091,1.34,33,0.832,0,0.517,No
+Automated progress tracking should be available.,Chatting system should be available.,0.381,1,0,0.375,1.113,22,0.453,0.167,1.37,No
+Dashboard should contain link to monitor performances.,Chatting system should be available.,0.093,0,0,0.091,1.346,44,0.832,0,0.517,No
+Automated progress tracking should be available.,A forum will be there for discussion.,0.092,1,0,0.083,1.348,38,0.846,0,0.867,No
+Dashboard should contain link to monitor performances.,A forum will be there for discussion.,0,0,0,0,1.414,42,1,0,0,No
+Dashboard should contain link to monitor performances.,Automated progress tracking should be available.,0.085,0,0,0.083,1.353,42,0.846,0,0.782,No

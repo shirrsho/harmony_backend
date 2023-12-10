@@ -1,0 +1,301 @@
+req2_content,req1_content,cos,pos_overlap_ratio,opposite_overlap_count,jaccard,euclidean,levenshtein,jensen_shannon,ngram,bm25,decision
+The registration process should include basic user information and account validation.,Users should be able to create accounts to track their progress and achievements.,0.085,0.0,0,0.095,1.352,67,0.833,0.0,3.332,No
+"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",Users should be able to create accounts to track their progress and achievements.,0.258,1.0,0,0.208,1.218,61,0.642,0.13,11.069,No
+Each puzzle type should have multiple difficulty levels.,Users should be able to create accounts to track their progress and achievements.,0.049,0.0,0,0.053,1.379,62,0.903,0.0,1.449,No
+Provide an intuitive and interactive interface for solving puzzles.,Users should be able to create accounts to track their progress and achievements.,0.046,0.0,0,0.05,1.382,61,0.908,0.0,1.517,No
+Implement a timer for time-based challenges.,Users should be able to create accounts to track their progress and achievements.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+Allow users to save progress and resume puzzles later.,Users should be able to create accounts to track their progress and achievements.,0.281,0.2,0,0.167,1.199,59,0.686,0.0,4.551,Yes
+Include hints and solution options for users who need assistance.,Users should be able to create accounts to track their progress and achievements.,0.09,0.0,0,0.048,1.349,60,0.913,0.0,1.589,No
+User will track their progress.,Users should be able to create accounts to track their progress and achievements.,0.22,0.333,0,0.133,1.249,52,0.764,0.077,2.553,Yes
+User profile should contain user information.,Users should be able to create accounts to track their progress and achievements.,0.049,0.0,0,0.059,1.379,57,0.89,0.0,1.328,No
+"Only two puzzles will be the options, crosswords and sudoku.",Users should be able to create accounts to track their progress and achievements.,0.09,0.333,0,0.1,1.349,61,0.825,0.0,3.179,No
+Puzzle will have five different difficulty levels.,Users should be able to create accounts to track their progress and achievements.,0.0,0.0,0,0.0,1.414,64,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,Users should be able to create accounts to track their progress and achievements.,0.09,0.333,0,0.111,1.349,57,0.806,0.0,2.899,No
+Users can save their progress.,Users should be able to create accounts to track their progress and achievements.,0.22,0.5,0,0.133,1.249,54,0.764,0.0,2.553,Yes
+Implement a scoring system based on completion time and difficulty level.,Users should be able to create accounts to track their progress and achievements.,0.043,0.0,0,0.045,1.383,67,0.917,0.0,1.666,No
+Include achievements for completing specific challenges or reaching milestones.,Users should be able to create accounts to track their progress and achievements.,0.046,0.25,0,0.0,1.382,64,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Users should be able to create accounts to track their progress and achievements.,0.0,0.0,0,0.0,1.414,65,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,Users should be able to create accounts to track their progress and achievements.,0.049,0.0,0,0.053,1.379,59,0.903,0.0,1.449,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Users should be able to create accounts to track their progress and achievements.,0.119,0.0,0,0.04,1.327,80,0.898,0.0,1.92,No
+Implement a chat or messaging feature for multiplayer interactions.,Users should be able to create accounts to track their progress and achievements.,0.0,0.0,0,0.0,1.414,63,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,Users should be able to create accounts to track their progress and achievements.,0.229,0.25,0,0.176,1.242,44,0.668,0.0,4.348,No
+Allow users to compare their performance with friends or the global community.,Users should be able to create accounts to track their progress and achievements.,0.18,0.0,0,0.091,1.281,64,0.809,0.0,3.493,No
+A scoring system should be available.,Users should be able to create accounts to track their progress and achievements.,0.135,0.333,0,0.125,1.315,64,0.781,0.0,2.656,No
+"The game should be responsive for mobiles, desktops and tablets.",Users should be able to create accounts to track their progress and achievements.,0.142,0.333,0,0.158,1.31,52,0.738,0.0,4.768,No
+There should not be any leaderboard.,Users should be able to create accounts to track their progress and achievements.,0.121,0.333,0,0.125,1.326,57,0.781,0.0,2.656,No
+"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",The registration process should include basic user information and account validation.,0.041,0.0,0,0.037,1.385,85,0.928,0.0,2.241,No
+Each puzzle type should have multiple difficulty levels.,The registration process should include basic user information and account validation.,0.057,0.0,0,0.056,1.373,64,0.894,0.0,1.355,No
+Provide an intuitive and interactive interface for solving puzzles.,The registration process should include basic user information and account validation.,0.054,0.0,0,0.053,1.376,63,0.9,0.0,1.433,No
+Implement a timer for time-based challenges.,The registration process should include basic user information and account validation.,0.0,0.0,0,0.0,1.414,67,1.0,0.0,0.0,No
+Allow users to save progress and resume puzzles later.,The registration process should include basic user information and account validation.,0.054,0.0,0,0.053,1.376,67,0.9,0.0,1.433,No
+Include hints and solution options for users who need assistance.,The registration process should include basic user information and account validation.,0.107,0.0,0,0.05,1.337,67,0.905,0.0,1.515,No
+User will track their progress.,The registration process should include basic user information and account validation.,0.074,0.0,0,0.0,1.361,71,1.0,0.0,0.0,No
+User profile should contain user information.,The registration process should include basic user information and account validation.,0.292,0.5,0,0.133,1.19,51,0.759,0.0,2.435,Yes
+"Only two puzzles will be the options, crosswords and sudoku.",The registration process should include basic user information and account validation.,0.107,0.0,0,0.05,1.337,64,0.905,0.0,1.515,No
+Puzzle will have five different difficulty levels.,The registration process should include basic user information and account validation.,0.0,0.0,0,0.0,1.414,67,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,The registration process should include basic user information and account validation.,0.051,0.0,0,0.056,1.378,57,0.894,0.0,1.355,No
+Users can save their progress.,The registration process should include basic user information and account validation.,0.0,0.0,0,0.0,1.414,70,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,The registration process should include basic user information and account validation.,0.051,0.0,0,0.048,1.378,64,0.909,0.0,1.602,No
+Include achievements for completing specific challenges or reaching milestones.,The registration process should include basic user information and account validation.,0.054,0.0,0,0.0,1.376,67,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,The registration process should include basic user information and account validation.,0.048,0.0,0,0.0,1.38,62,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,The registration process should include basic user information and account validation.,0.057,0.0,0,0.056,1.373,62,0.894,0.0,1.355,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,The registration process should include basic user information and account validation.,0.042,0.0,0,0.0,1.384,82,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,The registration process should include basic user information and account validation.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,The registration process should include basic user information and account validation.,0.057,0.0,0,0.056,1.373,63,0.894,0.0,1.355,No
+Allow users to compare their performance with friends or the global community.,The registration process should include basic user information and account validation.,0.046,0.0,0,0.0,1.381,69,1.0,0.0,0.0,No
+A scoring system should be available.,The registration process should include basic user information and account validation.,0.074,0.0,0,0.062,1.361,64,0.879,0.0,1.217,No
+"The game should be responsive for mobiles, desktops and tablets.",The registration process should include basic user information and account validation.,0.169,0.0,0,0.167,1.289,59,0.714,0.0,4.544,No
+There should not be any leaderboard.,The registration process should include basic user information and account validation.,0.067,0.0,0,0.062,1.366,61,0.879,0.0,1.217,No
+Each puzzle type should have multiple difficulty levels.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.102,0.111,0,0.087,1.34,80,0.834,0.0,3.192,No
+Provide an intuitive and interactive interface for solving puzzles.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.046,0.111,0,0.0,1.382,75,1.0,0.0,0.0,No
+Implement a timer for time-based challenges.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.0,0.0,0,0.045,1.414,85,0.907,0.0,1.503,No
+Allow users to save progress and resume puzzles later.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.151,0.111,0,0.04,1.303,80,0.921,0.0,1.649,No
+Include hints and solution options for users who need assistance.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.043,0.0,0,0.0,1.383,81,1.0,0.0,0.0,No
+User will track their progress.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.0,0.0,0,0.0,1.414,84,1.0,0.0,0.0,No
+User profile should contain user information.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.049,0.0,0,0.045,1.379,81,0.907,0.0,1.503,No
+"Only two puzzles will be the options, crosswords and sudoku.","Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.198,0.5,0,0.038,1.266,73,0.924,0.0,1.705,No
+Puzzle will have five different difficulty levels.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.052,0.0,0,0.0,1.377,84,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.09,0.333,0,0.087,1.349,83,0.834,0.0,3.192,No
+Users can save their progress.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.063,0.111,0,0.048,1.369,83,0.9,0.0,1.465,No
+Implement a scoring system based on completion time and difficulty level.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.0,0.0,0,0.037,1.414,83,0.928,0.0,1.766,No
+Include achievements for completing specific challenges or reaching milestones.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.0,0.0,0,0.0,1.414,82,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.041,0.111,0,0.077,1.385,81,0.855,0.0,3.531,No
+Ensure responsiveness for both desktop and mobile devices.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.0,0.0,0,0.0,1.414,82,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.117,0.111,0,0.033,1.329,86,0.935,0.0,1.964,No
+Implement a chat or messaging feature for multiplayer interactions.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.0,0.0,0,0.04,1.414,83,0.921,0.0,1.649,No
+Display leaderboards to showcase top scores and achievements.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.049,0.0,0,0.042,1.379,80,0.917,0.0,1.596,No
+Allow users to compare their performance with friends or the global community.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.082,0.0,0,0.036,1.355,80,0.93,0.0,1.829,No
+A scoring system should be available.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.135,0.5,0,0.095,1.315,86,0.813,0.0,3.006,No
+"The game should be responsive for mobiles, desktops and tablets.","Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.09,0.5,0,0.08,1.349,73,0.849,0.0,3.411,No
+There should not be any leaderboard.,"Users should be able to choose from a variety of puzzle types (e.g., crosswords, Sudoku, jigsaw puzzles).",0.121,0.5,0,0.095,1.326,81,0.813,0.0,3.006,No
+Provide an intuitive and interactive interface for solving puzzles.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,53,1.0,0.0,0.0,No
+Implement a timer for time-based challenges.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,43,1.0,0.0,0.0,No
+Allow users to save progress and resume puzzles later.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,45,1.0,0.0,0.0,No
+Include hints and solution options for users who need assistance.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,56,1.0,0.0,0.0,No
+User will track their progress.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,44,1.0,0.0,0.0,No
+User profile should contain user information.,Each puzzle type should have multiple difficulty levels.,0.067,0.0,0,0.077,1.366,40,0.856,0.0,0.984,No
+"Only two puzzles will be the options, crosswords and sudoku.",Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,49,1.0,0.0,0.0,No
+Puzzle will have five different difficulty levels.,Each puzzle type should have multiple difficulty levels.,0.368,1.0,0,0.25,1.124,26,0.6,0.0,3.185,Yes
+Time elapsed should be tracked for time challenges.,Each puzzle type should have multiple difficulty levels.,0.06,0.0,0,0.067,1.371,40,0.875,0.0,1.147,No
+Users can save their progress.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,43,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,Each puzzle type should have multiple difficulty levels.,0.06,0.143,0,0.056,1.371,44,0.894,0.0,1.445,No
+Include achievements for completing specific challenges or reaching milestones.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,62,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Each puzzle type should have multiple difficulty levels.,0.193,0.4,0,0.056,1.271,61,0.894,0.0,1.445,No
+Ensure responsiveness for both desktop and mobile devices.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,46,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Each puzzle type should have multiple difficulty levels.,0.05,0.0,0,0.0,1.378,83,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,51,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,50,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Each puzzle type should have multiple difficulty levels.,0.0,0.0,0,0.0,1.414,62,1.0,0.0,0.0,No
+A scoring system should be available.,Each puzzle type should have multiple difficulty levels.,0.087,0.0,0,0.077,1.351,40,0.856,0.0,0.984,No
+"The game should be responsive for mobiles, desktops and tablets.",Each puzzle type should have multiple difficulty levels.,0.06,0.0,0,0.059,1.371,49,0.889,0.0,1.338,No
+There should not be any leaderboard.,Each puzzle type should have multiple difficulty levels.,0.079,0.0,0,0.077,1.357,41,0.856,0.0,0.984,No
+Implement a timer for time-based challenges.,Provide an intuitive and interactive interface for solving puzzles.,0.074,0.0,0,0.071,1.361,49,0.865,0.0,1.076,No
+Allow users to save progress and resume puzzles later.,Provide an intuitive and interactive interface for solving puzzles.,0.126,0.2,0,0.059,1.322,53,0.889,0.0,1.318,No
+Include hints and solution options for users who need assistance.,Provide an intuitive and interactive interface for solving puzzles.,0.119,0.0,0,0.118,1.327,53,0.789,0.0,2.824,No
+User will track their progress.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,51,1.0,0.0,0.0,No
+User profile should contain user information.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,52,1.0,0.0,0.0,No
+"Only two puzzles will be the options, crosswords and sudoku.",Provide an intuitive and interactive interface for solving puzzles.,0.119,0.25,0,0.056,1.327,53,0.895,0.0,1.412,No
+Puzzle will have five different difficulty levels.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,48,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,Provide an intuitive and interactive interface for solving puzzles.,0.056,0.0,0,0.062,1.374,48,0.882,0.0,1.231,No
+Users can save their progress.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,51,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,Provide an intuitive and interactive interface for solving puzzles.,0.056,0.0,0,0.053,1.374,57,0.9,0.0,1.512,No
+Include achievements for completing specific challenges or reaching milestones.,Provide an intuitive and interactive interface for solving puzzles.,0.06,0.0,0,0.059,1.371,57,0.889,0.0,1.318,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Provide an intuitive and interactive interface for solving puzzles.,0.113,0.25,0,0.111,1.332,51,0.799,0.0,3.024,No
+Ensure responsiveness for both desktop and mobile devices.,Provide an intuitive and interactive interface for solving puzzles.,0.135,0.0,0,0.133,1.315,50,0.764,0.0,2.462,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Provide an intuitive and interactive interface for solving puzzles.,0.099,0.2,0,0.045,1.342,80,0.912,0.0,1.856,No
+Implement a chat or messaging feature for multiplayer interactions.,Provide an intuitive and interactive interface for solving puzzles.,0.063,0.0,0,0.059,1.369,55,0.889,0.0,1.318,No
+Display leaderboards to showcase top scores and achievements.,Provide an intuitive and interactive interface for solving puzzles.,0.063,0.0,0,0.062,1.369,55,0.882,0.0,1.231,No
+Allow users to compare their performance with friends or the global community.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,61,1.0,0.0,0.0,No
+A scoring system should be available.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,55,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Provide an intuitive and interactive interface for solving puzzles.,0.119,0.0,0,0.118,1.327,53,0.789,0.0,2.824,No
+There should not be any leaderboard.,Provide an intuitive and interactive interface for solving puzzles.,0.0,0.0,0,0.0,1.414,52,1.0,0.0,0.0,No
+Allow users to save progress and resume puzzles later.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,42,1.0,0.0,0.0,No
+Include hints and solution options for users who need assistance.,Implement a timer for time-based challenges.,0.07,0.0,0,0.067,1.364,45,0.873,0.0,1.063,No
+User will track their progress.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,33,1.0,0.0,0.0,No
+User profile should contain user information.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,39,1.0,0.0,0.0,No
+"Only two puzzles will be the options, crosswords and sudoku.",Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,49,1.0,0.0,0.0,No
+Puzzle will have five different difficulty levels.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,37,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,Implement a timer for time-based challenges.,0.359,0.333,0,0.167,1.132,29,0.713,0.0,1.732,Yes
+Users can save their progress.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,34,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,Implement a timer for time-based challenges.,0.245,0.143,0,0.133,1.229,46,0.759,0.0,2.356,No
+Include achievements for completing specific challenges or reaching milestones.,Implement a timer for time-based challenges.,0.16,0.25,0,0.071,1.296,52,0.865,0.0,0.96,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Implement a timer for time-based challenges.,0.067,0.0,0,0.133,1.366,60,0.759,0.0,2.356,No
+Ensure responsiveness for both desktop and mobile devices.,Implement a timer for time-based challenges.,0.079,0.0,0,0.077,1.357,41,0.856,0.0,0.866,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Implement a timer for time-based challenges.,0.059,0.0,0,0.053,1.372,82,0.895,0.0,1.612,No
+Implement a chat or messaging feature for multiplayer interactions.,Implement a timer for time-based challenges.,0.171,0.167,0,0.25,1.288,41,0.595,0.0,2.879,No
+Display leaderboards to showcase top scores and achievements.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,43,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,57,1.0,0.0,0.0,No
+A scoring system should be available.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,33,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Implement a timer for time-based challenges.,0.07,0.0,0,0.067,1.364,47,0.873,0.0,1.063,No
+There should not be any leaderboard.,Implement a timer for time-based challenges.,0.0,0.0,0,0.0,1.414,34,1.0,0.0,0.0,No
+Include hints and solution options for users who need assistance.,Allow users to save progress and resume puzzles later.,0.119,0.167,0,0.118,1.327,49,0.789,0.0,2.824,No
+User will track their progress.,Allow users to save progress and resume puzzles later.,0.082,0.2,0,0.0,1.355,41,1.0,0.0,0.0,No
+User profile should contain user information.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,42,1.0,0.0,0.0,No
+"Only two puzzles will be the options, crosswords and sudoku.",Allow users to save progress and resume puzzles later.,0.119,0.2,0,0.118,1.327,48,0.789,0.0,2.824,Yes
+Puzzle will have five different difficulty levels.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,42,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,41,1.0,0.0,0.0,No
+Users can save their progress.,Allow users to save progress and resume puzzles later.,0.295,1.0,0,0.077,1.187,37,0.854,0.0,1.008,Yes
+Implement a scoring system based on completion time and difficulty level.,Allow users to save progress and resume puzzles later.,0.056,0.0,0,0.053,1.374,54,0.9,0.0,1.512,No
+Include achievements for completing specific challenges or reaching milestones.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,54,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,Allow users to save progress and resume puzzles later.,0.063,0.0,0,0.062,1.369,45,0.882,0.0,1.231,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Allow users to save progress and resume puzzles later.,0.157,0.4,0,0.15,1.299,75,0.736,0.0,5.568,No
+Implement a chat or messaging feature for multiplayer interactions.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,49,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,Allow users to save progress and resume puzzles later.,0.135,0.0,0,0.133,1.315,44,0.764,0.0,2.462,No
+Allow users to compare their performance with friends or the global community.,Allow users to save progress and resume puzzles later.,0.171,0.4,0,0.167,1.288,48,0.713,0.062,4.857,No
+A scoring system should be available.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,40,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Allow users to save progress and resume puzzles later.,0.056,0.0,0,0.056,1.374,48,0.895,0.0,1.412,No
+There should not be any leaderboard.,Allow users to save progress and resume puzzles later.,0.0,0.0,0,0.0,1.414,41,1.0,0.0,0.0,No
+User will track their progress.,Include hints and solution options for users who need assistance.,0.0,0.0,0,0.0,1.414,52,1.0,0.0,0.0,No
+User profile should contain user information.,Include hints and solution options for users who need assistance.,0.0,0.0,0,0.0,1.414,47,1.0,0.0,0.0,No
+"Only two puzzles will be the options, crosswords and sudoku.",Include hints and solution options for users who need assistance.,0.112,0.167,0,0.053,1.332,46,0.9,0.0,1.469,No
+Puzzle will have five different difficulty levels.,Include hints and solution options for users who need assistance.,0.0,0.0,0,0.0,1.414,52,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,Include hints and solution options for users who need assistance.,0.053,0.0,0,0.059,1.376,48,0.889,0.0,1.299,No
+Users can save their progress.,Include hints and solution options for users who need assistance.,0.077,0.0,0,0.0,1.358,49,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,Include hints and solution options for users who need assistance.,0.053,0.0,0,0.05,1.376,56,0.905,0.0,1.562,No
+Include achievements for completing specific challenges or reaching milestones.,Include hints and solution options for users who need assistance.,0.119,0.167,0,0.118,1.327,48,0.789,0.0,2.762,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Include hints and solution options for users who need assistance.,0.051,0.0,0,0.05,1.378,61,0.905,0.0,1.562,No
+Ensure responsiveness for both desktop and mobile devices.,Include hints and solution options for users who need assistance.,0.127,0.0,0,0.125,1.321,49,0.777,0.0,2.597,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Include hints and solution options for users who need assistance.,0.147,0.333,0,0.143,1.306,71,0.748,0.0,5.637,No
+Implement a chat or messaging feature for multiplayer interactions.,Include hints and solution options for users who need assistance.,0.06,0.0,0,0.056,1.371,51,0.895,0.0,1.381,No
+Display leaderboards to showcase top scores and achievements.,Include hints and solution options for users who need assistance.,0.06,0.0,0,0.059,1.371,50,0.889,0.0,1.299,No
+Allow users to compare their performance with friends or the global community.,Include hints and solution options for users who need assistance.,0.048,0.167,0,0.048,1.38,62,0.909,0.0,1.661,No
+A scoring system should be available.,Include hints and solution options for users who need assistance.,0.0,0.0,0,0.0,1.414,48,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Include hints and solution options for users who need assistance.,0.112,0.0,0,0.111,1.332,51,0.8,0.0,2.937,No
+There should not be any leaderboard.,Include hints and solution options for users who need assistance.,0.0,0.0,0,0.0,1.414,49,1.0,0.0,0.0,No
+User profile should contain user information.,User will track their progress.,0.194,0.333,0,0.1,1.269,30,0.818,0.0,0.457,No
+"Only two puzzles will be the options, crosswords and sudoku.",User will track their progress.,0.077,0.0,0,0.071,1.358,44,0.862,0.0,0.748,No
+Puzzle will have five different difficulty levels.,User will track their progress.,0.093,0.0,0,0.091,1.346,36,0.832,0.0,0.517,No
+Time elapsed should be tracked for time challenges.,User will track their progress.,0.0,0.0,0,0.0,1.414,35,1.0,0.0,0.0,No
+Users can save their progress.,User will track their progress.,0.252,0.5,0,0.25,1.223,9,0.6,0.0,0.808,Yes
+Implement a scoring system based on completion time and difficulty level.,User will track their progress.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+Include achievements for completing specific challenges or reaching milestones.,User will track their progress.,0.0,0.0,0,0.0,1.414,63,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,User will track their progress.,0.074,0.0,0,0.0,1.361,57,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,User will track their progress.,0.0,0.0,0,0.0,1.414,45,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,User will track their progress.,0.0,0.0,0,0.0,1.414,90,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,User will track their progress.,0.0,0.0,0,0.0,1.414,52,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,User will track their progress.,0.0,0.0,0,0.0,1.414,47,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,User will track their progress.,0.07,0.0,0,0.062,1.364,59,0.876,0.0,0.963,No
+A scoring system should be available.,User will track their progress.,0.0,0.0,0,0.0,1.414,31,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",User will track their progress.,0.0,0.0,0,0.0,1.414,52,1.0,0.0,0.0,No
+There should not be any leaderboard.,User will track their progress.,0.0,0.0,0,0.0,1.414,27,1.0,0.0,0.0,No
+"Only two puzzles will be the options, crosswords and sudoku.",User profile should contain user information.,0.0,0.0,0,0.0,1.414,45,1.0,0.0,0.0,No
+Puzzle will have five different difficulty levels.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,41,1.0,0.0,0.0,No
+Time elapsed should be tracked for time challenges.,User profile should contain user information.,0.06,0.0,0,0.077,1.371,34,0.856,0.0,0.866,No
+Users can save their progress.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,32,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,54,1.0,0.0,0.0,No
+Include achievements for completing specific challenges or reaching milestones.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,User profile should contain user information.,0.127,0.0,0,0.0,1.321,58,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,44,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,83,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,47,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,48,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,User profile should contain user information.,0.0,0.0,0,0.0,1.414,58,1.0,0.0,0.0,No
+A scoring system should be available.,User profile should contain user information.,0.087,0.0,0,0.091,1.351,34,0.833,0.0,0.705,No
+"The game should be responsive for mobiles, desktops and tablets.",User profile should contain user information.,0.06,0.0,0,0.067,1.371,48,0.873,0.0,1.063,No
+There should not be any leaderboard.,User profile should contain user information.,0.079,0.0,0,0.091,1.357,29,0.833,0.0,0.705,No
+Puzzle will have five different difficulty levels.,"Only two puzzles will be the options, crosswords and sudoku.",0.064,0.0,0,0.062,1.368,45,0.881,0.0,1.222,No
+Time elapsed should be tracked for time challenges.,"Only two puzzles will be the options, crosswords and sudoku.",0.053,0.333,0,0.059,1.376,47,0.889,0.0,1.299,No
+Users can save their progress.,"Only two puzzles will be the options, crosswords and sudoku.",0.0,0.0,0,0.0,1.414,45,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,"Only two puzzles will be the options, crosswords and sudoku.",0.053,0.0,0,0.05,1.376,57,0.905,0.0,1.562,No
+Include achievements for completing specific challenges or reaching milestones.,"Only two puzzles will be the options, crosswords and sudoku.",0.0,0.0,0,0.0,1.414,61,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,"Only two puzzles will be the options, crosswords and sudoku.",0.0,0.0,0,0.0,1.414,61,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,"Only two puzzles will be the options, crosswords and sudoku.",0.06,0.0,0,0.059,1.371,50,0.889,0.0,1.299,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,"Only two puzzles will be the options, crosswords and sudoku.",0.045,0.2,0,0.043,1.382,82,0.916,0.0,1.879,No
+Implement a chat or messaging feature for multiplayer interactions.,"Only two puzzles will be the options, crosswords and sudoku.",0.0,0.0,0,0.0,1.414,55,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,"Only two puzzles will be the options, crosswords and sudoku.",0.06,0.0,0,0.059,1.371,49,0.889,0.0,1.299,No
+Allow users to compare their performance with friends or the global community.,"Only two puzzles will be the options, crosswords and sudoku.",0.048,0.0,0,0.048,1.38,60,0.909,0.0,1.661,No
+A scoring system should be available.,"Only two puzzles will be the options, crosswords and sudoku.",0.077,1.0,0,0.067,1.358,49,0.873,0.0,1.152,No
+"The game should be responsive for mobiles, desktops and tablets.","Only two puzzles will be the options, crosswords and sudoku.",0.178,1.0,0,0.111,1.282,47,0.8,0.0,2.937,No
+There should not be any leaderboard.,"Only two puzzles will be the options, crosswords and sudoku.",0.07,1.0,0,0.067,1.364,46,0.873,0.0,1.152,No
+Time elapsed should be tracked for time challenges.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,41,1.0,0.0,0.0,No
+Users can save their progress.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,37,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,Puzzle will have five different difficulty levels.,0.064,0.143,0,0.059,1.368,45,0.887,0.0,1.345,No
+Include achievements for completing specific challenges or reaching milestones.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,61,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Puzzle will have five different difficulty levels.,0.061,0.0,0,0.0,1.37,59,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,44,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,84,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,50,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,49,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+A scoring system should be available.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,40,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,48,1.0,0.0,0.0,No
+There should not be any leaderboard.,Puzzle will have five different difficulty levels.,0.0,0.0,0,0.0,1.414,42,1.0,0.0,0.0,No
+Users can save their progress.,Time elapsed should be tracked for time challenges.,0.0,0.0,0,0.0,1.414,39,1.0,0.0,0.0,No
+Implement a scoring system based on completion time and difficulty level.,Time elapsed should be tracked for time challenges.,0.116,0.143,0,0.056,1.33,51,0.894,0.0,1.445,No
+Include achievements for completing specific challenges or reaching milestones.,Time elapsed should be tracked for time challenges.,0.119,0.25,0,0.062,1.327,59,0.882,0.0,1.239,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Time elapsed should be tracked for time challenges.,0.051,0.0,0,0.056,1.378,57,0.894,0.0,1.445,No
+Ensure responsiveness for both desktop and mobile devices.,Time elapsed should be tracked for time challenges.,0.06,0.0,0,0.067,1.371,43,0.875,0.0,1.147,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Time elapsed should be tracked for time challenges.,0.045,0.0,0,0.048,1.382,82,0.907,0.0,1.819,No
+Implement a chat or messaging feature for multiplayer interactions.,Time elapsed should be tracked for time challenges.,0.06,0.0,0,0.062,1.371,49,0.882,0.0,1.239,No
+Display leaderboards to showcase top scores and achievements.,Time elapsed should be tracked for time challenges.,0.0,0.0,0,0.0,1.414,43,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Time elapsed should be tracked for time challenges.,0.0,0.0,0,0.0,1.414,58,1.0,0.0,0.0,No
+A scoring system should be available.,Time elapsed should be tracked for time challenges.,0.168,0.333,0,0.167,1.29,36,0.713,0.0,1.967,No
+"The game should be responsive for mobiles, desktops and tablets.",Time elapsed should be tracked for time challenges.,0.178,0.333,0,0.2,1.282,40,0.666,0.0,4.013,No
+There should not be any leaderboard.,Time elapsed should be tracked for time challenges.,0.151,0.333,0,0.167,1.303,34,0.713,0.0,1.967,No
+Implement a scoring system based on completion time and difficulty level.,Users can save their progress.,0.0,0.0,0,0.0,1.414,59,1.0,0.0,0.0,No
+Include achievements for completing specific challenges or reaching milestones.,Users can save their progress.,0.0,0.0,0,0.0,1.414,62,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Users can save their progress.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,Users can save their progress.,0.0,0.0,0,0.0,1.414,43,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Users can save their progress.,0.065,0.0,0,0.0,1.368,90,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,Users can save their progress.,0.0,0.0,0,0.0,1.414,50,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,Users can save their progress.,0.0,0.0,0,0.0,1.414,46,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Users can save their progress.,0.152,0.0,0,0.062,1.302,57,0.876,0.0,0.963,No
+A scoring system should be available.,Users can save their progress.,0.0,0.0,0,0.0,1.414,30,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Users can save their progress.,0.0,0.0,0,0.0,1.414,51,1.0,0.0,0.0,No
+There should not be any leaderboard.,Users can save their progress.,0.0,0.0,0,0.0,1.414,28,1.0,0.0,0.0,No
+Include achievements for completing specific challenges or reaching milestones.,Implement a scoring system based on completion time and difficulty level.,0.0,0.0,0,0.0,1.414,58,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Implement a scoring system based on completion time and difficulty level.,0.0,0.0,0,0.048,1.414,61,0.909,0.0,1.602,No
+Ensure responsiveness for both desktop and mobile devices.,Implement a scoring system based on completion time and difficulty level.,0.06,0.0,0,0.056,1.371,51,0.894,0.0,1.355,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Implement a scoring system based on completion time and difficulty level.,0.0,0.0,0,0.0,1.414,79,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,Implement a scoring system based on completion time and difficulty level.,0.06,0.143,0,0.111,1.371,50,0.799,0.0,2.865,No
+Display leaderboards to showcase top scores and achievements.,Implement a scoring system based on completion time and difficulty level.,0.06,0.0,0,0.056,1.371,55,0.894,0.0,1.355,No
+Allow users to compare their performance with friends or the global community.,Implement a scoring system based on completion time and difficulty level.,0.0,0.0,0,0.0,1.414,66,1.0,0.0,0.0,No
+A scoring system should be available.,Implement a scoring system based on completion time and difficulty level.,0.168,0.286,0,0.133,1.29,45,0.759,0.0,2.435,No
+"The game should be responsive for mobiles, desktops and tablets.",Implement a scoring system based on completion time and difficulty level.,0.053,0.0,0,0.05,1.376,54,0.905,0.0,1.515,No
+There should not be any leaderboard.,Implement a scoring system based on completion time and difficulty level.,0.0,0.0,0,0.0,1.414,56,1.0,0.0,0.0,No
+Design a user-friendly interface with clear instructions for each puzzle type.,Include achievements for completing specific challenges or reaching milestones.,0.054,0.0,0,0.053,1.376,59,0.9,0.0,1.512,No
+Ensure responsiveness for both desktop and mobile devices.,Include achievements for completing specific challenges or reaching milestones.,0.063,0.0,0,0.062,1.369,55,0.882,0.0,1.231,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Include achievements for completing specific challenges or reaching milestones.,0.157,0.2,0,0.15,1.299,73,0.736,0.0,5.568,No
+Implement a chat or messaging feature for multiplayer interactions.,Include achievements for completing specific challenges or reaching milestones.,0.135,0.0,0,0.125,1.315,57,0.778,0.0,2.637,No
+Display leaderboards to showcase top scores and achievements.,Include achievements for completing specific challenges or reaching milestones.,0.063,0.25,0,0.0,1.369,57,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Include achievements for completing specific challenges or reaching milestones.,0.051,0.0,0,0.05,1.378,62,0.904,0.0,1.619,No
+A scoring system should be available.,Include achievements for completing specific challenges or reaching milestones.,0.0,0.0,0,0.0,1.414,60,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Include achievements for completing specific challenges or reaching milestones.,0.056,0.0,0,0.056,1.374,60,0.895,0.0,1.412,No
+There should not be any leaderboard.,Include achievements for completing specific challenges or reaching milestones.,0.0,0.0,0,0.0,1.414,62,1.0,0.0,0.0,No
+Ensure responsiveness for both desktop and mobile devices.,Design a user-friendly interface with clear instructions for each puzzle type.,0.057,0.0,0,0.056,1.373,58,0.894,0.0,1.355,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Design a user-friendly interface with clear instructions for each puzzle type.,0.089,0.0,0,0.087,1.35,82,0.839,0.0,3.791,No
+Implement a chat or messaging feature for multiplayer interactions.,Design a user-friendly interface with clear instructions for each puzzle type.,0.057,0.0,0,0.111,1.373,63,0.799,0.0,2.865,No
+Display leaderboards to showcase top scores and achievements.,Design a user-friendly interface with clear instructions for each puzzle type.,0.0,0.0,0,0.0,1.414,57,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Design a user-friendly interface with clear instructions for each puzzle type.,0.046,0.0,0,0.045,1.381,61,0.913,0.0,1.694,No
+A scoring system should be available.,Design a user-friendly interface with clear instructions for each puzzle type.,0.0,0.0,0,0.0,1.414,61,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Design a user-friendly interface with clear instructions for each puzzle type.,0.051,0.0,0,0.05,1.378,59,0.905,0.0,1.515,No
+There should not be any leaderboard.,Design a user-friendly interface with clear instructions for each puzzle type.,0.0,0.0,0,0.0,1.414,63,1.0,0.0,0.0,No
+Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,Ensure responsiveness for both desktop and mobile devices.,0.05,0.0,0,0.048,1.378,81,0.907,0.0,1.819,No
+Implement a chat or messaging feature for multiplayer interactions.,Ensure responsiveness for both desktop and mobile devices.,0.067,0.0,0,0.062,1.366,52,0.882,0.0,1.239,No
+Display leaderboards to showcase top scores and achievements.,Ensure responsiveness for both desktop and mobile devices.,0.067,0.0,0,0.067,1.366,45,0.875,0.0,1.147,No
+Allow users to compare their performance with friends or the global community.,Ensure responsiveness for both desktop and mobile devices.,0.0,0.0,0,0.0,1.414,56,1.0,0.0,0.0,No
+A scoring system should be available.,Ensure responsiveness for both desktop and mobile devices.,0.0,0.0,0,0.0,1.414,44,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Ensure responsiveness for both desktop and mobile devices.,0.127,0.0,0,0.125,1.321,37,0.777,0.0,2.675,No
+There should not be any leaderboard.,Ensure responsiveness for both desktop and mobile devices.,0.0,0.0,0,0.0,1.414,40,1.0,0.0,0.0,No
+Implement a chat or messaging feature for multiplayer interactions.,Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,0.168,0.167,0,0.15,1.29,74,0.736,0.0,4.661,No
+Display leaderboards to showcase top scores and achievements.,Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,0.05,0.0,0,0.048,1.378,80,0.907,0.0,1.49,No
+Allow users to compare their performance with friends or the global community.,Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,0.132,0.2,0,0.13,1.317,81,0.769,0.0,5.306,No
+A scoring system should be available.,Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,0.0,0.0,0,0.0,1.414,86,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,0.045,0.0,0,0.043,1.382,77,0.916,0.0,1.621,No
+There should not be any leaderboard.,Include multiplayer functionality for users to solve puzzles collaboratively or compete against each other.,0.0,0.0,0,0.0,1.414,88,1.0,0.0,0.0,No
+Display leaderboards to showcase top scores and achievements.,Implement a chat or messaging feature for multiplayer interactions.,0.0,0.0,0,0.0,1.414,54,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Implement a chat or messaging feature for multiplayer interactions.,0.054,0.0,0,0.05,1.375,62,0.904,0.0,1.619,No
+A scoring system should be available.,Implement a chat or messaging feature for multiplayer interactions.,0.0,0.0,0,0.0,1.414,51,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Implement a chat or messaging feature for multiplayer interactions.,0.06,0.0,0,0.056,1.371,53,0.895,0.0,1.412,No
+There should not be any leaderboard.,Implement a chat or messaging feature for multiplayer interactions.,0.0,0.0,0,0.0,1.414,51,1.0,0.0,0.0,No
+Allow users to compare their performance with friends or the global community.,Display leaderboards to showcase top scores and achievements.,0.054,0.0,0,0.053,1.375,59,0.899,0.0,1.56,No
+A scoring system should be available.,Display leaderboards to showcase top scores and achievements.,0.0,0.0,0,0.0,1.414,45,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Display leaderboards to showcase top scores and achievements.,0.06,0.0,0,0.059,1.371,48,0.889,0.0,1.338,No
+There should not be any leaderboard.,Display leaderboards to showcase top scores and achievements.,0.0,0.0,0,0.0,1.414,45,1.0,0.0,0.0,No
+A scoring system should be available.,Allow users to compare their performance with friends or the global community.,0.0,0.0,0,0.0,1.414,61,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",Allow users to compare their performance with friends or the global community.,0.048,0.0,0,0.0,1.38,62,1.0,0.0,0.0,No
+There should not be any leaderboard.,Allow users to compare their performance with friends or the global community.,0.0,0.0,0,0.0,1.414,62,1.0,0.0,0.0,No
+"The game should be responsive for mobiles, desktops and tablets.",A scoring system should be available.,0.168,1.0,0,0.143,1.29,46,0.745,0.0,2.126,No
+There should not be any leaderboard.,A scoring system should be available.,0.226,1.0,0,0.2,1.244,29,0.667,0.0,1.411,Yes
+There should not be any leaderboard.,"The game should be responsive for mobiles, desktops and tablets.",0.151,1.0,0,0.143,1.303,40,0.745,0.0,2.304,No

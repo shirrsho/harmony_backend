@@ -1,0 +1,301 @@
+req2_content,req1_content,cos,pos_overlap_ratio,opposite_overlap_count,jaccard,euclidean,levenshtein,jensen_shannon,ngram,bm25,decision
+Two-factor authentication for enhanced security.,"Users should be able to register, log in, and reset their passwords securely.",0,0,0,0,1.414,55,1,0,0,No
+Users can create and manage multiple financial accounts.,"Users should be able to register, log in, and reset their passwords securely.",0.11,0.333,0,0.105,1.334,55,0.806,0,2.899,No
+"Support for various account types such as savings, checking, and investment.","Users should be able to register, log in, and reset their passwords securely.",0.044,0,0,0.043,1.383,65,0.917,0,1.666,No
+"Ability to perform various financial transactions like deposits, withdrawals, and transfers.","Users should be able to register, log in, and reset their passwords securely.",0.092,0,0,0.091,1.347,71,0.833,0,3.332,No
+Real-time transaction processing with secure protocols.,"Users should be able to register, log in, and reset their passwords securely.",0,0,0,0,1.414,60,1,0,0,No
+Integration with popular payment gateways for seamless transactions.,"Users should be able to register, log in, and reset their passwords securely.",0,0,0,0,1.414,61,1,0,0,No
+"Support for mobile payments, online transfers, and recurring payments.","Users should be able to register, log in, and reset their passwords securely.",0.044,0,0,0.048,1.383,59,0.908,0,1.517,No
+Users should be able to authenticate and reset their passwords.,"Users should be able to register, log in, and reset their passwords securely.",0.661,1,0,0.533,0.824,25,0.301,0.357,12.715,Yes
+Users can create an account.,"Users should be able to register, log in, and reset their passwords securely.",0.067,0.333,0,0.059,1.366,57,0.882,0,1.276,No
+Ability to send and receive money.,"Users should be able to register, log in, and reset their passwords securely.",0.13,0,0,0.118,1.319,55,0.781,0,2.656,No
+Popular payment gateways should be integrated.,"Users should be able to register, log in, and reset their passwords securely.",0.13,0.333,0,0.118,1.319,58,0.781,0,2.656,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.","Users should be able to register, log in, and reset their passwords securely.",0.176,0,0,0.125,1.284,81,0.778,0,5.761,No
+Integration with stock market data for real-time updates.,"Users should be able to register, log in, and reset their passwords securely.",0,0,0,0,1.414,62,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.","Users should be able to register, log in, and reset their passwords securely.",0.046,0,0,0.045,1.381,61,0.913,0,1.589,No
+Automated budget alerts and recommendations.,"Users should be able to register, log in, and reset their passwords securely.",0.067,0,0,0.059,1.366,57,0.882,0,1.276,No
+Comprehensive reporting tools to generate financial statements and transaction history.,"Users should be able to register, log in, and reset their passwords securely.",0.097,0,0,0.095,1.344,66,0.825,0,3.179,No
+Data analytics for personalized financial insights.,"Users should be able to register, log in, and reset their passwords securely.",0,0,0,0,1.414,61,1,0,0,No
+Compliance with financial regulations and security standards.,"Users should be able to register, log in, and reset their passwords securely.",0.056,0,0,0.053,1.374,59,0.897,0,1.386,No
+Regular updates to adapt to changing regulations.,"Users should be able to register, log in, and reset their passwords securely.",0.108,0,0,0.056,1.336,57,0.865,0,1.386,No
+Tools to manage their investments.,"Users should be able to register, log in, and reset their passwords securely.",0.146,0,0,0.125,1.307,57,0.764,0,2.553,No
+No integration with stock market data.,"Users should be able to register, log in, and reset their passwords securely.",0,0,0,0,1.414,61,1,0,0,No
+Automated budget alerts and recommendations.,"Users should be able to register, log in, and reset their passwords securely.",0.067,0,0,0.059,1.366,57,0.882,0,1.276,No
+Generate financial statements and transaction history.,"Users should be able to register, log in, and reset their passwords securely.",0.061,0,0,0.056,1.37,59,0.89,0,1.328,No
+Information to adapt to changing regulations.,"Users should be able to register, log in, and reset their passwords securely.",0.117,0,0,0.059,1.329,59,0.857,0,1.328,No
+Users can create and manage multiple financial accounts.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,42,1,0,0,No
+"Support for various account types such as savings, checking, and investment.",Two-factor authentication for enhanced security.,0.067,0,0,0.067,1.366,58,0.87,0,0.848,No
+"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",Two-factor authentication for enhanced security.,0,0,0,0,1.414,71,1,0,0,No
+Real-time transaction processing with secure protocols.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,40,1,0,0,No
+Integration with popular payment gateways for seamless transactions.,Two-factor authentication for enhanced security.,0.079,0,0,0.083,1.357,48,0.844,0,0.584,No
+"Support for mobile payments, online transfers, and recurring payments.",Two-factor authentication for enhanced security.,0.067,0,0,0.077,1.366,50,0.854,0,0.661,No
+Users should be able to authenticate and reset their passwords.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,43,1,0,0,No
+Users can create an account.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,36,1,0,0,No
+Ability to send and receive money.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,35,1,0,0,No
+Popular payment gateways should be integrated.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,37,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Two-factor authentication for enhanced security.,0.059,0,0,0.056,1.372,83,0.887,0,1.258,No
+Integration with stock market data for real-time updates.,Two-factor authentication for enhanced security.,0.074,0,0,0.083,1.361,40,0.844,0,0.584,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Two-factor authentication for enhanced security.,0.07,0,0,0.071,1.364,55,0.862,0,0.748,No
+Automated budget alerts and recommendations.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,38,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,66,1,0,0,No
+Data analytics for personalized financial insights.,Two-factor authentication for enhanced security.,0.092,0,0,0.1,1.348,40,0.818,0,0.457,No
+Compliance with financial regulations and security standards.,Two-factor authentication for enhanced security.,0.085,0.25,0,0,1.353,43,1,0,0,No
+Regular updates to adapt to changing regulations.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,36,1,0,0,No
+Tools to manage their investments.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,33,1,0,0,No
+No integration with stock market data.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,35,1,0,0,No
+Automated budget alerts and recommendations.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,38,1,0,0,No
+Generate financial statements and transaction history.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,42,1,0,0,No
+Information to adapt to changing regulations.,Two-factor authentication for enhanced security.,0,0,0,0,1.414,34,1,0,0,No
+"Support for various account types such as savings, checking, and investment.",Users can create and manage multiple financial accounts.,0.057,0,0,0.056,1.373,58,0.894,0,1.445,No
+"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",Users can create and manage multiple financial accounts.,0.121,0.5,0,0.118,1.326,70,0.788,0,2.889,No
+Real-time transaction processing with secure protocols.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,46,1,0,0,No
+Integration with popular payment gateways for seamless transactions.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,52,1,0,0,No
+"Support for mobile payments, online transfers, and recurring payments.",Users can create and manage multiple financial accounts.,0.057,0,0,0.062,1.373,51,0.882,0,1.239,No
+Users should be able to authenticate and reset their passwords.,Users can create and manage multiple financial accounts.,0.127,0.5,0,0.125,1.321,46,0.777,0,2.675,No
+Users can create an account.,Users can create and manage multiple financial accounts.,0.317,0.5,0,0.3,1.169,28,0.531,0.125,2.738,Yes
+Ability to send and receive money.,Users can create and manage multiple financial accounts.,0.079,0,0,0.077,1.357,42,0.856,0,0.984,No
+Popular payment gateways should be integrated.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,44,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Users can create and manage multiple financial accounts.,0.168,0.5,0,0.1,1.29,81,0.814,0,3.638,No
+Integration with stock market data for real-time updates.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,45,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Users can create and manage multiple financial accounts.,0.127,0.5,0,0.125,1.321,49,0.777,0,2.675,Yes
+Automated budget alerts and recommendations.,Users can create and manage multiple financial accounts.,0.087,0,0,0.083,1.351,44,0.844,0,0.913,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Users can create and manage multiple financial accounts.,0.127,0.5,0,0.125,1.321,64,0.777,0,2.675,Yes
+Data analytics for personalized financial insights.,Users can create and manage multiple financial accounts.,0.079,0.5,0,0.077,1.357,35,0.856,0,0.984,No
+Compliance with financial regulations and security standards.,Users can create and manage multiple financial accounts.,0.156,0.5,0,0.154,1.299,46,0.733,0,2.123,No
+Regular updates to adapt to changing regulations.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,39,1,0,0,No
+Tools to manage their investments.,Users can create and manage multiple financial accounts.,0.087,0.5,0,0.083,1.351,37,0.844,0,0.913,No
+No integration with stock market data.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,43,1,0,0,No
+Automated budget alerts and recommendations.,Users can create and manage multiple financial accounts.,0.087,0,0,0.083,1.351,44,0.844,0,0.913,No
+Generate financial statements and transaction history.,Users can create and manage multiple financial accounts.,0.171,0.5,0,0.167,1.288,44,0.713,0,1.967,No
+Information to adapt to changing regulations.,Users can create and manage multiple financial accounts.,0,0,0,0,1.414,42,1,0,0,No
+"Ability to perform various financial transactions like deposits, withdrawals, and transfers.","Support for various account types such as savings, checking, and investment.",0.101,0.5,0,0.1,1.341,60,0.818,0,3.204,No
+Real-time transaction processing with secure protocols.,"Support for various account types such as savings, checking, and investment.",0,0,0,0,1.414,57,1,0,0,No
+Integration with popular payment gateways for seamless transactions.,"Support for various account types such as savings, checking, and investment.",0.057,0,0,0.056,1.373,60,0.894,0,1.355,No
+"Support for mobile payments, online transfers, and recurring payments.","Support for various account types such as savings, checking, and investment.",0.16,0.167,0,0.176,1.296,49,0.699,0,4.298,No
+Users should be able to authenticate and reset their passwords.,"Support for various account types such as savings, checking, and investment.",0.051,0,0,0.05,1.378,61,0.905,0,1.515,No
+Users can create an account.,"Support for various account types such as savings, checking, and investment.",0.074,0.167,0,0,1.361,60,1,0,0,No
+Ability to send and receive money.,"Support for various account types such as savings, checking, and investment.",0.067,0,0,0.062,1.366,60,0.879,0,1.217,No
+Popular payment gateways should be integrated.,"Support for various account types such as savings, checking, and investment.",0,0,0,0,1.414,58,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.","Support for various account types such as savings, checking, and investment.",0.139,0.125,0,0.087,1.312,80,0.839,0,3.791,No
+Integration with stock market data for real-time updates.,"Support for various account types such as savings, checking, and investment.",0.054,0,0,0.056,1.376,60,0.894,0,1.355,No
+"Features for budget creation, tracking expenses, and setting financial goals.","Support for various account types such as savings, checking, and investment.",0.107,0,0,0.105,1.337,59,0.809,0,3.029,No
+Automated budget alerts and recommendations.,"Support for various account types such as savings, checking, and investment.",0.074,0,0,0.067,1.361,56,0.87,0,1.158,No
+Comprehensive reporting tools to generate financial statements and transaction history.,"Support for various account types such as savings, checking, and investment.",0.051,0,0,0.05,1.378,66,0.905,0,1.515,No
+Data analytics for personalized financial insights.,"Support for various account types such as savings, checking, and investment.",0.067,0,0,0.062,1.366,57,0.879,0,1.217,No
+Compliance with financial regulations and security standards.,"Support for various account types such as savings, checking, and investment.",0.061,0,0,0.059,1.37,59,0.887,0,1.284,No
+Regular updates to adapt to changing regulations.,"Support for various account types such as savings, checking, and investment.",0,0,0,0,1.414,55,1,0,0,No
+Tools to manage their investments.,"Support for various account types such as savings, checking, and investment.",0,0,0,0,1.414,52,1,0,0,No
+No integration with stock market data.,"Support for various account types such as savings, checking, and investment.",0,0,0,0,1.414,60,1,0,0,No
+Automated budget alerts and recommendations.,"Support for various account types such as savings, checking, and investment.",0.074,0,0,0.067,1.361,56,0.87,0,1.158,No
+Generate financial statements and transaction history.,"Support for various account types such as savings, checking, and investment.",0.067,0,0,0.062,1.366,57,0.879,0,1.217,No
+Information to adapt to changing regulations.,"Support for various account types such as savings, checking, and investment.",0,0,0,0,1.414,53,1,0,0,No
+Real-time transaction processing with secure protocols.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0,0,0,0,1.414,63,1,0,0,No
+Integration with popular payment gateways for seamless transactions.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.057,0.2,0,0,1.373,70,1,0,0,No
+"Support for mobile payments, online transfers, and recurring payments.","Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.101,0.2,0,0.053,1.341,66,0.9,0,1.433,No
+Users should be able to authenticate and reset their passwords.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.107,0,0,0.105,1.337,70,0.809,0,3.029,No
+Users can create an account.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0,0,0,0,1.414,75,1,0,0,No
+Ability to send and receive money.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.232,0.2,0,0.214,1.24,67,0.638,0,3.652,Yes
+Popular payment gateways should be integrated.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0,0,0,0,1.414,72,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.","Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.089,0,0,0.087,1.35,87,0.839,0,3.791,No
+Integration with stock market data for real-time updates.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0,0,0,0,1.414,68,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.","Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.107,0.5,0,0.105,1.337,67,0.809,0,3.029,No
+Automated budget alerts and recommendations.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.074,0,0,0.067,1.361,71,0.87,0,1.158,No
+Comprehensive reporting tools to generate financial statements and transaction history.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.169,0.5,0,0.167,1.289,72,0.714,0,4.544,No
+Data analytics for personalized financial insights.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.067,0.5,0,0.062,1.366,70,0.879,0,1.217,No
+Compliance with financial regulations and security standards.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.13,0.5,0,0.125,1.319,58,0.775,0,2.567,Yes
+Regular updates to adapt to changing regulations.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.118,0,0,0.062,1.328,72,0.85,0,1.284,No
+Tools to manage their investments.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.074,0,0,0.067,1.361,71,0.87,0,1.158,No
+No integration with stock market data.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0,0,0,0,1.414,70,1,0,0,No
+Automated budget alerts and recommendations.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.074,0,0,0.067,1.361,71,0.87,0,1.158,No
+Generate financial statements and transaction history.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.143,0.5,0,0.133,1.309,64,0.759,0,2.435,No
+Information to adapt to changing regulations.,"Ability to perform various financial transactions like deposits, withdrawals, and transfers.",0.127,0,0,0.067,1.321,69,0.841,0,1.217,No
+Integration with popular payment gateways for seamless transactions.,Real-time transaction processing with secure protocols.,0.072,0,0,0.077,1.362,50,0.856,0,0.866,No
+"Support for mobile payments, online transfers, and recurring payments.",Real-time transaction processing with secure protocols.,0,0,0,0,1.414,53,1,0,0,No
+Users should be able to authenticate and reset their passwords.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,49,1,0,0,No
+Users can create an account.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,42,1,0,0,No
+Ability to send and receive money.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,40,1,0,0,No
+Popular payment gateways should be integrated.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,46,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Real-time transaction processing with secure protocols.,0,0,0,0,1.414,83,1,0,0,No
+Integration with stock market data for real-time updates.,Real-time transaction processing with secure protocols.,0.236,0,0,0.077,1.236,46,0.856,0,0.866,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Real-time transaction processing with secure protocols.,0,0,0,0,1.414,54,1,0,0,No
+Automated budget alerts and recommendations.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,42,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Real-time transaction processing with secure protocols.,0.064,0.2,0,0.067,1.368,65,0.873,0,1.063,No
+Data analytics for personalized financial insights.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,42,1,0,0,No
+Compliance with financial regulations and security standards.,Real-time transaction processing with secure protocols.,0.078,0,0,0.083,1.358,43,0.846,0,0.782,No
+Regular updates to adapt to changing regulations.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,41,1,0,0,No
+Tools to manage their investments.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,40,1,0,0,No
+No integration with stock market data.,Real-time transaction processing with secure protocols.,0.085,0,0,0.091,1.353,38,0.833,0,0.705,No
+Automated budget alerts and recommendations.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,42,1,0,0,No
+Generate financial statements and transaction history.,Real-time transaction processing with secure protocols.,0.085,0.25,0,0.091,1.353,43,0.833,0,0.705,No
+Information to adapt to changing regulations.,Real-time transaction processing with secure protocols.,0,0,0,0,1.414,39,1,0,0,No
+"Support for mobile payments, online transfers, and recurring payments.",Integration with popular payment gateways for seamless transactions.,0.057,0,0,0.062,1.373,51,0.882,0,1.239,No
+Users should be able to authenticate and reset their passwords.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,48,1,0,0,No
+Users can create an account.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,51,1,0,0,No
+Ability to send and receive money.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,51,1,0,0,No
+Popular payment gateways should be integrated.,Integration with popular payment gateways for seamless transactions.,0.28,0.5,0,0.167,1.2,39,0.713,0,1.967,Yes
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Integration with popular payment gateways for seamless transactions.,0.05,0,0,0.048,1.378,84,0.907,0,1.819,No
+Integration with stock market data for real-time updates.,Integration with popular payment gateways for seamless transactions.,0.217,0.2,0,0.231,1.251,31,0.625,0,3.44,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Integration with popular payment gateways for seamless transactions.,0.06,0,0,0.059,1.371,57,0.889,0,1.338,No
+Automated budget alerts and recommendations.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,45,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,57,1,0,0,No
+Data analytics for personalized financial insights.,Integration with popular payment gateways for seamless transactions.,0.079,0,0,0.077,1.357,50,0.856,0,0.984,No
+Compliance with financial regulations and security standards.,Integration with popular payment gateways for seamless transactions.,0.072,0,0,0.071,1.362,46,0.867,0,1.062,No
+Regular updates to adapt to changing regulations.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,46,1,0,0,No
+Tools to manage their investments.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,51,1,0,0,No
+No integration with stock market data.,Integration with popular payment gateways for seamless transactions.,0.171,0,0,0.077,1.288,46,0.856,0,0.984,No
+Automated budget alerts and recommendations.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,45,1,0,0,No
+Generate financial statements and transaction history.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,47,1,0,0,No
+Information to adapt to changing regulations.,Integration with popular payment gateways for seamless transactions.,0,0,0,0,1.414,42,1,0,0,No
+Users should be able to authenticate and reset their passwords.,"Support for mobile payments, online transfers, and recurring payments.",0.051,0,0,0.056,1.378,49,0.895,0,1.412,No
+Users can create an account.,"Support for mobile payments, online transfers, and recurring payments.",0,0,0,0,1.414,54,1,0,0,No
+Ability to send and receive money.,"Support for mobile payments, online transfers, and recurring payments.",0.067,0,0,0.071,1.366,48,0.865,0,1.076,No
+Popular payment gateways should be integrated.,"Support for mobile payments, online transfers, and recurring payments.",0,0,0,0,1.414,48,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.","Support for mobile payments, online transfers, and recurring payments.",0.089,0,0,0.095,1.35,75,0.824,0,3.712,No
+Integration with stock market data for real-time updates.,"Support for mobile payments, online transfers, and recurring payments.",0.054,0,0,0.062,1.376,53,0.882,0,1.231,No
+"Features for budget creation, tracking expenses, and setting financial goals.","Support for mobile payments, online transfers, and recurring payments.",0.107,0,0,0.118,1.337,51,0.789,0,2.824,No
+Automated budget alerts and recommendations.,"Support for mobile payments, online transfers, and recurring payments.",0.074,0,0,0.077,1.361,45,0.854,0,1.008,No
+Comprehensive reporting tools to generate financial statements and transaction history.,"Support for mobile payments, online transfers, and recurring payments.",0.051,0,0,0.056,1.378,64,0.895,0,1.412,No
+Data analytics for personalized financial insights.,"Support for mobile payments, online transfers, and recurring payments.",0.067,0,0,0.071,1.366,53,0.865,0,1.076,No
+Compliance with financial regulations and security standards.,"Support for mobile payments, online transfers, and recurring payments.",0.061,0,0,0.067,1.37,48,0.874,0,1.15,No
+Regular updates to adapt to changing regulations.,"Support for mobile payments, online transfers, and recurring payments.",0,0,0,0,1.414,53,1,0,0,No
+Tools to manage their investments.,"Support for mobile payments, online transfers, and recurring payments.",0,0,0,0,1.414,49,1,0,0,No
+No integration with stock market data.,"Support for mobile payments, online transfers, and recurring payments.",0,0,0,0,1.414,55,1,0,0,No
+Automated budget alerts and recommendations.,"Support for mobile payments, online transfers, and recurring payments.",0.074,0,0,0.077,1.361,45,0.854,0,1.008,No
+Generate financial statements and transaction history.,"Support for mobile payments, online transfers, and recurring payments.",0.067,0,0,0.071,1.366,49,0.865,0,1.076,No
+Information to adapt to changing regulations.,"Support for mobile payments, online transfers, and recurring payments.",0,0,0,0,1.414,50,1,0,0,No
+Users can create an account.,Users should be able to authenticate and reset their passwords.,0.077,0.5,0,0.071,1.358,44,0.862,0,1.088,No
+Ability to send and receive money.,Users should be able to authenticate and reset their passwords.,0.151,0,0,0.143,1.303,44,0.745,0,2.304,No
+Popular payment gateways should be integrated.,Users should be able to authenticate and reset their passwords.,0.151,0.333,0,0.143,1.303,46,0.745,0,2.304,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Users should be able to authenticate and reset their passwords.,0.206,0,0,0.143,1.26,80,0.748,0,5.637,No
+Integration with stock market data for real-time updates.,Users should be able to authenticate and reset their passwords.,0,0,0,0,1.414,48,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Users should be able to authenticate and reset their passwords.,0.053,0,0,0.053,1.376,56,0.9,0,1.469,No
+Automated budget alerts and recommendations.,Users should be able to authenticate and reset their passwords.,0.077,0,0,0.071,1.358,42,0.862,0,1.088,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Users should be able to authenticate and reset their passwords.,0.112,0,0,0.111,1.332,63,0.8,0,2.937,No
+Data analytics for personalized financial insights.,Users should be able to authenticate and reset their passwords.,0,0,0,0,1.414,51,1,0,0,No
+Compliance with financial regulations and security standards.,Users should be able to authenticate and reset their passwords.,0.064,0,0,0.062,1.368,49,0.881,0,1.222,No
+Regular updates to adapt to changing regulations.,Users should be able to authenticate and reset their passwords.,0.124,0,0,0.067,1.324,44,0.841,0,1.222,No
+Tools to manage their investments.,Users should be able to authenticate and reset their passwords.,0.168,0,0,0.154,1.29,44,0.725,0,2.176,No
+No integration with stock market data.,Users should be able to authenticate and reset their passwords.,0,0,0,0,1.414,49,1,0,0,No
+Automated budget alerts and recommendations.,Users should be able to authenticate and reset their passwords.,0.077,0,0,0.071,1.358,42,0.862,0,1.088,No
+Generate financial statements and transaction history.,Users should be able to authenticate and reset their passwords.,0.07,0,0,0.067,1.364,44,0.873,0,1.152,No
+Information to adapt to changing regulations.,Users should be able to authenticate and reset their passwords.,0.134,0,0,0.071,1.316,44,0.831,0,1.152,No
+Ability to send and receive money.,Users can create an account.,0,0,0,0,1.414,27,1,0,0,No
+Popular payment gateways should be integrated.,Users can create an account.,0,0,0,0,1.414,35,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Users can create an account.,0.065,0,0,0,1.368,89,1,0,0,No
+Integration with stock market data for real-time updates.,Users can create an account.,0,0,0,0,1.414,42,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Users can create an account.,0,0,0,0,1.414,59,1,0,0,No
+Automated budget alerts and recommendations.,Users can create an account.,0,0,0,0,1.414,31,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Users can create an account.,0,0,0,0,1.414,67,1,0,0,No
+Data analytics for personalized financial insights.,Users can create an account.,0,0,0,0,1.414,39,1,0,0,No
+Compliance with financial regulations and security standards.,Users can create an account.,0,0,0,0,1.414,46,1,0,0,No
+Regular updates to adapt to changing regulations.,Users can create an account.,0,0,0,0,1.414,37,1,0,0,No
+Tools to manage their investments.,Users can create an account.,0,0,0,0,1.414,23,1,0,0,No
+No integration with stock market data.,Users can create an account.,0,0,0,0,1.414,30,1,0,0,No
+Automated budget alerts and recommendations.,Users can create an account.,0,0,0,0,1.414,31,1,0,0,No
+Generate financial statements and transaction history.,Users can create an account.,0,0,0,0,1.414,37,1,0,0,No
+Information to adapt to changing regulations.,Users can create an account.,0,0,0,0,1.414,33,1,0,0,No
+Popular payment gateways should be integrated.,Ability to send and receive money.,0,0,0,0,1.414,35,1,0,0,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Ability to send and receive money.,0.202,0,0,0.176,1.263,86,0.685,0,4.835,No
+Integration with stock market data for real-time updates.,Ability to send and receive money.,0,0,0,0,1.414,39,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Ability to send and receive money.,0.07,0,0,0.067,1.364,60,0.873,0,1.063,No
+Automated budget alerts and recommendations.,Ability to send and receive money.,0.102,0,0,0.1,1.34,28,0.818,0,0.637,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Ability to send and receive money.,0.151,0,0,0.143,1.303,66,0.745,0,2.126,No
+Data analytics for personalized financial insights.,Ability to send and receive money.,0,0,0,0,1.414,39,1,0,0,No
+Compliance with financial regulations and security standards.,Ability to send and receive money.,0.085,0,0,0.083,1.353,43,0.846,0,0.782,No
+Regular updates to adapt to changing regulations.,Ability to send and receive money.,0.163,0,0,0.091,1.294,36,0.785,0,0.782,No
+Tools to manage their investments.,Ability to send and receive money.,0.102,0,0,0.1,1.34,23,0.818,0,0.637,No
+No integration with stock market data.,Ability to send and receive money.,0,0,0,0,1.414,31,1,0,0,No
+Automated budget alerts and recommendations.,Ability to send and receive money.,0.102,0,0,0.1,1.34,28,0.818,0,0.637,No
+Generate financial statements and transaction history.,Ability to send and receive money.,0.092,0,0,0.091,1.348,37,0.833,0,0.705,No
+Information to adapt to changing regulations.,Ability to send and receive money.,0.176,0,0,0.1,1.284,33,0.77,0,0.705,No
+"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",Popular payment gateways should be integrated.,0,0,0,0,1.414,87,1,0,0,No
+Integration with stock market data for real-time updates.,Popular payment gateways should be integrated.,0,0,0,0,1.414,43,1,0,0,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Popular payment gateways should be integrated.,0,0,0,0,1.414,59,1,0,0,No
+Automated budget alerts and recommendations.,Popular payment gateways should be integrated.,0,0,0,0,1.414,34,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Popular payment gateways should be integrated.,0,0,0,0,1.414,67,1,0,0,No
+Data analytics for personalized financial insights.,Popular payment gateways should be integrated.,0,0,0,0,1.414,42,1,0,0,No
+Compliance with financial regulations and security standards.,Popular payment gateways should be integrated.,0,0,0,0,1.414,46,1,0,0,No
+Regular updates to adapt to changing regulations.,Popular payment gateways should be integrated.,0,0,0,0,1.414,34,1,0,0,No
+Tools to manage their investments.,Popular payment gateways should be integrated.,0,0,0,0,1.414,33,1,0,0,No
+No integration with stock market data.,Popular payment gateways should be integrated.,0,0,0,0,1.414,33,1,0,0,No
+Automated budget alerts and recommendations.,Popular payment gateways should be integrated.,0,0,0,0,1.414,34,1,0,0,No
+Generate financial statements and transaction history.,Popular payment gateways should be integrated.,0,0,0,0,1.414,42,1,0,0,No
+Information to adapt to changing regulations.,Popular payment gateways should be integrated.,0,0,0,0,1.414,37,1,0,0,No
+Integration with stock market data for real-time updates.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.047,0,0,0.048,1.38,85,0.907,0,1.49,No
+"Features for budget creation, tracking expenses, and setting financial goals.","Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.093,0,0,0.091,1.346,79,0.832,0,3.243,No
+Automated budget alerts and recommendations.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.14,0.125,0,0.118,1.311,77,0.774,0,2.657,No
+Comprehensive reporting tools to generate financial statements and transaction history.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.147,0,0,0.091,1.306,84,0.832,0,3.243,No
+Data analytics for personalized financial insights.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.059,0,0,0.053,1.372,85,0.895,0,1.376,No
+Compliance with financial regulations and security standards.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.054,0,0,0.05,1.375,83,0.902,0,1.431,No
+Regular updates to adapt to changing regulations.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.104,0,0,0.053,1.339,84,0.871,0,1.431,No
+Tools to manage their investments.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.469,1,0,0.267,1.031,78,0.549,0.154,5.313,Yes
+No integration with stock market data.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0,0,0,0,1.414,88,1,0,0,No
+Automated budget alerts and recommendations.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.14,0.125,0,0.118,1.311,77,0.774,0,2.657,No
+Generate financial statements and transaction history.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.059,0,0,0.053,1.372,86,0.895,0,1.376,No
+Information to adapt to changing regulations.,"Tools for users to manage their investments, view portfolio performance, and receive investment recommendations.",0.112,0,0,0.056,1.332,83,0.864,0,1.376,No
+"Features for budget creation, tracking expenses, and setting financial goals.",Integration with stock market data for real-time updates.,0.056,0,0,0.059,1.374,60,0.889,0,1.338,No
+Automated budget alerts and recommendations.,Integration with stock market data for real-time updates.,0,0,0,0,1.414,39,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Integration with stock market data for real-time updates.,0,0,0,0,1.414,64,1,0,0,No
+Data analytics for personalized financial insights.,Integration with stock market data for real-time updates.,0.16,0,0,0.077,1.296,44,0.856,0,0.984,No
+Compliance with financial regulations and security standards.,Integration with stock market data for real-time updates.,0.068,0,0,0.071,1.365,43,0.867,0,1.062,No
+Regular updates to adapt to changing regulations.,Integration with stock market data for real-time updates.,0.06,0.2,0,0,1.371,42,1,0,0,No
+Tools to manage their investments.,Integration with stock market data for real-time updates.,0,0,0,0,1.414,40,1,0,0,No
+No integration with stock market data.,Integration with stock market data for real-time updates.,0.527,0.6,0,0.273,0.973,26,0.569,0.25,2.951,Yes
+Automated budget alerts and recommendations.,Integration with stock market data for real-time updates.,0,0,0,0,1.414,39,1,0,0,No
+Generate financial statements and transaction history.,Integration with stock market data for real-time updates.,0,0,0,0,1.414,41,1,0,0,No
+Information to adapt to changing regulations.,Integration with stock market data for real-time updates.,0,0,0,0,1.414,37,1,0,0,No
+Automated budget alerts and recommendations.,"Features for budget creation, tracking expenses, and setting financial goals.",0.168,0.2,0,0.154,1.29,54,0.725,0,2.176,No
+Comprehensive reporting tools to generate financial statements and transaction history.,"Features for budget creation, tracking expenses, and setting financial goals.",0.112,0.5,0,0.111,1.332,67,0.8,0,2.937,No
+Data analytics for personalized financial insights.,"Features for budget creation, tracking expenses, and setting financial goals.",0.151,0.5,0,0.143,1.303,54,0.745,0,2.304,No
+Compliance with financial regulations and security standards.,"Features for budget creation, tracking expenses, and setting financial goals.",0.138,1,0,0.133,1.313,57,0.763,0,2.445,Yes
+Regular updates to adapt to changing regulations.,"Features for budget creation, tracking expenses, and setting financial goals.",0,0,0,0,1.414,56,1,0,0,No
+Tools to manage their investments.,"Features for budget creation, tracking expenses, and setting financial goals.",0,0,0,0,1.414,60,1,0,0,No
+No integration with stock market data.,"Features for budget creation, tracking expenses, and setting financial goals.",0,0,0,0,1.414,58,1,0,0,No
+Automated budget alerts and recommendations.,"Features for budget creation, tracking expenses, and setting financial goals.",0.168,0.2,0,0.154,1.29,54,0.725,0,2.176,No
+Generate financial statements and transaction history.,"Features for budget creation, tracking expenses, and setting financial goals.",0.151,1,0,0.143,1.303,55,0.745,0,2.304,No
+Information to adapt to changing regulations.,"Features for budget creation, tracking expenses, and setting financial goals.",0,0,0,0,1.414,56,1,0,0,No
+Comprehensive reporting tools to generate financial statements and transaction history.,Automated budget alerts and recommendations.,0.077,0,0,0.071,1.358,64,0.862,0,0.748,No
+Data analytics for personalized financial insights.,Automated budget alerts and recommendations.,0,0,0,0,1.414,41,1,0,0,No
+Compliance with financial regulations and security standards.,Automated budget alerts and recommendations.,0.093,0,0,0.091,1.346,43,0.832,0,0.517,No
+Regular updates to adapt to changing regulations.,Automated budget alerts and recommendations.,0,0,0,0,1.414,34,1,0,0,No
+Tools to manage their investments.,Automated budget alerts and recommendations.,0,0,0,0,1.414,30,1,0,0,No
+No integration with stock market data.,Automated budget alerts and recommendations.,0,0,0,0,1.414,35,1,0,0,No
+Automated budget alerts and recommendations.,Automated budget alerts and recommendations.,1,1,0,1,0,0,0,1,2.019,Yes
+Generate financial statements and transaction history.,Automated budget alerts and recommendations.,0.102,0,0,0.1,1.34,37,0.818,0,0.457,No
+Information to adapt to changing regulations.,Automated budget alerts and recommendations.,0,0,0,0,1.414,30,1,0,0,No
+Data analytics for personalized financial insights.,Comprehensive reporting tools to generate financial statements and transaction history.,0.07,0.5,0,0.067,1.364,63,0.873,0,1.152,No
+Compliance with financial regulations and security standards.,Comprehensive reporting tools to generate financial statements and transaction history.,0.138,0.5,0,0.133,1.313,58,0.763,0,2.445,Yes
+Regular updates to adapt to changing regulations.,Comprehensive reporting tools to generate financial statements and transaction history.,0.124,0,0,0.067,1.324,64,0.841,0,1.222,No
+Tools to manage their investments.,Comprehensive reporting tools to generate financial statements and transaction history.,0.168,0,0,0.071,1.29,66,0.862,0,1.088,No
+No integration with stock market data.,Comprehensive reporting tools to generate financial statements and transaction history.,0,0,0,0,1.414,67,1,0,0,No
+Automated budget alerts and recommendations.,Comprehensive reporting tools to generate financial statements and transaction history.,0.077,0,0,0.071,1.358,64,0.862,0,1.088,No
+Generate financial statements and transaction history.,Comprehensive reporting tools to generate financial statements and transaction history.,0.657,0.6,0,0.455,0.828,34,0.364,0.333,5.759,Yes
+Information to adapt to changing regulations.,Comprehensive reporting tools to generate financial statements and transaction history.,0.134,0,0,0.071,1.316,64,0.831,0,1.152,No
+Compliance with financial regulations and security standards.,Data analytics for personalized financial insights.,0.085,0.5,0,0.083,1.353,47,0.846,0,0.782,Yes
+Regular updates to adapt to changing regulations.,Data analytics for personalized financial insights.,0,0,0,0,1.414,41,1,0,0,No
+Tools to manage their investments.,Data analytics for personalized financial insights.,0,0,0,0,1.414,37,1,0,0,No
+No integration with stock market data.,Data analytics for personalized financial insights.,0.092,0,0,0,1.348,40,1,0,0,No
+Automated budget alerts and recommendations.,Data analytics for personalized financial insights.,0,0,0,0,1.414,41,1,0,0,No
+Generate financial statements and transaction history.,Data analytics for personalized financial insights.,0.092,0.5,0,0.091,1.348,41,0.833,0,0.705,No
+Information to adapt to changing regulations.,Data analytics for personalized financial insights.,0,0,0,0,1.414,39,1,0,0,No
+Regular updates to adapt to changing regulations.,Compliance with financial regulations and security standards.,0.068,0.25,0,0,1.365,46,1,0,0,No
+Tools to manage their investments.,Compliance with financial regulations and security standards.,0,0,0,0,1.414,44,1,0,0,No
+No integration with stock market data.,Compliance with financial regulations and security standards.,0.085,0,0,0.083,1.353,44,0.846,0,0.867,No
+Automated budget alerts and recommendations.,Compliance with financial regulations and security standards.,0.093,0,0,0.091,1.346,43,0.832,0,0.794,No
+Generate financial statements and transaction history.,Compliance with financial regulations and security standards.,0.184,1,0,0.182,1.277,38,0.692,0,1.733,No
+Information to adapt to changing regulations.,Compliance with financial regulations and security standards.,0.072,0.25,0,0,1.362,45,1,0,0,No
+Tools to manage their investments.,Regular updates to adapt to changing regulations.,0.18,0,0,0.1,1.281,34,0.763,0,0.794,No
+No integration with stock market data.,Regular updates to adapt to changing regulations.,0,0,0,0,1.414,39,1,0,0,No
+Automated budget alerts and recommendations.,Regular updates to adapt to changing regulations.,0,0,0,0,1.414,34,1,0,0,No
+Generate financial statements and transaction history.,Regular updates to adapt to changing regulations.,0,0,0,0,1.414,41,1,0,0,No
+Information to adapt to changing regulations.,Regular updates to adapt to changing regulations.,0.706,1,0,0.571,0.767,13,0.229,0.5,3.466,Yes
+No integration with stock market data.,Tools to manage their investments.,0,0,0,0,1.414,29,1,0,0,No
+Automated budget alerts and recommendations.,Tools to manage their investments.,0,0,0,0,1.414,30,1,0,0,No
+Generate financial statements and transaction history.,Tools to manage their investments.,0,0,0,0,1.414,40,1,0,0,No
+Information to adapt to changing regulations.,Tools to manage their investments.,0.194,0,0,0.111,1.269,31,0.745,0,0.457,No
+Automated budget alerts and recommendations.,No integration with stock market data.,0,0,0,0,1.414,35,1,0,0,No
+Generate financial statements and transaction history.,No integration with stock market data.,0,0,0,0,1.414,41,1,0,0,No
+Information to adapt to changing regulations.,No integration with stock market data.,0,0,0,0,1.414,34,1,0,0,No
+Generate financial statements and transaction history.,Automated budget alerts and recommendations.,0.102,0,0,0.1,1.34,37,0.818,0,0.457,No
+Information to adapt to changing regulations.,Automated budget alerts and recommendations.,0,0,0,0,1.414,30,1,0,0,No
+Information to adapt to changing regulations.,Generate financial statements and transaction history.,0,0,0,0,1.414,39,1,0,0,No
