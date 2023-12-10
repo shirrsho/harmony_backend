@@ -94,7 +94,7 @@ def determine(conflicts):
         scores = [[
             conflicts[i]["cos"],
             conflicts[i]["pos_overlap_ratio"],
-            conflicts[i]["opposite_overlap_count"],
+            # conflicts[i]["opposite_overlap_count"],
             conflicts[i]["jaccard"],
             conflicts[i]["euclidean"],
             conflicts[i]["levenshtein"],
