@@ -9,7 +9,7 @@ from src.document.functionalities.operations import getDocument
 from src.project.functionalities.operations import getProjectFromDB
 from src.report.functionalities.operations import addDocumentReport, addProjectReport, getDocumentReport, getProjectReport
 from src.requirement.functionalities.operations import getDocumentRequirementsFromDB, getProjectRequirementsFromDB
-
+from src.logger import console_log
 load_dotenv()
 
 # srs_database = MongoDB().get_client()[os.environ.get("DATABASE_NAME")]
@@ -48,6 +48,8 @@ async def find_document_conflict(document_id:str):
             "conflict_count":result.inserted_ids.__len__(),
             "threat":0.0
         }) # External call
+
+        console_log("Conflicts Sent!")
         
         return {
             "message": "Conflicts successfully found!",
@@ -77,6 +79,8 @@ async def find_project_conflict(project_id:str):
             "conflict_count":result.inserted_ids.__len__(),
             "threat":0.0
         }) # External call
+
+        console_log("Conflicts Sent!")
 
         # return {
         #     "message": "Conflicts successfully found!",
